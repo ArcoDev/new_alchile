@@ -1,0 +1,14 @@
+.about {
+    padding: 100px;
+    .title-about {
+        position: relative;
+        color: $blanco;
+        font-size: 3rem;
+    }
+    .description {
+        position: relative;
+        color: $blanco;
+        font-size: 1.5rem;
+        line-height: 1.8;
+    }
+}

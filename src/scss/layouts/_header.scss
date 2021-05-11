@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+
     video {
         position: absolute;
         top: 0;
@@ -13,17 +13,50 @@
         pointer-events: none;
     }
 }
-.about {
-    padding: 100px;
-    .title-about {
-        position: relative;
-        color: $blanco;
-        font-size: 3rem;
+
+.layer {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: $layer;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: $separacion / 2;
+    .icon {
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
     }
-    .description {
-        position: relative;
+    .icon-menu {
+        i {
+            font-size: 2.5rem;
+            color: $blanco;
+            cursor: pointer;
+            margin-top: $separacion / 2;
+            margin-right: $separacion / 3;
+            transition: all .8s;
+            &:hover {
+                color: $amarillo;
+            }
+        }
+    }
+}
+.title-header {
+    width: 20%;
+    margin-left: 20%;
+    margin-top: -5%;
+    h1 {
+        font-size: 12rem;
+        text-align: right;
         color: $blanco;
-        font-size: 1.5rem;
-        line-height: 1.8;
+        font-family: $titulo;
+        font-weight: $semiBold;
+        line-height: 0.9;
     }
 }
