@@ -1,0 +1,23 @@
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: $morado;
+    position: fixed;
+    transition: all .5s ease-out;
+    animation: animaOverlay 5s;
+    z-index: 9;
+}
+@keyframes animaOverlay {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 110%;
+        top: 0;
+    }
+    50% {
+        left: 0;
+        top: 0;
+    }
+}

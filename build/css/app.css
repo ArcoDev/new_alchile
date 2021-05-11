@@ -343,7 +343,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem; }
+  padding: 2.5rem;
+  z-index: 10; }
   .navbar .icon img {
     width: 100px;
     height: 100px;
@@ -357,6 +358,10 @@ body {
     transition: all .8s; }
     .navbar .icon-menu i:hover {
       color: #F6BB31; }
+
+.anima-navbar {
+  transition: all .5s ease-out;
+  transform: translate3d(0px, -100%, 0px); }
 
 .title-header {
   width: 20%;
@@ -381,3 +386,23 @@ body {
     color: #FFFFFF;
     font-size: 1.5rem;
     line-height: 1.8; }
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: #594590;
+  position: fixed;
+  transition: all .5s ease-out;
+  animation: animaOverlay 5s;
+  z-index: 9; }
+
+@keyframes animaOverlay {
+  0% {
+    left: 0;
+    top: 0; }
+  25% {
+    left: 110%;
+    top: 0; }
+  50% {
+    left: 0;
+    top: 0; } }

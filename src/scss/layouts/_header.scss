@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     padding: $separacion / 2;
+    z-index: 10;
     .icon {
         img {
             width: 100px;
@@ -46,6 +47,10 @@
             }
         }
     }
+}
+.anima-navbar {
+    transition: all .5s ease-out;
+    transform: translate3d(0px, -100%, 0px);
 }
 .title-header {
     width: 20%;

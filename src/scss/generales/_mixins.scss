@@ -1,0 +1,6 @@
+//FONDO COMO IMAGEN
+@mixin backgroundIMG($size) {
+    background-size: $size;
+    background-position: center;
+    background-repeat: no-repeat;
+}
