@@ -1,0 +1,24 @@
+{
+  "name": "alchile_animaciones",
+  "version": "1.0.0",
+  "description": "Remodelacion de la pagina de alchile studio 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "animaciones"
+  ],
+  "author": "Christian Acosta (arcodev)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-webp": "^4.0.1"
+  }
+}
