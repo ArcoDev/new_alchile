@@ -7,9 +7,11 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
 }
 body {
     font-family: $textos;
     background-color: $grisOscuro;
     overflow-x: hidden;
-}
+} 

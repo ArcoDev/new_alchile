@@ -1,23 +1,50 @@
 .overlay {
     width: 100%;
     height: 100vh;
-    background-color: $morado;
-    position: fixed;
-    transition: all .5s ease-out;
+    @include backgroundIMG(cover);
+    background-image: url('../../../build/img/fondo-overlay.webp');
+    position: absolute;
+    transition: all 1s ease-out;
     animation: animaOverlay 5s;
     z-index: 9;
 }
+
 @keyframes animaOverlay {
     0% {
         left: 0;
         top: 0;
+        background: $morado;
+
     }
+
     25% {
         left: 110%;
         top: 0;
+        background: $morado;
     }
+
     50% {
         left: 0;
         top: 0;
+        background-color: $morado;
+    }
+}
+
+.layer-menu {
+    width: 100%;
+    height: 100vh;
+    background: $layerMenu;
+    display: flex;
+    flex-direction: column;
+    .items {
+        border: 2px solid white;
+        padding: $separacion * 3;
+    }
+    .socials ul {
+        border: 2px solid white;
+        display: flex;
+        gap: 5px;
+        justify-content: flex-end;
+        padding: $separacion / 3;
     }
 }

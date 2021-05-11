@@ -312,7 +312,9 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -390,19 +392,41 @@ body {
 .overlay {
   width: 100%;
   height: 100vh;
-  background-color: #594590;
-  position: fixed;
-  transition: all .5s ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../build/img/fondo-overlay.webp");
+  position: absolute;
+  transition: all 1s ease-out;
   animation: animaOverlay 5s;
   z-index: 9; }
 
 @keyframes animaOverlay {
   0% {
     left: 0;
-    top: 0; }
+    top: 0;
+    background: #594590; }
   25% {
     left: 110%;
-    top: 0; }
+    top: 0;
+    background: #594590; }
   50% {
     left: 0;
-    top: 0; } }
+    top: 0;
+    background-color: #594590; } }
+
+.layer-menu {
+  width: 100%;
+  height: 100vh;
+  background: #584294a1;
+  display: flex;
+  flex-direction: column; }
+  .layer-menu .items {
+    border: 2px solid white;
+    padding: 15rem; }
+  .layer-menu .socials ul {
+    border: 2px solid white;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    padding: 1.66667rem; }
