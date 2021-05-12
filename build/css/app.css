@@ -327,6 +327,7 @@ body {
   min-height: 100vh; }
   .header video {
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -336,6 +337,7 @@ body {
 
 .layer {
   position: absolute;
+  z-index: 10;
   width: 100%;
   min-height: 100vh;
   background: #58429462;
@@ -343,10 +345,12 @@ body {
   flex-direction: column; }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
-  z-index: 10; }
+  z-index: 100; }
   .navbar .icon img {
     width: 100px;
     height: 100px;
@@ -360,15 +364,17 @@ body {
     transition: all .8s; }
     .navbar .icon-menu i:hover {
       color: #F6BB31; }
+  .navbar .icon-menu .fa-times {
+    display: none; }
 
-.anima-navbar {
-  transition: all .5s ease-out;
-  transform: translate3d(0px, -100%, 0px); }
-
+/*.anima-navbar {
+    transition: all .5s ease-out;
+    transform: translate3d(0px, -100%, 0px);
+}*/
 .title-header {
   width: 20%;
   margin-left: 20%;
-  margin-top: -5%; }
+  margin-top: 5%; }
   .title-header h1 {
     font-size: 12rem;
     text-align: right;
@@ -376,6 +382,9 @@ body {
     font-family: "Spectral", serif;
     font-weight: 600;
     line-height: 0.9; }
+    @media screen and (min-width: 1920px) {
+      .title-header h1 {
+        font-size: 15rem; } }
 
 .about {
   padding: 100px; }
@@ -390,20 +399,21 @@ body {
     line-height: 1.8; }
 
 .overlay {
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../../build/img/fondo-overlay.webp");
-  position: absolute;
   transition: all 1s ease-out;
   animation: animaOverlay 5s;
-  z-index: 9; }
+  z-index: 10;
+  overflow: hidden; }
 
 @keyframes animaOverlay {
   0% {
-    left: 0;
+    left: -120%;
     top: 0;
     background: #594590; }
   25% {
@@ -418,15 +428,64 @@ body {
 .layer-menu {
   width: 100%;
   height: 100vh;
-  background: #584294a1;
+  background: #352268cc;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: hidden; }
   .layer-menu .items {
-    border: 2px solid white;
-    padding: 15rem; }
+    padding-top: 10rem;
+    padding-left: 8rem; }
+    @media screen and (min-width: 1920px) {
+      .layer-menu .items {
+        padding-top: 15rem;
+        padding-left: 15rem; } }
+    .layer-menu .items .link a {
+      font-size: 1.3rem;
+      color: #ffffff86;
+      font-family: "Spectral", serif;
+      line-height: 1.3;
+      transition: all .4s ease-out; }
+      .layer-menu .items .link a:hover {
+        color: #FFFFFF;
+        font-weight: 600; }
+      @media screen and (min-width: 1920px) {
+        .layer-menu .items .link a {
+          font-size: 1.5rem; } }
+    .layer-menu .items .link span {
+      font-size: 9rem;
+      margin-left: 2.5rem; }
+      @media screen and (min-width: 1920px) {
+        .layer-menu .items .link span {
+          font-size: 10rem; } }
   .layer-menu .socials ul {
-    border: 2px solid white;
     display: flex;
     gap: 5px;
     justify-content: flex-end;
-    padding: 1.66667rem; }
+    padding: 5rem 3rem 0 0; }
+    @media screen and (min-width: 1920px) {
+      .layer-menu .socials ul {
+        padding: 15rem 3rem 0 0; } }
+    .layer-menu .socials ul a {
+      color: #ffffff86;
+      font-size: 1.7rem;
+      font-family: "Spectral", serif; }
+      .layer-menu .socials ul a:hover {
+        color: #FFFFFF; }
+      @media screen and (min-width: 1920px) {
+        .layer-menu .socials ul a {
+          font-size: 2rem; } }
+
+.txt-overlay {
+  position: absolute;
+  width: 5%;
+  right: 2%;
+  bottom: 15%;
+  z-index: 1; }
+  .txt-overlay h2 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-align: right;
+    font-family: "Spectral", serif; }
+    @media screen and (min-width: 1920px) {
+      .txt-overlay h2 {
+        font-size: 4rem; } }

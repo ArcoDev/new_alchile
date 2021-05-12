@@ -5,6 +5,7 @@
     //margin-top: -10px;
     video {
         position: absolute;
+        z-index: 10;
         top: 0;
         left: 0;
         width: 100%;
@@ -16,6 +17,7 @@
 
 .layer {
     position: absolute;
+    z-index: 10;
     width: 100%;
     min-height: 100vh;
     background: $layer;
@@ -23,10 +25,12 @@
     flex-direction: column;
 }
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: $separacion / 2;
-    z-index: 10;
+    z-index: 100;
     .icon {
         img {
             width: 100px;
@@ -46,16 +50,19 @@
                 color: $amarillo;
             }
         }
+        .fa-times {
+            display: none;
+        }
     }
 }
-.anima-navbar {
+/*.anima-navbar {
     transition: all .5s ease-out;
     transform: translate3d(0px, -100%, 0px);
-}
+}*/
 .title-header {
     width: 20%;
     margin-left: 20%;
-    margin-top: -5%;
+    margin-top: 5%;
     h1 {
         font-size: 12rem;
         text-align: right;
@@ -63,5 +70,8 @@
         font-family: $titulo;
         font-weight: $semiBold;
         line-height: 0.9;
+        @include monitor {
+            font-size: 15rem;
+        }
     }
 }

@@ -4,3 +4,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+//MEDIA QUERIES
+//Monitor
+@mixin monitor  {
+    @media screen and(min-width: $monitor) {
+        @content;
+    }
+}

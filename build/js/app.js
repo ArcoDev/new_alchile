@@ -1,14 +1,14 @@
 //Animacion en el video  al hacer scrooll 
 window.addEventListener('DOMContentLoaded', function() {
     const menu = document.getElementById('menu');
-    const cajaNav = document.getElementById('box-nav');
     const overlay = document.getElementById('overlay');
+
     if(menu) {
         menu.addEventListener('click', function() {
-            overlay.classList.add('overlay');
+            overlay.classList.toggle('overlay');
         });
     }
-    window.onscroll = function () {
+    /*window.onscroll = function () {
         animaMenu()
     };
     
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', function() {
         } else if (document.body.scrollTop < 1 || document.documentElement.scrollTop < 1) {
             cajaNav.classList.remove('anima-navbar');
         }
-    }
+    }*/
 });
 //Animacion en el video  al hacer scrooll 
 window.addEventListener('DOMContentLoaded', function() {
