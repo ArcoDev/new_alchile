@@ -6,9 +6,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 $separacion;
+
     .title-services {
         position: relative;
         max-width: 60%;
+
         h2 {
             color: $blanco;
             font-family: $titulo;
@@ -22,12 +24,14 @@
                 font-weight: $semiBold;
             }
         }
+
         p {
             color: $blanco;
             font-size: 2rem;
             text-align: center;
             margin: $separacion 0;
         }
+
         a {
             color: $blanco;
             letter-spacing: 1.3px;
@@ -36,18 +40,28 @@
             border-radius: 20px;
             background: $azulCielo;
             padding: 1rem $separacion;
+            transition: all .4s ease-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.04);
+                background: $morado;
+            }
         }
     }
+
     .img-big {
         width: 60%;
         display: flex;
         justify-content: flex-end;
         z-index: 10;
+
         img {
             max-width: 70%;
             object-fit: cover;
         }
     }
+
     .img-thumb {
         position: absolute;
         left: 35%;
@@ -59,14 +73,17 @@
             margin: 0 10px;
             cursor: pointer;
             transition: 0.5s;
+
             &:hover {
                 transform: translateY(-15px);
             }
         }
+
         img {
             max-width: 60%;
         }
     }
+
     .circle {
         position: absolute;
         top: 0;
