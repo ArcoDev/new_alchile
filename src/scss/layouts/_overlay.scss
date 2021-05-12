@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     @include backgroundIMG(cover);
-    background-image: url('../../../build/img/fondo-overlay.webp');
+    background-image: url('../img/fondo-overlay.webp');
     transition: all 1s ease-out;
     animation: animaOverlay 5s;
     z-index: 10;
