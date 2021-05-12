@@ -321,6 +321,14 @@ body {
   background-color: #2e2d2d;
   overflow-x: hidden; }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #FFFFFF; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #6EB2BD; }
+
 .header {
   position: relative;
   width: 100%;
@@ -355,16 +363,16 @@ body {
     width: 100px;
     height: 100px;
     object-fit: cover; }
-  .navbar .icon-menu i {
+  .navbar .menu i {
     font-size: 2.5rem;
     color: #FFFFFF;
     cursor: pointer;
     margin-top: 2.5rem;
     margin-right: 1.66667rem;
     transition: all .8s; }
-    .navbar .icon-menu i:hover {
+    .navbar .menu i:hover {
       color: #F6BB31; }
-  .navbar .icon-menu .fa-times {
+  .navbar .menu .fa-times {
     display: none; }
 
 /*.anima-navbar {
@@ -408,7 +416,7 @@ body {
   background-image: url("../img/fondo-overlay.webp");
   transition: all 1s ease-out;
   animation: animaOverlay 5s;
-  z-index: 10;
+  z-index: 90;
   overflow: hidden; }
 
 @keyframes animaOverlay {
@@ -417,7 +425,7 @@ body {
     top: 0;
     background: #594590; }
   25% {
-    left: 110%;
+    left: 100%;
     top: 0;
     background: #594590; }
   50% {
@@ -428,7 +436,7 @@ body {
 .layer-menu {
   width: 100%;
   height: 100vh;
-  background: #352268cc;
+  background-color: #352268cc;
   display: flex;
   flex-direction: column;
   overflow: hidden; }
