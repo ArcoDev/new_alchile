@@ -1,14 +1,19 @@
 .about {
     padding: 100px;
+    display: flex;
+    gap: 10px;
     .title-about {
         position: relative;
+        width: 40%;
         color: $blanco;
-        font-size: 3rem;
+        font-size: 6rem;
     }
     .description {
         position: relative;
+        width: 60%;
         color: $blanco;
         font-size: 1.5rem;
+        text-align: justify;
         line-height: 1.8;
     }
 }

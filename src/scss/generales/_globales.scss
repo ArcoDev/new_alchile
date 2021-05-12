@@ -13,8 +13,20 @@ html {
 body {
     font-family: $textos;
     background-color: $grisOscuro;
+    //animation: background-body 5s ease-out infinite;
     overflow-x: hidden;
 } 
+@keyframes background-body {
+    0% {
+        background-color: $morado;
+    }
+    25% {
+        background-color: $rosa;
+    }
+    50% {
+        background: $azulCielo;
+    }
+}
 body::-webkit-scrollbar {
     width: 10px;
     background: $blanco;

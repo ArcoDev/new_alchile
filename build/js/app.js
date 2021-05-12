@@ -34,3 +34,12 @@ window.addEventListener('DOMContentLoaded', function() {
         video.style.opacity = value;
     });
 });
+
+function imgSlider(anything) {
+    document.querySelector('.big').src = anything;
+}
+
+function changeCircle(color) {
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+}

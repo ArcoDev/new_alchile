@@ -321,6 +321,14 @@ body {
   background-color: #2e2d2d;
   overflow-x: hidden; }
 
+@keyframes background-body {
+  0% {
+    background-color: #594590; }
+  25% {
+    background-color: #B22777; }
+  50% {
+    background: #6EB2BD; } }
+
 body::-webkit-scrollbar {
   width: 10px;
   background: #FFFFFF; }
@@ -395,15 +403,20 @@ body::-webkit-scrollbar-thumb {
         font-size: 15rem; } }
 
 .about {
-  padding: 100px; }
+  padding: 100px;
+  display: flex;
+  gap: 10px; }
   .about .title-about {
     position: relative;
+    width: 40%;
     color: #FFFFFF;
-    font-size: 3rem; }
+    font-size: 6rem; }
   .about .description {
     position: relative;
+    width: 60%;
     color: #FFFFFF;
     font-size: 1.5rem;
+    text-align: justify;
     line-height: 1.8; }
 
 .overlay {
@@ -497,3 +510,69 @@ body::-webkit-scrollbar-thumb {
     @media screen and (min-width: 1920px) {
       .txt-overlay h2 {
         font-size: 4rem; } }
+
+.services {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem; }
+  .services .title-services {
+    position: relative;
+    max-width: 60%; }
+    .services .title-services h2 {
+      color: #FFFFFF;
+      font-family: "Spectral", serif;
+      font-size: 8.3rem;
+      line-height: 1;
+      font-weight: 400;
+      margin: 0; }
+      .services .title-services h2 span {
+        font-size: 10rem;
+        color: #FFFFFF;
+        font-weight: 600; }
+    .services .title-services p {
+      color: #FFFFFF;
+      font-size: 2rem;
+      text-align: center;
+      margin: 5rem 0; }
+    .services .title-services a {
+      color: #FFFFFF;
+      letter-spacing: 1.3px;
+      font-size: 2rem;
+      font-weight: 600;
+      border-radius: 20px;
+      background: #6EB2BD;
+      padding: 1rem 5rem; }
+  .services .img-big {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10; }
+    .services .img-big img {
+      max-width: 70%;
+      object-fit: cover; }
+  .services .img-thumb {
+    position: absolute;
+    left: 35%;
+    bottom: 1%;
+    display: flex; }
+    .services .img-thumb li {
+      display: inline-block;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: 0.5s; }
+      .services .img-thumb li:hover {
+        transform: translateY(-15px); }
+    .services .img-thumb img {
+      max-width: 60%; }
+  .services .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #B22777;
+    clip-path: circle(600px at right 800px); }
