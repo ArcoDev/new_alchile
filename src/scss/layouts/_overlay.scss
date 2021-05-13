@@ -105,6 +105,9 @@
     @include movil {
         display: none;
     }
+    @include tablet {
+        display: none;
+    }
     h2 {
         font-size: 3rem;
         color: $blanco;

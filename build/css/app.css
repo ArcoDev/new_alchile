@@ -398,11 +398,12 @@ body::-webkit-scrollbar-thumb {
 .title-header {
   width: 20%;
   margin-left: 20%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  margin-top: 30%; }
   @media screen and (max-width: 767px) {
     .title-header {
       margin-left: 15%;
-      margin-top: 20%; } }
+      margin-top: 30%; } }
   .title-header h1 {
     font-size: 12rem;
     text-align: right;
@@ -516,7 +517,8 @@ body::-webkit-scrollbar-thumb {
   width: 5%;
   right: 2%;
   bottom: 15%;
-  z-index: 1; }
+  z-index: 1;
+  display: none; }
   @media screen and (max-width: 767px) {
     .txt-overlay {
       display: none; } }
