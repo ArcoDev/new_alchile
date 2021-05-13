@@ -12,24 +12,13 @@ html {
 }
 body {
     font-family: $textos;
-    background-color: $morado;
+    background-color: $rosa;
     //animation: background-body 5s ease-out infinite;
     overflow-x: hidden;
     transition: all 1s ease-in;
 } 
-@keyframes background-body {
-    0% {
-        background-color: $morado;
-    }
-    25% {
-        background-color: $rosa;
-    }
-    50% {
-        background: $azulCielo;
-    }
-}
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
     background: $blanco;
 }
 

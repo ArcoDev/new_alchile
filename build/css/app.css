@@ -318,20 +318,12 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #594590;
+  background-color: #B22777;
   overflow-x: hidden;
   transition: all 1s ease-in; }
 
-@keyframes background-body {
-  0% {
-    background-color: #594590; }
-  25% {
-    background-color: #B22777; }
-  50% {
-    background: #6EB2BD; } }
-
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   background: #FFFFFF; }
 
 body::-webkit-scrollbar-thumb {
@@ -366,7 +358,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: 0 5rem;
   z-index: 100;
   /*background: #5945903f;
     backdrop-filter: blur(10px);*/ }
@@ -528,21 +520,23 @@ body::-webkit-scrollbar-thumb {
   padding: 0 5rem; }
   .services .title-services {
     position: relative;
-    max-width: 60%; }
+    max-width: 60%;
+    display: grid;
+    place-items: center; }
     .services .title-services h2 {
       color: #FFFFFF;
       font-size: 7rem;
       line-height: 1;
-      font-weight: 400;
+      font-weight: 300;
       margin: 0; }
       .services .title-services h2 span {
-        font-size: 10rem;
-        color: #FFFFFF;
-        font-weight: 600; }
+        font-size: 8.3rem;
+        font-weight: 600;
+        font-family: "Spectral", serif; }
     .services .title-services p {
       color: #FFFFFF;
       font-size: 2rem;
-      text-align: center;
+      font-weight: 600;
       margin: 5rem 0; }
     .services .title-services a {
       color: #FFFFFF;
@@ -567,8 +561,8 @@ body::-webkit-scrollbar-thumb {
       object-fit: cover; }
   .services .img-thumb {
     position: absolute;
-    left: 35%;
-    bottom: 1%;
+    left: 20%;
+    bottom: 3%;
     display: flex; }
     .services .img-thumb li {
       display: inline-block;
@@ -586,7 +580,8 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     background: #B22777;
-    clip-path: circle(600px at right 800px); }
+    clip-path: circle(400px at right 450px);
+    transition: all .8 ease-out; }
 
 .portafolio {
   width: 100%;

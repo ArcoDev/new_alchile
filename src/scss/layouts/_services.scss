@@ -10,24 +10,25 @@
     .title-services {
         position: relative;
         max-width: 60%;
-
+        display: grid;
+        place-items: center;
         h2 {
             color: $blanco;
             font-size: 7rem;
             line-height: 1;
-            font-weight: $regular;
+            font-weight: $delgada;
             margin: 0;
             span {
-                font-size: 10rem;
-                color: $blanco;
+                font-size: 8.3rem;
                 font-weight: $semiBold;
+                font-family: $titulo;
             }
         }
 
         p {
             color: $blanco;
             font-size: 2rem;
-            text-align: center;
+            font-weight: 600;
             margin: $separacion 0;
         }
 
@@ -41,7 +42,6 @@
             padding: 1rem $separacion;
             transition: all .4s ease-out;
             cursor: pointer;
-
             &:hover {
                 transform: scale(1.04);
                 background: $morado;
@@ -63,8 +63,8 @@
 
     .img-thumb {
         position: absolute;
-        left: 35%;
-        bottom: 1%;
+        left: 20%;
+        bottom: 3%;
         display: flex;
 
         li {
@@ -90,6 +90,7 @@
         width: 100%;
         height: 100%;
         background: $rosa;
-        clip-path: circle(600px at right 800px);
+        clip-path: circle(400px at right 450px);
+        transition: all .8 ease-out;
     }
 }
