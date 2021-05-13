@@ -398,12 +398,11 @@ body::-webkit-scrollbar-thumb {
 .title-header {
   width: 20%;
   margin-left: 20%;
-  margin-top: 5%;
-  margin-top: 30%; }
+  margin-top: 5%; }
   @media screen and (max-width: 767px) {
     .title-header {
       margin-left: 15%;
-      margin-top: 30%; } }
+      margin-top: 50%; } }
   .title-header h1 {
     font-size: 12rem;
     text-align: right;
@@ -414,6 +413,9 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .title-header h1 {
         font-size: 9.5rem; } }
+    @media screen and (min-width: 768px) {
+      .title-header h1 {
+        font-size: 13rem; } }
     @media screen and (min-width: 1920px) {
       .title-header h1 {
         font-size: 15rem; } }
@@ -422,18 +424,47 @@ body::-webkit-scrollbar-thumb {
   padding: 100px;
   display: flex;
   gap: 10px; }
+  @media screen and (max-width: 767px) {
+    .about {
+      flex-wrap: wrap;
+      padding: 0;
+      gap: 0; } }
+  @media screen and (min-width: 768px) {
+    .about {
+      padding: 30px;
+      gap: 12px; } }
   .about .title-about {
     position: relative;
     width: 40%;
     color: #FFFFFF;
-    font-size: 6rem; }
+    font-size: 5rem; }
+    @media screen and (max-width: 767px) {
+      .about .title-about {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center; } }
+    @media screen and (min-width: 768px) {
+      .about .title-about {
+        font-size: 2.3rem;
+        display: grid;
+        place-items: center; } }
   .about .description {
     position: relative;
     width: 60%;
     color: #FFFFFF;
     font-size: 1.5rem;
     text-align: justify;
-    line-height: 1.8; }
+    line-height: 1.8;
+    display: grid;
+    place-items: center; }
+    @media screen and (max-width: 767px) {
+      .about .description {
+        width: 95%;
+        font-size: 1.3rem;
+        margin: 0 auto; } }
+    @media screen and (min-width: 768px) {
+      .about .description {
+        font-size: 1.2rem; } }
 
 .overlay {
   position: fixed;
@@ -517,9 +548,11 @@ body::-webkit-scrollbar-thumb {
   width: 5%;
   right: 2%;
   bottom: 15%;
-  z-index: 1;
-  display: none; }
+  z-index: 1; }
   @media screen and (max-width: 767px) {
+    .txt-overlay {
+      display: none; } }
+  @media screen and (min-width: 768px) {
     .txt-overlay {
       display: none; } }
   .txt-overlay h2 {

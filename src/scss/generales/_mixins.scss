@@ -17,5 +17,7 @@
     }
 }
 @mixin  tablet {
-    @content;
+    @media screen and(min-width: $tablet){
+        @content;
+    }
 }

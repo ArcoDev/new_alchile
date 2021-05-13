@@ -82,10 +82,10 @@
     margin-top: 5%;
     @include movil {
         margin-left: 15%;
-        margin-top: 30%;
+        margin-top: 50%;
     }
     @include tablet {
-     margin-top: 30%;   
+     //margin-top: 30%;   
     }
     h1 {
         font-size: 12rem;
@@ -98,7 +98,7 @@
             font-size: 9.5rem;
         }
         @include tablet {
-
+            font-size: 13rem;
         }
         @include monitor {
             font-size: 15rem;
