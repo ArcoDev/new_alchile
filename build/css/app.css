@@ -319,8 +319,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #B22777;
-  overflow-x: hidden;
-  transition: all 1s ease-in; }
+  overflow-x: hidden; }
 
 body::-webkit-scrollbar {
   width: 15px;
@@ -360,18 +359,28 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 0 5rem;
   z-index: 100;
-  /*background: #5945903f;
-    backdrop-filter: blur(10px);*/ }
+  background: #5945903f;
+  backdrop-filter: blur(10px); }
+  @media screen and (max-width: 767px) {
+    .navbar {
+      padding: 0; } }
   .navbar .icon {
     width: 95%; }
     .navbar .icon img {
       width: 100px;
       height: 100px;
       object-fit: cover; }
+      @media screen and (max-width: 767px) {
+        .navbar .icon img {
+          width: 80px;
+          height: 80px; } }
   .navbar .menu {
     width: 5%;
     display: grid;
     place-items: center; }
+    @media screen and (max-width: 767px) {
+      .navbar .menu {
+        width: 15%; } }
     .navbar .menu i {
       font-size: 2.8rem;
       color: #FFFFFF;
@@ -390,6 +399,10 @@ body::-webkit-scrollbar-thumb {
   width: 20%;
   margin-left: 20%;
   margin-top: 5%; }
+  @media screen and (max-width: 767px) {
+    .title-header {
+      margin-left: 15%;
+      margin-top: 20%; } }
   .title-header h1 {
     font-size: 12rem;
     text-align: right;
@@ -397,6 +410,9 @@ body::-webkit-scrollbar-thumb {
     font-family: "Spectral", serif;
     font-weight: 600;
     line-height: 0.9; }
+    @media screen and (max-width: 767px) {
+      .title-header h1 {
+        font-size: 10rem; } }
     @media screen and (min-width: 1920px) {
       .title-header h1 {
         font-size: 15rem; } }
@@ -501,6 +517,9 @@ body::-webkit-scrollbar-thumb {
   right: 2%;
   bottom: 15%;
   z-index: 1; }
+  @media screen and (max-width: 767px) {
+    .txt-overlay {
+      display: none; } }
   .txt-overlay h2 {
     font-size: 3rem;
     color: #FFFFFF;

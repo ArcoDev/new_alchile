@@ -102,6 +102,9 @@
     right: 2%;
     bottom: 15%;
     z-index: 1;
+    @include movil {
+        display: none;
+    }
     h2 {
         font-size: 3rem;
         color: $blanco;

@@ -32,21 +32,30 @@
     //padding: $separacion / 2;
     padding: 0 $separacion;
     z-index: 100;
-    /*background: #5945903f;
-    backdrop-filter: blur(10px);*/
+    background: #5945903f;
+    backdrop-filter: blur(10px);
+    @include movil {
+        padding: 0;
+    }
     .icon {
         width: 95%;
-
         img {
             width: 100px;
             height: 100px;
             object-fit: cover;
+            @include movil {
+                width: 80px;
+                height: 80px;
+            }
         }
     }
     .menu {
         width: 5%;
         display: grid;
         place-items: center;
+        @include movil {
+            width: 15%;
+        }
         i {
             font-size: 2.8rem;
             color: $blanco;
@@ -71,6 +80,10 @@
     width: 20%;
     margin-left: 20%;
     margin-top: 5%;
+    @include movil {
+        margin-left: 15%;
+        margin-top: 20%;
+    }
     h1 {
         font-size: 12rem;
         text-align: right;
@@ -78,6 +91,9 @@
         font-family: $titulo;
         font-weight: $semiBold;
         line-height: 0.9;
+        @include movil {
+            font-size: 10rem;
+        }
         @include monitor {
             font-size: 15rem;
         }
