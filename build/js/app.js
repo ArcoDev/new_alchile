@@ -87,7 +87,7 @@ window.onscroll = function () {
         body.style.background = '#594590';
     }
     if (scroll < 980) {
-        body.style.background = '#B22777';
+        body.style.background = '#594590';
 
     }
 }

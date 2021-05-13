@@ -32,8 +32,8 @@
     //padding: $separacion / 2;
     padding: 0 $separacion;
     z-index: 100;
-    background: #5945903f;
-    backdrop-filter: blur(10px);
+    /*background: #5945903f;
+    backdrop-filter: blur(10px);*/
     @include movil {
         padding: 0;
     }
@@ -85,7 +85,7 @@
         margin-top: 50%;
     }
     @include tablet {
-     //margin-top: 30%;   
+     margin-top: 30%;   
     }
     h1 {
         font-size: 12rem;
@@ -95,10 +95,10 @@
         font-weight: $semiBold;
         line-height: 0.9;
         @include movil {
-            font-size: 9.5rem;
+            font-size: 10rem;
         }
         @include tablet {
-            font-size: 13rem;
+            font-size: 10rem;
         }
         @include monitor {
             font-size: 15rem;
