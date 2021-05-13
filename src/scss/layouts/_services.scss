@@ -29,16 +29,20 @@
             line-height: 1;
             font-weight: $delgada;
             margin: 0;
-           @include movil {
-               font-size: 3.5rem;
-               margin-bottom: $separacion - 3;
-           }
+
+            @include movil {
+                font-size: 4.2rem;
+                margin-bottom: $separacion - 3;
+            }
+
             span {
                 font-size: 8.3rem;
                 font-weight: $semiBold;
                 font-family: $titulo;
+
                 @include movil {
                     font-size: 4rem;
+                    line-height: 1.8;
                 }
             }
         }
@@ -48,6 +52,7 @@
             font-size: 2rem;
             font-weight: 600;
             margin: $separacion 0;
+
             @include movil {
                 display: none;
             }
@@ -76,10 +81,12 @@
         display: flex;
         justify-content: flex-end;
         z-index: 10;
+
         @include movil {
             width: 100%;
-            margin-top: -25rem;
+            margin-top: -20rem;
         }
+
         img {
             max-width: 70%;
             object-fit: cover;
@@ -91,14 +98,11 @@
         left: 20%;
         bottom: 3%;
         display: flex;
+
         @include movil {
-            /*flex-direction: column;
-            left: -5%;
-            bottom: -15%;
-            z-index: 10;*/
             left: -9%;
-            bottom: 10%;
         }
+
         li {
             display: inline-block;
             margin: 0 10px;
@@ -112,6 +116,7 @@
 
         img {
             max-width: 60%;
+
             @include movil {
                 max-width: 100%;
             }

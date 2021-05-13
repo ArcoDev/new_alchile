@@ -594,7 +594,7 @@ body::-webkit-scrollbar-thumb {
       margin: 0; }
       @media screen and (max-width: 767px) {
         .services .title-services h2 {
-          font-size: 3.5rem;
+          font-size: 4.2rem;
           margin-bottom: 2rem; } }
       .services .title-services h2 span {
         font-size: 8.3rem;
@@ -602,7 +602,8 @@ body::-webkit-scrollbar-thumb {
         font-family: "Spectral", serif; }
         @media screen and (max-width: 767px) {
           .services .title-services h2 span {
-            font-size: 4rem; } }
+            font-size: 4rem;
+            line-height: 1.8; } }
     .services .title-services p {
       color: #FFFFFF;
       font-size: 2rem;
@@ -632,7 +633,7 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .services .img-big {
         width: 100%;
-        margin-top: -25rem; } }
+        margin-top: -20rem; } }
     .services .img-big img {
       max-width: 70%;
       object-fit: cover; }
@@ -643,12 +644,7 @@ body::-webkit-scrollbar-thumb {
     display: flex; }
     @media screen and (max-width: 767px) {
       .services .img-thumb {
-        /*flex-direction: column;
-            left: -5%;
-            bottom: -15%;
-            z-index: 10;*/
-        left: -9%;
-        bottom: 10%; } }
+        left: -9%; } }
     .services .img-thumb li {
       display: inline-block;
       margin: 0 10px;
