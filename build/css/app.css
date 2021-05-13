@@ -319,7 +319,8 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #B22777;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  transition: all 1s ease-in; }
 
 body::-webkit-scrollbar {
   width: 15px;
@@ -572,26 +573,44 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
   padding: 0 5rem; }
+  @media screen and (max-width: 767px) {
+    .services {
+      padding: 0 0.625rem;
+      flex-wrap: wrap; } }
   .services .title-services {
     position: relative;
     max-width: 60%;
     display: grid;
     place-items: center; }
+    @media screen and (max-width: 767px) {
+      .services .title-services {
+        max-width: 100%;
+        text-align: center; } }
     .services .title-services h2 {
       color: #FFFFFF;
       font-size: 7rem;
       line-height: 1;
       font-weight: 300;
       margin: 0; }
+      @media screen and (max-width: 767px) {
+        .services .title-services h2 {
+          font-size: 3.5rem;
+          margin-bottom: 2rem; } }
       .services .title-services h2 span {
         font-size: 8.3rem;
         font-weight: 600;
         font-family: "Spectral", serif; }
+        @media screen and (max-width: 767px) {
+          .services .title-services h2 span {
+            font-size: 4rem; } }
     .services .title-services p {
       color: #FFFFFF;
       font-size: 2rem;
       font-weight: 600;
       margin: 5rem 0; }
+      @media screen and (max-width: 767px) {
+        .services .title-services p {
+          display: none; } }
     .services .title-services a {
       color: #FFFFFF;
       letter-spacing: 1.3px;
@@ -610,6 +629,10 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: flex-end;
     z-index: 10; }
+    @media screen and (max-width: 767px) {
+      .services .img-big {
+        width: 100%;
+        margin-top: -25rem; } }
     .services .img-big img {
       max-width: 70%;
       object-fit: cover; }
@@ -618,6 +641,14 @@ body::-webkit-scrollbar-thumb {
     left: 20%;
     bottom: 3%;
     display: flex; }
+    @media screen and (max-width: 767px) {
+      .services .img-thumb {
+        /*flex-direction: column;
+            left: -5%;
+            bottom: -15%;
+            z-index: 10;*/
+        left: -9%;
+        bottom: 10%; } }
     .services .img-thumb li {
       display: inline-block;
       margin: 0 10px;
@@ -627,6 +658,9 @@ body::-webkit-scrollbar-thumb {
         transform: translateY(-15px); }
     .services .img-thumb img {
       max-width: 60%; }
+      @media screen and (max-width: 767px) {
+        .services .img-thumb img {
+          max-width: 100%; } }
   .services .circle {
     position: absolute;
     top: 0;
