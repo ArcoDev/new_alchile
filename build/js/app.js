@@ -47,12 +47,19 @@ function changeCircle(color) {
 window.onscroll = function () {
     var y = window.scrollY;
     const body = document.querySelector('body');
+    const scr = document.getElementById('scroll');
     console.log(y);
-    if (y > 800) {
-        body.style.transition = 'all 1s ease-in';
+    //scr.innerHTML = y;
+    if (y > 980) {
         body.style.background = '#F6BB31';
+    } 
+    if (y > 1700) {
+        body.style.background = '#6EB2BD';
     }
-     if (y > 1900) {
+    if(y > 2400) {
         body.style.background = '#B22777';
+    }
+    if(y < 980) {
+        body.style.background = '#594590';
     }
 }

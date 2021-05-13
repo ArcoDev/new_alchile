@@ -29,9 +29,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: $separacion / 2;
+    //padding: $separacion / 2;
+    padding:$separacion - 4 $separacion;
     z-index: 100;
+    /*background: #5945903f;
+    backdrop-filter: blur(10px);*/
     .icon {
+        width: 95%;
+
         img {
             width: 100px;
             height: 100px;
@@ -39,15 +44,18 @@
         }
     }
     .menu {
+        width: 5%;
+        display: grid;
+        place-items: center;
         i {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: $blanco;
             cursor: pointer;
-            margin-top: $separacion / 2;
-            margin-right: $separacion / 3;
+            //margin-top: $separacion - 2;
+            //margin-right: $separacion / 3;
             transition: all .8s;
             &:hover {
-                color: $amarillo;
+                color: $azulCielo;
             }
         }
         .fa-times {
