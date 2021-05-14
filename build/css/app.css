@@ -330,6 +330,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #6EB2BD; }
 
+.loading {
+  opacity: 0; }
+
 .header {
   position: relative;
   width: 100%;
