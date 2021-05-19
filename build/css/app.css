@@ -318,7 +318,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #594590;
   overflow-x: hidden;
   transition: all 1s ease-in; }
 
@@ -329,9 +328,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #6EB2BD; }
-
-.loading {
-  opacity: 0; }
 
 .header {
   position: relative;
@@ -402,7 +398,27 @@ body::-webkit-scrollbar-thumb {
 .title-header {
   width: 20%;
   margin-left: 20%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  /*.line {
+        background: $blanco;
+        width: 20%;
+        height: .5%;
+        color: $rosa;
+        border-radius: 10px;
+    }
+    .line-1 {
+        position: absolute;
+        left: -3%;
+        bottom: 10%;
+        transform: rotate(45deg);
+    }
+    .line-2 {
+        position: absolute;
+        width: 15%;
+        top: 50%;
+        right: 15%;
+        transform: rotate(-45deg);
+    }*/ }
   @media screen and (max-width: 767px) {
     .title-header {
       margin-left: 15%;

@@ -104,4 +104,24 @@
             font-size: 15rem;
         }
     }
+    /*.line {
+        background: $blanco;
+        width: 20%;
+        height: .5%;
+        color: $rosa;
+        border-radius: 10px;
+    }
+    .line-1 {
+        position: absolute;
+        left: -3%;
+        bottom: 10%;
+        transform: rotate(45deg);
+    }
+    .line-2 {
+        position: absolute;
+        width: 15%;
+        top: 50%;
+        right: 15%;
+        transform: rotate(-45deg);
+    }*/
 }

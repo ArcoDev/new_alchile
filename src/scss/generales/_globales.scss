@@ -12,10 +12,11 @@ html {
 }
 body {
     font-family: $textos;
-    background-color: $morado;
+    //background-color: $morado;
     //animation: background-body 5s ease-out infinite;
     overflow-x: hidden;
     transition: all 1s ease-in;
+    
 } 
 body::-webkit-scrollbar {
     width: 15px;
@@ -25,7 +26,4 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: $azulCielo;
-}
-.loading {
-    opacity: 0;
 }
