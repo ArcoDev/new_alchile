@@ -1,12 +1,13 @@
 //Animacion en el video  al hacer scrooll 
 window.addEventListener('DOMContentLoaded', function () {
-    const menu = document.getElementById('menu');
+    const bars = document.getElementById('bars');
     const overlay = document.getElementById('overlay');
     const link = document.getElementById('link');
-    if (menu) {
-        menu.addEventListener('click', function () {
+    if (bars) {
+        bars.addEventListener('click', function () {
             overlay.style.transform = 'unset';
-            overlay.classList.toggle('overlay');        
+            overlay.classList.add('overlay');  
+            bars.style.display = 'none';      
         });
     }
     /*if(link) {

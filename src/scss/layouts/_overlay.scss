@@ -30,7 +30,17 @@
         
     }
 }
-
+.quitarOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    @include backgroundIMG(cover);
+    background-image: url('../img/fondo-overlay.webp');
+    transition: all 1s ease-out;
+    animation: animaOverlay 5s;
+    z-index: 90;
+    overflow: hidden;
+}
 .layer-menu {
     width: 100%;
     height: 100vh;

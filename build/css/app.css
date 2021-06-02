@@ -388,8 +388,8 @@ body::-webkit-scrollbar-thumb {
       transition: all .8s; }
       .navbar .menu i:hover {
         color: #6EB2BD; }
-    .navbar .menu .fa-times {
-      display: none; }
+  .navbar #close {
+    display: none; }
 
 /*.anima-navbar {
     transition: all .5s ease-out;
@@ -398,27 +398,7 @@ body::-webkit-scrollbar-thumb {
 .title-header {
   width: 20%;
   margin-left: 20%;
-  margin-top: 5%;
-  /*.line {
-        background: $blanco;
-        width: 20%;
-        height: .5%;
-        color: $rosa;
-        border-radius: 10px;
-    }
-    .line-1 {
-        position: absolute;
-        left: -3%;
-        bottom: 10%;
-        transform: rotate(45deg);
-    }
-    .line-2 {
-        position: absolute;
-        width: 15%;
-        top: 50%;
-        right: 15%;
-        transform: rotate(-45deg);
-    }*/ }
+  margin-top: 5%; }
   @media screen and (max-width: 767px) {
     .title-header {
       margin-left: 15%;
@@ -515,6 +495,19 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     top: 0;
     background-color: #594590; } }
+
+.quitarOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/fondo-overlay.webp");
+  transition: all 1s ease-out;
+  animation: animaOverlay 5s;
+  z-index: 90;
+  overflow: hidden; }
 
 .layer-menu {
   width: 100%;

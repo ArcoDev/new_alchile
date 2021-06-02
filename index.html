@@ -18,29 +18,29 @@
         opacity: 0;
     }
 </style>
-<body data-barba="wrapper"  id="body" >
-    <div data-barba="container" data-barba-namespace="home">
-        <!-- Nav -->
-        <nav id="box-nav" class="navbar">
-            <div class="icon">
-                <img src="src/icons/aclhile.svg" alt="">
-            </div>
-            <div id="menu" class="menu">
-                <i id="bars" class="fas fa-bars"></i>
-                <i id="close" class="fas fa-times"></i>
-            </div>
-        </nav>
-        <!-- Header -->
-        <header class="header">
-            <video src="src/video/header2.mp4" autoplay muted loop playsinline></video>
-            <div class="layer">
-                <div class="title-header">
-                    <h1>We Make Good Shit</h1>
-                    <!--<div class="line line-1">1</div>
+
+<body id="body">
+    <!-- Nav -->
+    <nav id="box-nav" class="navbar">
+        <div class="icon">
+            <img src="src/icons/aclhile.svg" alt="">
+        </div>
+        <div id="menu" class="menu">
+            <i id="bars" class="fas fa-bars"></i>
+            <i id="close" class="fas fa-times"></i>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+        <video src="src/video/header2.mp4" autoplay muted loop playsinline></video>
+        <div class="layer">
+            <div class="title-header">
+                <h1>We Make Good Shit</h1>
+                <!--<div class="line line-1">1</div>
                     <div class="line line-2">2</div>-->
-                </div>
             </div>
-            <div id="overlay">
+        </div>
+        <div id="overlay">
             <div class="layer-menu">
                 <div class="txt-overlay">
                     <h2>We Make Good Shit</h2>
@@ -71,79 +71,87 @@
                 </div>
                 <div class="socials">
                     <ul>
-                        <a href=""><li>Facebook /</li></a>
-                        <a href=""><li>Instagram /</li></a>
-                        <a href=""><li>Whatsap /</li></a>
-                        <a href=""><li>Correo /</li></a>
-                        <a href=""><li>Telefono</li></a>
+                        <a href="">
+                            <li>Facebook /</li>
+                        </a>
+                        <a href="">
+                            <li>Instagram /</li>
+                        </a>
+                        <a href="">
+                            <li>Whatsap /</li>
+                        </a>
+                        <a href="">
+                            <li>Correo /</li>
+                        </a>
+                        <a href="">
+                            <li>Telefono</li>
+                        </a>
                     </ul>
                 </div>
             </div>
         </div>
-        </header>
-        <!-- About -->
-        <section id="about" class="about">
-            <h2 class="title-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit illo. Vitae
-                dolor, et enim iure quod magni a sint saepe esse asperiores at laborum quam consectetur quis, corporis
-                reprehenderit.Enim doloribus, obcaecati ullam repellendus eligendi reprehenderit repudiandae odit vitae
-                nostrum commodi impedit neque eaque error sequi provident. Aliquam voluptas debitis odit voluptatibus!
-                Non incidunt nostrum, error natus consectetur ad? Facere molestiae quaerat quas a eveniet atque iure,
-                rerum aut at libero inventore amet assumenda, officia quibusdam modi iusto nobis maiores repudiandae
-                doloribus praesentium vero error fugiat debitis. Veritatis,ducimus
-            </p>
-        </section>
-        <!-- Services -->
-        <section class="services">
-            <div id="circle" class="circle"></div>
-            <div class="title-services">
-                <h2>Hacemos cosas picantes como <span id="service">Diseño</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptas vel ex laboriosam sequi,
-                    dolor exercitationem ipsum nisi, consectetur facere aspernatur, consequatur fugit. Laudantium in
-                    voluptates odio reiciendis vero temporibus?</p>
-                <a href="#">Hablemos</a>
-            </div>
-            <div class="img-big">
-                <img src="build/img/grande1.webp" alt="" class="big">
-            </div>
-            <ul class="img-thumb">
-                <li><img src="build/img/chica1.webp"
-                        onclick="imgSlider('build/img/grande1.webp');changeCircle('#5f4691'); txtServices();" alt="">
-                </li>
-                <li><img src="build/img/chica2.webp"
-                        onclick="imgSlider('build/img/grande2.webp');changeCircle('#2fa2a8'); txtServices2();" alt="">
-                </li>
-                <li><img src="build/img/chica3.webp"
-                        onclick="imgSlider('build/img/grande3.webp');changeCircle('#ce297a'); txtServices3();" alt="">
-                </li>
-                <li><img src="build/img/chica1.webp"
-                        onclick="imgSlider('build/img/grande1.webp');changeCircle('#2fa2a8'); txtServices4();" alt="">
-                </li>
-                <li><img src="build/img/chica2.webp"
-                        onclick="imgSlider('build/img/grande2.webp');changeCircle('#ce297a'); txtServices5();" alt="">
-                </li>
-                <li><img src="build/img/chica3.webp"
-                        onclick="imgSlider('build/img/grande3.webp');changeCircle('#5f4691'); txtServices6();" alt="">
-                </li>
-                <li><img src="build/img/chica3.webp"
-                        onclick="imgSlider('build/img/grande3.webp');changeCircle('#2fa2a8'); txtServices7();" alt="">
-                </li>
-            </ul>
-        </section>
-        
-        <!-- Portafolio  -->
-        <section class="portafolio">
-            <div class="filter">filtro</div>
-            <div class="img-portafolio">imagenes</div>
-        </section>
-       
-        <!-- Contacto -->
-        <section class="portafolio">
-            Contacto
-        </section>
-        
-    </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about">
+        <h2 class="title-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit illo. Vitae
+            dolor, et enim iure quod magni a sint saepe esse asperiores at laborum quam consectetur quis, corporis
+            reprehenderit.Enim doloribus, obcaecati ullam repellendus eligendi reprehenderit repudiandae odit vitae
+            nostrum commodi impedit neque eaque error sequi provident. Aliquam voluptas debitis odit voluptatibus!
+            Non incidunt nostrum, error natus consectetur ad? Facere molestiae quaerat quas a eveniet atque iure,
+            rerum aut at libero inventore amet assumenda, officia quibusdam modi iusto nobis maiores repudiandae
+            doloribus praesentium vero error fugiat debitis. Veritatis,ducimus
+        </p>
+    </section>
+    <!-- Services -->
+    <section class="services">
+        <div id="circle" class="circle"></div>
+        <div class="title-services">
+            <h2>Hacemos cosas picantes como <span id="service">Diseño</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptas vel ex laboriosam sequi,
+                dolor exercitationem ipsum nisi, consectetur facere aspernatur, consequatur fugit. Laudantium in
+                voluptates odio reiciendis vero temporibus?</p>
+            <a href="#">Hablemos</a>
+        </div>
+        <div class="img-big">
+            <img src="build/img/grande1.webp" alt="" class="big">
+        </div>
+        <ul class="img-thumb">
+            <li><img src="build/img/chica1.webp"
+                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#5f4691'); txtServices();" alt="">
+            </li>
+            <li><img src="build/img/chica2.webp"
+                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#2fa2a8'); txtServices2();" alt="">
+            </li>
+            <li><img src="build/img/chica3.webp"
+                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#ce297a'); txtServices3();" alt="">
+            </li>
+            <li><img src="build/img/chica1.webp"
+                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#2fa2a8'); txtServices4();" alt="">
+            </li>
+            <li><img src="build/img/chica2.webp"
+                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#ce297a'); txtServices5();" alt="">
+            </li>
+            <li><img src="build/img/chica3.webp"
+                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#5f4691'); txtServices6();" alt="">
+            </li>
+            <li><img src="build/img/chica3.webp"
+                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#2fa2a8'); txtServices7();" alt="">
+            </li>
+        </ul>
+    </section>
+
+    <!-- Portafolio  -->
+    <section class="portafolio">
+        <div class="filter">filtro</div>
+        <div class="img-portafolio">imagenes</div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="portafolio">
+        Contacto
+    </section>
     <script src="build/js/app.js"></script>
 </body>
 
