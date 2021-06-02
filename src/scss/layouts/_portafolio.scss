@@ -1,14 +1,64 @@
 .portafolio {
     width: 100%;
-    height: 100vh;
-    font-size: 10rem;
-    border: 2px solid black;
+    height: auto;
     .filter {
         display: flex;
+        width: 100%;
+        height: auto;
         justify-content: flex-end;
+        padding: 2rem 0;
+        padding-right: 5rem;
+
+        ul {
+            display: flex;
+            gap: 1rem;
+
+            li {
+                font-size: 2rem;
+            }
+
+            a {
+                color: $blanco;;
+                padding-right: 1rem;
+                font-weight: $semiBold;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    color: $morado;
+                }
+            }
+
+            span {
+                color: $blanco;
+            }
+        }
     }
+
     .img-portafolio {
-        display: grid;
-        place-items: center;
-    } 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .title-protafolio h1 {
+        width: 60%;
+        font-size: 4.3rem;
+        letter-spacing: .3rem;
+        color: $blanco;
+        font-family: $titulo;
+        padding-left: $separacion + 2;
+    }
+    .imagenes {
+        width: 90%;
+        height: 500px;
+        object-fit: cover;
+        .web {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            img {
+                width: 49.2%;
+            }
+        }
+    }
 }

@@ -497,17 +497,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #594590; } }
 
 .quitarOverlay {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../img/fondo-overlay.webp");
-  transition: all 1s ease-out;
-  animation: animaOverlay 5s;
-  z-index: 90;
-  overflow: hidden; }
+  transform: translate(-100%); }
 
 .layer-menu {
   width: 100%;
@@ -684,15 +674,50 @@ body::-webkit-scrollbar-thumb {
 
 .portafolio {
   width: 100%;
-  height: 100vh;
-  font-size: 10rem;
-  border: 2px solid black; }
+  height: auto; }
   .portafolio .filter {
     display: flex;
-    justify-content: flex-end; }
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    padding: 2rem 0;
+    padding-right: 5rem; }
+    .portafolio .filter ul {
+      display: flex;
+      gap: 1rem; }
+      .portafolio .filter ul li {
+        font-size: 2rem; }
+      .portafolio .filter ul a {
+        color: #FFFFFF;
+        padding-right: 1rem;
+        font-weight: 600;
+        transition: all 0.5s ease-in-out; }
+        .portafolio .filter ul a:hover {
+          color: #594590; }
+      .portafolio .filter ul span {
+        color: #FFFFFF; }
   .portafolio .img-portafolio {
-    display: grid;
-    place-items: center; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .portafolio .title-protafolio h1 {
+    width: 60%;
+    font-size: 4.3rem;
+    letter-spacing: .3rem;
+    color: #FFFFFF;
+    font-family: "Spectral", serif;
+    padding-left: 7rem; }
+  .portafolio .imagenes {
+    width: 90%;
+    height: 500px;
+    object-fit: cover; }
+    .portafolio .imagenes .web {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem; }
+      .portafolio .imagenes .web img {
+        width: 49.2%; }
 
 .contact {
   width: 100%;
