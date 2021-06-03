@@ -16,6 +16,11 @@
 
 
 <body id="body">
+    <a href="#" title="Volver Arriba">
+        <div class="up">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+    </a>
     <!-- Nav -->
     <nav id="box-nav" class="navbar">
         <div class="icon">
@@ -142,38 +147,60 @@
     <section class="portafolio">
         <div class="filter">
             <ul>
-                <li>
-                    <a href="">Desarrollo Web</a>
+                <li class="item">
+                    <a id="enlace-1" data-grid="1">Diseño</a>
                     <span>|</span>
                 </li>
-                <li>
-                    <a href="">Fotografia</a>
+                <li class="item">
+                    <a id="enlace-2" data-grid="2">Fotografia</a>
                     <span>|</span>
                 </li>
-                <li>
-                    <a href="">Marketing</a>
+                <li class="item">
+                    <a id="enlace-3" data-grid="3">Social Media</a>
                     <span>|</span>
                 </li>
-                <li>
-                    <a href="">Social Media</a>
+                <li class="item">
+                    <a id="enlace-4" data-grid="4">Video Marketing</a>
                 </li>
             </ul>
-            
+
         </div>
         <div class="img-portafolio">
             <div class="title-protafolio">
                 <h1>"A place where you can teach your Grandma how to floss, and we dont mean her teeth."</h1>
             </div>
-            <div class="imagenes">
-                <div class="web">
-                    <img src="src/img/portafolio/web/1.jpg" alt="">
-                    <img src="src/img/portafolio/web/2.jpg" alt="">
-                    <img src="src/img/portafolio/web/3.jpg" alt="">
-
-                </div>
+        </div>
+        <div class="container">
+            <div id="grid-1" class="grid">
+                <img src="src/img/portafolio/web/1.jpg" alt="">
+                <img src="src/img/portafolio/web/2.jpg" alt="">
+                <img src="src/img/portafolio/web/2.jpg" alt="">
+                <img src="src/img/portafolio/web/1.jpg" alt="">
+            </div>
+            <div id="grid-2" class="grid">
+                <img src="src/img/portafolio/fotografia/1.jpg" alt="">
+                <img src="src/img/portafolio/fotografia/2.jpg" alt="">
+                <img src="src/img/portafolio/fotografia/2.jpg" alt="">
+                <img src="src/img/portafolio/fotografia/1.jpg" alt="">
+            </div>
+            <div id="grid-3" class="grid">
+                <img src="src/img/portafolio/fotografia/1.jpg" alt="">
+                <img src="src/img/portafolio/fotografia/2.jpg" alt="">
+            </div>
+            <div id="grid-4" class="grid">
+                <img src="src/img/portafolio/web/1.jpg" alt="">
+                <img src="src/img/portafolio/web/2.jpg" alt="">
+                <img src="src/img/portafolio/web/2.jpg" alt="">
+                <img src="src/img/portafolio/web/1.jpg" alt="">
             </div>
         </div>
     </section>
+    <!--<section class="contact">
+        <h1>Contacto</h1>
+    </section>
+    <footer>
+        Footer
+    </footer>-->
     <script src="build/js/app.js"></script>
 </body>
 

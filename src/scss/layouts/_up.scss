@@ -1,0 +1,22 @@
+.up {  
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 500;
+    padding: $separacion / 4;
+    border-radius: 50%;
+    background: $up;
+    box-shadow: 0 4px 6px 0 rgba(187, 129, 13, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    animation: up 1s ease-out infinite;
+    display: none;
+    @keyframes up {
+        50% {
+            transform: translateY(-1rem);
+        }
+    }
+    i {
+        font-size: 3rem;
+        text-decoration: none;
+        color: $amarillo;
+    }
+}

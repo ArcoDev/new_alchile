@@ -1,6 +1,8 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 *,
@@ -9,6 +11,7 @@ html {
     box-sizing: inherit;
     list-style: none;
     text-decoration: none;
+
 }
 body {
     font-family: $textos;

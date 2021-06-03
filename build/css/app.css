@@ -307,7 +307,8 @@ template {
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 *,
 *::before,
@@ -328,6 +329,26 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #6EB2BD; }
+
+.up {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 500;
+  padding: 1.25rem;
+  border-radius: 50%;
+  background: #5b37c7;
+  box-shadow: 0 4px 6px 0 rgba(187, 129, 13, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  animation: up 1s ease-out infinite;
+  display: none; }
+
+@keyframes up {
+  50% {
+    transform: translateY(-1rem); } }
+  .up i {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #F6BB31; }
 
 .header {
   position: relative;
@@ -674,26 +695,28 @@ body::-webkit-scrollbar-thumb {
 
 .portafolio {
   width: 100%;
-  height: auto; }
+  padding-bottom: 5rem; }
   .portafolio .filter {
     display: flex;
     width: 100%;
-    height: auto;
     justify-content: flex-end;
     padding: 2rem 0;
-    padding-right: 5rem; }
+    padding-right: 5.3rem; }
     .portafolio .filter ul {
       display: flex;
       gap: 1rem; }
       .portafolio .filter ul li {
-        font-size: 2rem; }
+        font-size: 1.5rem; }
       .portafolio .filter ul a {
         color: #FFFFFF;
         padding-right: 1rem;
         font-weight: 600;
-        transition: all 0.5s ease-in-out; }
+        transition: all 0.5s ease-in-out;
+        cursor: pointer; }
+        .portafolio .filter ul a.active {
+          color: #5b37c7; }
         .portafolio .filter ul a:hover {
-          color: #594590; }
+          color: #5b37c7; }
       .portafolio .filter ul span {
         color: #FFFFFF; }
   .portafolio .img-portafolio {
@@ -708,16 +731,22 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     font-family: "Spectral", serif;
     padding-left: 7rem; }
-  .portafolio .imagenes {
-    width: 90%;
-    height: 500px;
-    object-fit: cover; }
-    .portafolio .imagenes .web {
+  .portafolio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .portafolio .container .grid {
+      width: 90%;
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem; }
-      .portafolio .imagenes .web img {
-        width: 49.2%; }
+      gap: 1rem;
+      padding-bottom: 1rem;
+      display: none; }
+      .portafolio .container .grid.mostrar-grid {
+        display: inline-flex; }
+      .portafolio .container .grid img {
+        width: 49.6%;
+        object-fit: cover; }
 
 .contact {
   width: 100%;
