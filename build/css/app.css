@@ -702,11 +702,24 @@ body::-webkit-scrollbar-thumb {
     justify-content: flex-end;
     padding: 2rem 0;
     padding-right: 5.3rem; }
+    @media screen and (max-width: 767px) {
+      .portafolio .filter {
+        justify-content: center;
+        padding: 0; } }
     .portafolio .filter ul {
       display: flex;
       gap: 1rem; }
+      @media screen and (max-width: 767px) {
+        .portafolio .filter ul {
+          flex-wrap: wrap;
+          gap: 2rem;
+          padding: 0 1rem;
+          text-align: center; } }
       .portafolio .filter ul li {
         font-size: 1.5rem; }
+        @media screen and (max-width: 767px) {
+          .portafolio .filter ul li {
+            font-size: 1.3rem; } }
       .portafolio .filter ul a {
         color: #FFFFFF;
         padding-right: 1rem;
@@ -731,6 +744,11 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     font-family: "Spectral", serif;
     padding-left: 7rem; }
+    @media screen and (max-width: 767px) {
+      .portafolio .title-protafolio h1 {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0 1rem 1rem 1rem; } }
   .portafolio .container {
     display: flex;
     flex-direction: column;
@@ -742,11 +760,17 @@ body::-webkit-scrollbar-thumb {
       gap: 1rem;
       padding-bottom: 1rem;
       display: none; }
+      @media screen and (max-width: 767px) {
+        .portafolio .container .grid {
+          width: 95%; } }
       .portafolio .container .grid.mostrar-grid {
         display: inline-flex; }
       .portafolio .container .grid img {
         width: 49.6%;
         object-fit: cover; }
+        @media screen and (max-width: 767px) {
+          .portafolio .container .grid img {
+            width: 48%; } }
 
 .contact {
   width: 100%;

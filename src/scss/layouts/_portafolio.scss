@@ -8,13 +8,24 @@
         justify-content: flex-end;
         padding: 2rem 0;
         padding-right: 5.3rem;
-
+        @include movil {
+            justify-content: center;
+            padding: 0;
+        }
         ul {
             display: flex;
             gap: 1rem;
-
+            @include movil {
+                flex-wrap: wrap;
+                gap: 2rem;
+                padding: 0 1rem;
+                text-align: center;
+            }
             li {
                 font-size: 1.5rem;
+                @include movil {
+                    font-size: 1.3rem;
+                }
             }
 
             a {
@@ -52,6 +63,11 @@
         color: $blanco;
         font-family: $titulo;
         padding-left: $separacion + 2;
+        @include movil {
+            width: 100%;
+            font-size: 2rem;
+            padding: 0 1rem 1rem 1rem;
+        }
     }
 
     .container {
@@ -65,11 +81,17 @@
             gap: 1rem;
             padding-bottom: 1rem;
             display: none;
+            @include movil { 
+                width: 95%;
+            }
             &.mostrar-grid {
                 display: inline-flex;
             }
             img {
                 width: 49.6%;
+                @include movil {
+                    width: 48%;
+                }
                 object-fit: cover;
             }
         }
