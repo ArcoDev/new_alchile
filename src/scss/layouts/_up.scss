@@ -18,14 +18,25 @@
     }
     span {
         position: absolute;
-        margin-top: -3.5rem;
-        margin-left: -1.7rem;
+        margin-left: -10rem;
         font-size: 1.5rem;
         color: $amarillo;
         font-weight: $semiBold;
         text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+        background: $up;
+        padding: 1rem;
+        border-radius: 10rem;
+        display: none;
         @include movil {
             font-size: 1.3rem;
+            margin-left: -2.5rem;
+            margin-top: -5.5rem;
+            display: block;
+        }
+    }
+    &:hover {
+        span{
+            display: block;
         }
     }
     i {

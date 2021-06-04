@@ -68,7 +68,6 @@
 
             span {
                 color: $blanco;
-
                 @include movil {
                     display: none;
                 }
@@ -102,7 +101,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        @include movil {
+            margin-top: 3rem;
+        }
         .grid {
             width: 90%;
             display: flex;

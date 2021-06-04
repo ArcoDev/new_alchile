@@ -348,15 +348,23 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-1rem); } }
   .up span {
     position: absolute;
-    margin-top: -3.5rem;
-    margin-left: -1.7rem;
+    margin-left: -10rem;
     font-size: 1.5rem;
     color: #F6BB31;
     font-weight: 600;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background: #5b37c7;
+    padding: 1rem;
+    border-radius: 10rem;
+    display: none; }
     @media screen and (max-width: 767px) {
       .up span {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        margin-left: -2.5rem;
+        margin-top: -5.5rem;
+        display: block; } }
+  .up:hover span {
+    display: block; }
   .up i {
     font-size: 3rem;
     text-decoration: none;
@@ -391,9 +399,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   padding: 0 5rem;
-  z-index: 1000;
-  /*background: #5945903f;
-    backdrop-filter: blur(10px);*/ }
+  z-index: 1000; }
   @media screen and (max-width: 767px) {
     .navbar {
       padding: 0 1.25rem; } }
@@ -445,8 +451,7 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     font-family: "Spectral", serif;
     font-weight: 600;
-    line-height: 0.9;
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.932); }
+    line-height: 0.9; }
     @media screen and (max-width: 767px) {
       .title-header h1 {
         font-size: 10rem; } }
@@ -638,8 +643,7 @@ body::-webkit-scrollbar-thumb {
       .services .title-services h2 span {
         font-size: 8.3rem;
         font-weight: 600;
-        font-family: "Spectral", serif;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+        font-family: "Spectral", serif; }
         @media screen and (max-width: 767px) {
           .services .title-services h2 span {
             font-size: 4rem;
@@ -674,7 +678,8 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .services .img-big {
         width: 100%;
-        margin-top: -20rem; } }
+        margin-top: -20rem;
+        justify-content: center; } }
     .services .img-big img {
       max-width: 70%;
       object-fit: cover; }
@@ -785,6 +790,9 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (max-width: 767px) {
+      .portafolio .container {
+        margin-top: 3rem; } }
     .portafolio .container .grid {
       width: 90%;
       display: flex;
@@ -835,7 +843,6 @@ body::-webkit-scrollbar-thumb {
         font-size: 5.3rem;
         font-family: "Spectral", serif;
         color: #FFFFFF;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         font-weight: 600; }
         @media screen and (max-width: 767px) {
           .contact .grid.paragraphs .text {

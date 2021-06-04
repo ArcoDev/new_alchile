@@ -39,8 +39,6 @@
                 font-size: 8.3rem;
                 font-weight: $semiBold;
                 font-family: $titulo;
-                text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-
                 @include movil {
                     font-size: 4rem;
                     line-height: 1.8;
@@ -87,6 +85,7 @@
         @include movil {
             width: 100%;
             margin-top: -20rem;
+            justify-content: center;
         }
 
         img {

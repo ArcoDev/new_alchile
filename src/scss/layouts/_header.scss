@@ -34,9 +34,6 @@
     //padding: $separacion / 2;
     padding: 0 $separacion;
     z-index: 1000;
-
-    /*background: #5945903f;
-    backdrop-filter: blur(10px);*/
     @include movil {
         padding: 0 $separacion / 4;
     }
@@ -109,7 +106,6 @@
         font-family: $titulo;
         font-weight: $semiBold;
         line-height: 0.9;
-        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.932);
         @include movil {
             font-size: 10rem;
         }
