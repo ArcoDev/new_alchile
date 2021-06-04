@@ -8,6 +8,7 @@
         justify-content: flex-end;
         padding: 2rem 0;
         padding-right: 5.3rem;
+
         @include movil {
             justify-content: center;
             padding: 0;
@@ -15,16 +16,24 @@
         ul {
             display: flex;
             gap: 1rem;
+
             @include movil {
+                justify-content: space-between;
+                align-items: center;
                 flex-wrap: wrap;
-                gap: 2rem;
                 padding: 0 1rem;
                 text-align: center;
+                
             }
+
             li {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
+                text-align: center;
                 @include movil {
+                    width: 30%;
                     font-size: 1.3rem;
+                    border: 2px solid $blanco;
+                    padding: 1rem;
                 }
             }
 
@@ -34,6 +43,9 @@
                 font-weight: $semiBold;
                 transition: all 0.5s ease-in-out;
                 cursor: pointer;
+                @include movil {
+                    padding: 0;
+                }
                 &.active {
                     color: $up;
                 }
@@ -45,6 +57,10 @@
 
             span {
                 color: $blanco;
+
+                @include movil {
+                    display: none;
+                }
             }
         }
     }
@@ -63,6 +79,7 @@
         color: $blanco;
         font-family: $titulo;
         padding-left: $separacion + 2;
+
         @include movil {
             width: 100%;
             font-size: 2rem;
@@ -74,6 +91,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .grid {
             width: 90%;
             display: flex;
@@ -81,17 +99,24 @@
             gap: 1rem;
             padding-bottom: 1rem;
             display: none;
-            @include movil { 
+
+            @include movil {
                 width: 95%;
             }
+
             &.mostrar-grid {
                 display: inline-flex;
             }
+
             img {
                 width: 49.6%;
+                height: 650px;
+
                 @include movil {
                     width: 48%;
+                    height: 250px;
                 }
+
                 object-fit: cover;
             }
         }
