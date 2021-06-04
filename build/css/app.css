@@ -715,7 +715,7 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 0; }
   @media screen and (max-width: 767px) {
     .portafolio {
-      padding: 1.66667rem 0.5rem; } }
+      padding: 1.66667rem 0; } }
   .portafolio .filter {
     display: flex;
     width: 100%;

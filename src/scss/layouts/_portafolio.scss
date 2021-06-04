@@ -5,7 +5,7 @@
     padding-bottom: 0;
 
     @include movil {
-        padding: $separacion / 3 .5rem;
+        padding: $separacion / 3 0;
     }
 
     .filter {
