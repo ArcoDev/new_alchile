@@ -1,7 +1,7 @@
 .portafolio {
     width: 100%;
     padding-bottom: 5rem;
-
+    padding: 0 .3rem;
     .filter {
         display: flex;
         width: 100%;
@@ -32,6 +32,7 @@
                 @include movil {
                     width: 30%;
                     font-size: 1.1rem;
+                    font-weight: $semiBold;
                     border: 1px solid $blanco;
                     padding: 1rem;
                 }
@@ -79,7 +80,6 @@
         color: $blanco;
         font-family: $titulo;
         padding-left: $separacion + 2;
-
         @include movil {
             width: 100%;
             font-size: 2rem;
@@ -91,7 +91,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         .grid {
             width: 90%;
             display: flex;
