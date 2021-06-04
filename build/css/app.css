@@ -731,7 +731,7 @@ body::-webkit-scrollbar-thumb {
       gap: 1rem; }
       @media screen and (max-width: 767px) {
         .portafolio .filter ul {
-          justify-content: space-between;
+          justify-content: space-evenly;
           align-items: center;
           flex-wrap: wrap;
           padding: 0 1rem;
@@ -794,7 +794,8 @@ body::-webkit-scrollbar-thumb {
       display: none; }
       @media screen and (max-width: 767px) {
         .portafolio .container .grid {
-          width: 95%; } }
+          width: 95%;
+          padding-left: .4rem; } }
       .portafolio .container .grid.mostrar-grid {
         display: inline-flex; }
       .portafolio .container .grid img {

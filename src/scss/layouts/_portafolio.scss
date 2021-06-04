@@ -25,7 +25,7 @@
             gap: 1rem;
 
             @include movil {
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
                 flex-wrap: wrap;
                 padding: 0 1rem;
@@ -113,10 +113,13 @@
 
             @include movil {
                 width: 95%;
+                padding-left: .4rem;
             }
 
             &.mostrar-grid {
                 display: inline-flex;
+                @include movil {
+                }
             }
 
             img {
