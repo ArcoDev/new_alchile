@@ -722,8 +722,8 @@ body::-webkit-scrollbar-thumb {
         @media screen and (max-width: 767px) {
           .portafolio .filter ul li {
             width: 30%;
-            font-size: 1.3rem;
-            border: 2px solid #FFFFFF;
+            font-size: 1.1rem;
+            border: 1px solid #FFFFFF;
             padding: 1rem; } }
       .portafolio .filter ul a {
         color: #FFFFFF;
