@@ -1,7 +1,8 @@
 .header {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+
     //margin-top: -10px;
     video {
         position: absolute;
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -31,31 +33,38 @@
     justify-content: space-between;
     //padding: $separacion / 2;
     padding: 0 $separacion;
-    z-index: 100;
+    z-index: 1000;
+
     /*background: #5945903f;
     backdrop-filter: blur(10px);*/
     @include movil {
-        padding: 0;
+        padding: 0 $separacion / 4;
     }
+
     .icon {
         width: 95%;
+
         img {
             width: 100px;
             height: 100px;
             object-fit: cover;
+
             @include movil {
                 width: 80px;
                 height: 80px;
             }
         }
     }
+
     .menu {
         width: 5%;
         display: grid;
         place-items: center;
+
         @include movil {
             width: 15%;
         }
+
         i {
             font-size: 2.8rem;
             color: $blanco;
@@ -63,15 +72,18 @@
             //margin-top: $separacion - 2;
             //margin-right: $separacion / 3;
             transition: all .8s;
+
             &:hover {
                 color: $azulCielo;
             }
         }
     }
+
     #close {
         display: none;
     }
 }
+
 /*.anima-navbar {
     transition: all .5s ease-out;
     transform: translate3d(0px, -100%, 0px);
@@ -80,13 +92,16 @@
     width: 20%;
     margin-left: 20%;
     margin-top: 5%;
+
     @include movil {
         margin-left: 15%;
         margin-top: 50%;
     }
+
     @include tablet {
-     margin-top: 30%;   
+        margin-top: 30%;
     }
+
     h1 {
         font-size: 12rem;
         text-align: right;
@@ -94,12 +109,15 @@
         font-family: $titulo;
         font-weight: $semiBold;
         line-height: 0.9;
+        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.932);
         @include movil {
             font-size: 10rem;
         }
+
         @include tablet {
             font-size: 10rem;
         }
+
         @include monitor {
             font-size: 15rem;
         }

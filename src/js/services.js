@@ -44,14 +44,10 @@ window.onscroll = function () {
     if (scroll > 980) {
         body.style.background = '#F6BB31';
     }
-    if (scroll > 1700) {
-        body.style.background = '#6EB2BD';
-    }
-    if (scroll > 2400) {
+   if (scroll > 1700) {
         body.style.background = '#594590';
     }
     if (scroll < 980) {
         body.style.background = '#594590';
-
     }
 }

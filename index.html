@@ -16,8 +16,9 @@
 
 
 <body id="body">
-    <a href="#" title="Volver Arriba">
+    <a id="up" href="#" title="Volver Arriba">
         <div class="up">
+            <span>Volvamos</span>
             <i class="fas fa-arrow-circle-up"></i>
         </div>
     </a>
@@ -33,7 +34,7 @@
     </nav>
     <!-- Header -->
     <header class="header">
-        <video src="src/video/header.mp4" autoplay muted loop playsinline></video>
+        <video src="src/video/header2.mp4" autoplay muted loop playsinline></video>
         <div class="layer">
             <div class="title-header">
                 <h1>We Make Good Shit</h1>
@@ -113,7 +114,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptas vel ex laboriosam sequi,
                 dolor exercitationem ipsum nisi, consectetur facere aspernatur, consequatur fugit. Laudantium in
                 voluptates odio reiciendis vero temporibus?</p>
-            <a href="#">Hablemos</a>
+            <a href="#contact">Hablemos</a>
         </div>
         <div class="img-big">
             <img src="build/img/grande1.webp" alt="" class="big">
@@ -145,6 +146,11 @@
 
     <!-- Portafolio  -->
     <section class="portafolio">
+        <div class="img-portafolio">
+            <div class="title-protafolio">
+                <h1>"A place where you can teach your Grandma how to floss, and we dont mean her teeth."</h1>
+            </div>
+        </div>
         <div class="filter">
             <ul>
                 <li class="item">
@@ -174,11 +180,6 @@
             </ul>
 
         </div>
-        <div class="img-portafolio">
-            <div class="title-protafolio">
-                <h1>"A place where you can teach your Grandma how to floss, and we dont mean her teeth."</h1>
-            </div>
-        </div>
         <div class="container">
             <div id="grid-1" class="grid">
                 <img src="src/img/portafolio/web/1.jpg" alt="">
@@ -204,12 +205,47 @@
             </div>
         </div>
     </section>
-    <!--<section class="contact">
-        <h1>Contacto</h1>
+    <section id="contact" class="contact">
+        <div class="grid paragraphs">
+            <p class="text"></p>
+        </div>
+        <div class="grid info-contact">
+            <div class="action">
+                <a href="tel:8717130425">
+                    <i class="fas fa-phone-volume"></i>
+                    <p>(871) 713 4025</p>
+                </a>
+            </div>
+            <div class="action">
+                <a href="mailto:hola:alchilestudio.com">
+                    <i class="fas fa-envelope"></i>
+                    <p>hola@alchilestudio.com</p>
+                </a>
+            </div>
+            <div class="action">
+                <a href="https://n9.cl/alchilestudio" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Torreón Coah. México</p>
+                </a>
+            </div>
+        </div>
+        <div class="grid socials">
+            <ul>
+                <a href="">
+                    <li>Facebook /</li>
+                </a>
+                <a href="">
+                    <li>Instagram /</li>
+                </a>
+                <a href="">
+                    <li>Whatsap</li>
+                </a>
+            </ul>
+        </div>
     </section>
-    <footer>
-        Footer
-    </footer>-->
+    <footer class="footer">
+      <h2>Sitio Desarrollado por <span><a href="awsoftware.mx" target="_blank">AW Software</a></span></h2>
+    </footer>
     <script src="build/js/app.js"></script>
 </body>
 

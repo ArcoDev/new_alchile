@@ -324,7 +324,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 15px;
-  background: #FFFFFF; }
+  background: #7049db; }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
@@ -339,12 +339,24 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   background: #5b37c7;
   box-shadow: 0 4px 6px 0 rgba(187, 129, 13, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  animation: up 1s ease-out infinite;
-  display: none; }
+  animation: up 1s ease-out infinite; }
+  .up.invisible {
+    display: none; }
 
 @keyframes up {
   50% {
     transform: translateY(-1rem); } }
+  .up span {
+    position: absolute;
+    margin-top: -3.5rem;
+    margin-left: -1.7rem;
+    font-size: 1.5rem;
+    color: #F6BB31;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 767px) {
+      .up span {
+        font-size: 1.3rem; } }
   .up i {
     font-size: 3rem;
     text-decoration: none;
@@ -353,7 +365,7 @@ body::-webkit-scrollbar-thumb {
 .header {
   position: relative;
   width: 100%;
-  min-height: 100vh; }
+  height: 100vh; }
   .header video {
     position: absolute;
     z-index: 10;
@@ -379,12 +391,12 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   padding: 0 5rem;
-  z-index: 100;
+  z-index: 1000;
   /*background: #5945903f;
     backdrop-filter: blur(10px);*/ }
   @media screen and (max-width: 767px) {
     .navbar {
-      padding: 0; } }
+      padding: 0 1.25rem; } }
   .navbar .icon {
     width: 95%; }
     .navbar .icon img {
@@ -433,7 +445,8 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     font-family: "Spectral", serif;
     font-weight: 600;
-    line-height: 0.9; }
+    line-height: 0.9;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.932); }
     @media screen and (max-width: 767px) {
       .title-header h1 {
         font-size: 10rem; } }
@@ -500,7 +513,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url("../img/fondo-overlay.webp");
   transition: all 1s ease-out;
   animation: animaOverlay 5s;
-  z-index: 90;
+  z-index: 501;
   overflow: hidden; }
 
 @keyframes animaOverlay {
@@ -625,7 +638,8 @@ body::-webkit-scrollbar-thumb {
       .services .title-services h2 span {
         font-size: 8.3rem;
         font-weight: 600;
-        font-family: "Spectral", serif; }
+        font-family: "Spectral", serif;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
         @media screen and (max-width: 767px) {
           .services .title-services h2 span {
             font-size: 4rem;
@@ -644,13 +658,14 @@ body::-webkit-scrollbar-thumb {
       font-size: 2rem;
       font-weight: 600;
       border-radius: 20px;
-      background: #6EB2BD;
+      background: #594590;
       padding: 1rem 5rem;
       transition: all .4s ease-out;
-      cursor: pointer; }
+      cursor: pointer;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19); }
       .services .title-services a:hover {
         transform: scale(1.04);
-        background: #594590; }
+        background: #7049db; }
   .services .img-big {
     width: 60%;
     display: flex;
@@ -696,13 +711,17 @@ body::-webkit-scrollbar-thumb {
 .portafolio {
   width: 100%;
   padding-bottom: 5rem;
-  padding: 0 .3rem; }
+  padding: 20rem .3rem;
+  padding-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .portafolio {
+      padding: 1.66667rem 0.5rem; } }
   .portafolio .filter {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     padding: 2rem 0;
-    padding-right: 5.3rem; }
+    padding-right: 7rem; }
     @media screen and (max-width: 767px) {
       .portafolio .filter {
         justify-content: center;
@@ -737,9 +756,9 @@ body::-webkit-scrollbar-thumb {
           .portafolio .filter ul a {
             padding: 0; } }
         .portafolio .filter ul a.active {
-          color: #5b37c7; }
+          color: #F6BB31; }
         .portafolio .filter ul a:hover {
-          color: #5b37c7; }
+          color: #F6BB31; }
       .portafolio .filter ul span {
         color: #FFFFFF; }
         @media screen and (max-width: 767px) {
@@ -781,6 +800,7 @@ body::-webkit-scrollbar-thumb {
       .portafolio .container .grid img {
         width: 49.6%;
         height: 650px;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
         object-fit: cover; }
         @media screen and (max-width: 767px) {
           .portafolio .container .grid img {
@@ -789,7 +809,95 @@ body::-webkit-scrollbar-thumb {
 
 .contact {
   width: 100%;
-  height: 100vh;
-  font-size: 10rem;
+  height: auto;
+  padding: 10rem;
   display: grid;
-  place-items: center; }
+  grid-template-columns: repeat(2, 1fr); }
+  @media screen and (max-width: 767px) {
+    .contact {
+      padding: 0; } }
+  .contact .grid {
+    height: 250px; }
+    @media screen and (max-width: 767px) {
+      .contact .grid {
+        height: 200px; }
+        .contact .grid:nth-child(1) {
+          grid-column-start: span 2; }
+        .contact .grid:nth-child(2) {
+          grid-column-start: span 2; } }
+    .contact .grid:nth-child(3) {
+      height: 100px;
+      grid-column-start: span 2; }
+    .contact .grid.paragraphs {
+      padding: 0 5rem; }
+      .contact .grid.paragraphs .text {
+        font-size: 5.3rem;
+        font-family: "Spectral", serif;
+        color: #FFFFFF;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        font-weight: 600; }
+        @media screen and (max-width: 767px) {
+          .contact .grid.paragraphs .text {
+            font-size: 3rem; } }
+    .contact .grid.socials ul {
+      display: flex;
+      gap: 5px;
+      justify-content: flex-end;
+      padding: 5rem 3rem 0 0; }
+      @media screen and (min-width: 1920px) {
+        .contact .grid.socials ul {
+          padding: 15rem 3rem 0 0; } }
+      .contact .grid.socials ul a {
+        color: #ffffff86;
+        font-size: 1.7rem;
+        font-family: "Spectral", serif; }
+        .contact .grid.socials ul a:hover {
+          color: #FFFFFF; }
+        @media screen and (min-width: 1920px) {
+          .contact .grid.socials ul a {
+            font-size: 2rem; } }
+      .contact .grid.socials ul a {
+        color: #FFFFFF; }
+        .contact .grid.socials ul a:hover {
+          color: #F6BB31; }
+    .contact .grid.info-contact {
+      display: grid;
+      place-items: center; }
+      .contact .grid.info-contact .action {
+        width: 40%; }
+        @media screen and (max-width: 767px) {
+          .contact .grid.info-contact .action {
+            width: 100%;
+            padding-left: 5rem; } }
+        .contact .grid.info-contact .action a {
+          color: #FFFFFF;
+          display: flex;
+          justify-content: space-between;
+          transition: all .8s ease-out; }
+          .contact .grid.info-contact .action a:hover {
+            color: #F6BB31; }
+        .contact .grid.info-contact .action i {
+          font-size: 3rem;
+          margin-right: 1rem;
+          margin-top: 1.7rem; }
+        .contact .grid.info-contact .action p {
+          flex: 1;
+          font-size: 2rem; }
+
+.footer {
+  padding: 1.66667rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 -6px 10px 0 rgba(0, 0, 0, 0.19); }
+  .footer h2 {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-family: "Spectral", serif;
+    letter-spacing: 1px; }
+    .footer h2 span a {
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 1.7rem;
+      font-family: "Roboto", sans-serif; }
+      .footer h2 span a:hover {
+        color: #F6BB31; }

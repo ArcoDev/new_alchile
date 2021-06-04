@@ -1,0 +1,21 @@
+.footer {
+    padding: $separacion / 3;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 -6px 10px 0 rgba(0, 0, 0, 0.19);
+    h2 {
+        color: $blanco;
+        font-size: 1.6rem;
+        font-family: $titulo;
+        letter-spacing: 1px;
+        span a {
+            color: $blanco;
+            font-weight: $semiBold;
+            font-size: 1.7rem;
+            font-family: $textos;
+            &:hover {
+                color: $amarillo;
+            }
+        }
+    }
+}
