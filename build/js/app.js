@@ -1161,42 +1161,38 @@ var typed = new Typed('.text', {
 });
 //Variables globales
 let gridImg = 1;
-let filtroActivo = 1;
 
 window.addEventListener('DOMContentLoaded', function () {
-    filtroGrid();
-    mostrarGrid();
-    enlaceActual();
+    mostrarPortafolio();
+    cambiarPortafolio();
 });
 
-function mostrarGrid() {
-    //Agregar mostrar-grid al filtro seleccionado actualmente
-    const gridActual = document.querySelector(`#grid-${gridImg}`);
-    gridActual.classList.add('mostrar-grid');
-}
-function enlaceActual() {
-    //Agregar clase active dependiendo del filtro seleccionado
-    const enlaceActual = document.querySelector(`#enlace-${filtroActivo}`);
+function mostrarPortafolio() {
+    const portafolioAnterior = document.querySelector('.mostrar-grid');
+    if (portafolioAnterior) {
+        portafolioAnterior.classList.remove('mostrar-grid');
+    }
+    //Portafolio que se mostrara de inicio
+    const portafolioActual = document.querySelector(`#grid-${gridImg}`);
+    portafolioActual.classList.add('mostrar-grid');
+
+    //Eliminar clase activo del enlace actual
+    const enlaceAnterior = document.querySelector('.active');
+    if (enlaceAnterior) {
+        enlaceAnterior.classList.remove('active')
+    }
+    //Resaltar enlace activo, agregando la clase active
+    const enlaceActual = document.querySelector(`[data-grid="${gridImg}"]`);
     enlaceActual.classList.add('active');
 }
-function filtroGrid() {
-    const filtro = document.querySelectorAll('.item a');
-    filtro.forEach(filt => {
-        filt.addEventListener('click', e => {
+
+function cambiarPortafolio() {
+    const enlaces = document.querySelectorAll('.item a');
+    enlaces.forEach(link => {
+        link.addEventListener('click', e => {
             e.preventDefault();
             gridImg = parseInt(e.target.dataset.grid);
-            
-            //Ocultar seccion que contenga mostrar-grid
-            document.querySelector('.mostrar-grid').classList.remove('mostrar-grid');
-            //Agregar mostrar-grid al filtro seleccionado actualmente
-            const gridActual = document.querySelector(`#grid-${gridImg}`);
-            gridActual.classList.add('mostrar-grid');
-            
-           //remover clase active en los enlaces
-            document.querySelector('.active').classList.remove('active');
-            //Agregar clase active dependiendo del filtro seleccionado
-            const enlaceActual = document.querySelector(`#enlace-${filtroActivo}`);
-            enlaceActual.classList.add('active');
+            mostrarPortafolio();
         });
     });
 }

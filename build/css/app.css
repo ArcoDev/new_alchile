@@ -323,7 +323,7 @@ body {
   transition: all 1s ease-in; }
 
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   background: #7049db; }
 
 body::-webkit-scrollbar-thumb {
