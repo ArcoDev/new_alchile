@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 function mostrarPortafolio() {
+    //Eliminar clase mostar-grid de la seccion de grid del protafolio
     const portafolioAnterior = document.querySelector('.mostrar-grid');
     if (portafolioAnterior) {
         portafolioAnterior.classList.remove('mostrar-grid');

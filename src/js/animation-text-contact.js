@@ -1155,7 +1155,7 @@ var typed = new Typed('.text', {
         "Si ya tienes tu marca y quieres potenciarla, echame un mensaje!",
         "Te dejo mis datos de contacto, estoy disponible 24/7 para ti..."
     ],
-    typeSpeed: 30,
+    typeSpeed: 80,
     backSpeed: 20,
     loop: true
 });
