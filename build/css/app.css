@@ -900,7 +900,7 @@ body::-webkit-scrollbar-thumb {
   .footer h2 {
     color: #FFFFFF;
     font-size: 1.6rem;
-    font-family: "Spectral", serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 1px; }
     .footer h2 span a {
       color: #FFFFFF;
