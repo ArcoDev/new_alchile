@@ -1,0 +1,36 @@
+.user-panel {
+    height: 60px;
+}
+
+.user-panel>.info {
+    position: relative;
+    left: auto;
+}
+
+.skin-blue .sidebar-menu>li.header {
+    color: #fff;
+}
+
+.skin-blue .sidebar span {
+    margin-left: 5px;
+}
+
+.swal2-popup {
+    width: 40em!important;
+}
+
+.swal2-popup .swal2-title {
+    font-size: 2.5rem!important;
+}
+
+.swal2-popup .swal2-content {
+    font-size: 1.5rem!important;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm {
+    font-size: 1.5rem!important;
+}
+
+.login-page .main-footer {
+    display: none;
+}
