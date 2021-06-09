@@ -51,7 +51,7 @@ $(document).ready(function() {
     $('.borrar_registro').on('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('data-id');
-        var producto = $(this).attr('data-tipo');
+        var imagenes = $(this).attr('data-tipo');
         swal({
             title: 'Estas seguro?',
             text: "Esta acción no se puede revertir!",
@@ -74,7 +74,7 @@ $(document).ready(function() {
                         'registro': 'eliminar'
                     },
 
-                    url: 'modelo-' + producto + '.php',
+                    url: 'modelo-' + imagenes + '.php',
                     success: function(data) {
                         //  console.log(data);
                         var resultado = JSON.parse(data);

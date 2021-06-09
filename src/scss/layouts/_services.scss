@@ -90,6 +90,7 @@
 
         img {
             max-width: 70%;
+            max-height: 70%;
             object-fit: cover;
 
         }
@@ -118,7 +119,7 @@
 
         img {
             max-width: 60%;
-
+            max-height: 100%;
             @include movil {
                 max-width: 100%;
             }

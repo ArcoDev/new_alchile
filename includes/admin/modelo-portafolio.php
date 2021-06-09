@@ -3,46 +3,18 @@ error_reporting(E_ALL ^ E_NOTICE);
 /* Crear productos y mandar ifo a la BD */
 include_once "functions/funciones.php";
 $nombre = $_POST['nombre'];
-$precio = $_POST['precio'];
-$categoria = $_POST['categoria'];
-$url_foto = $_POST['url_foto'];
-$url_mercado = $_POST['url_mercado'];
-$url_amazon = $_POST['url_amazon'];
-$id_registroEditar = $_POST["id_registro"];
 
 if($_POST['registro'] == 'nuevo') {
-    
-    /*Comprobar si se esta mandado los datos de file y de post
-    $respuesta = array(
-        'post' => $_POST,
-        'file' => $_FILES
-    );
-    die(json_encode($respuesta));
-    CHECAR VIDEO 777
-    */
-    $directorio = "../../assets/images/";
-    if(!is_dir($directorio)) {
-        mkdir($directorio, 0755, true);
-    }
-    if(move_uploaded_file($_FILES['archivo_imagen']['tmp_name'], $directorio . $_FILES['archivo_imagen']['name'])) {
-        $imagen_url = $_FILES['archivo_imagen']['name'];
-        $imagen_resultado = "Se cargo correctamente";
-    } else {
-        $respuesta = array(
-            'respuesta' => error_get_last()
-        );
-    }
     try {
         include_once "functions/funciones.php";
-        $stmt = $con->prepare("INSERT INTO productos (nombre, precio, nombre_cat, url_foto, url_mercado_libre, url_amazon) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssss", $nombre, $precio, $categoria, $imagen_url, $url_mercado, $url_amazon);
+        $stmt = $con->prepare("INSERT INTO portafolio (nombre_portafolio) VALUES (?)");
+        $stmt->bind_param("s", $nombre);
         $stmt->execute();
-        $id_insertado = $stmt->insert_id;
-        if ($stmt->affected_rows){
+        $id_registro=$stmt->insert_id;
+        if ($id_registro > 0){
             $respuesta=array(
                 'respuesta'=>'exito',
-                'id_producto'=>$id_insertado,
-                'resultado_imagen' => $imagen_resultado
+                'id_categoria'=>$id_registro
             );
         }else{
             $respuesta=array(
@@ -56,40 +28,23 @@ if($_POST['registro'] == 'nuevo') {
     }
     die(json_encode($respuesta));
 }
-
-
-/*Actualizar Registro de usuario */
+/* Actualizar categoria del portafolio 
 if($_POST['registro'] == 'actualizar') {
     
-    $directorio = "../../assets/images/";
-    if(!is_dir($directorio)) {
-        mkdir($directorio, 0755, true);
-    }
-    if(move_uploaded_file($_FILES['archivo_imagen']['tmp_name'], $directorio . $_FILES['archivo_imagen']['name'])) {
-        $imagen_url = $_FILES['archivo_imagen']['name'];
-        $imagen_resultado = "Se cargo correctamente";
-    } else {
-        $respuesta = array(
-            'respuesta' => error_get_last()
-        );
-    }
-    //var_dump($_FILES);
-    //die();
     try {
-        if($_FILES['archivo_imagen']['size'] > 0) {
-            //Con imagen
-            $stmt = $con->prepare('UPDATE productos SET nombre = ?, precio = ?, nombre_cat = ?, url_foto = ?, url_mercado_libre = ?, url_amazon = ? WHERE id_pro = ? ');
-            $stmt->bind_param("ssssssi", $nombre, $precio, $categoria, $imagen_url, $url_mercado, $url_amazon, $id_registroEditar);
+        if (empty($_POST['nombre'])) {
+            $stmt = $con->prepare("UPDATE categorias SET nombre =?, editado = NOW() WHERE id_cat =?");
+            $stmt->bind_param("si", $nombre, $id_registroEditar);
         } else {
-            //Sin imagen
-            $stmt = $con->prepare("UPDATE productos SET nombre = ?, precio = ?, nombre_cat = ?, url_mercado_libre = ?, url_amazon = ? WHERE id_pro = ?");
-            $stmt->bind_param("sssssi", $nombre, $precio, $categoria, $url_mercado, $url_amazon, $id_registroEditar);
+            $id_registroEditar = $_POST["id_registro"];
+            $stmt = $con->prepare("UPDATE categorias SET nombre = ?, editado = NOW() WHERE id_cat = ?");
+            $stmt->bind_param("si", $nombre, $id_registroEditar);
         }
-        $estado = $stmt->execute();
-        if($estado == true) {
+        $stmt->execute();
+        if($stmt->affected_rows) {
             $respuesta = array(
                 'respuesta' => 'actualizar',
-                'actualizar' => $id_registroEditar
+                'actualizar' => $stmt->insert_id
             );
         } else {
             $respuesta + array(
@@ -104,13 +59,13 @@ if($_POST['registro'] == 'actualizar') {
         );
     }
     die(json_encode($respuesta));
-}
+}*/
 
-/*Eliminar usuario */
+/*Eliminar usuario 
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
-        $stmt = $con->prepare("DELETE FROM productos WHERE id_pro = ?");
+        $stmt = $con->prepare("DELETE FROM categorias WHERE id_cat = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {
@@ -129,4 +84,4 @@ if($_POST['registro'] == 'eliminar') {
         );
     }
     die(json_encode($respuesta));
-}
+}*/

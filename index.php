@@ -1,3 +1,6 @@
+<?php
+    include_once "includes/conexion.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -120,26 +123,40 @@
             <img src="build/img/grande1.webp" alt="" class="big">
         </div>
         <ul class="img-thumb">
-            <li><img src="build/img/chica1.webp"
-                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#5f4691'); txtServices();" alt="">
+            <li>
+                <img src="build/img/chica1.webp"
+                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#5f4691'); txtServices();"
+                    alt="Nuestros Servicios">
             </li>
-            <li><img src="build/img/chica2.webp"
-                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#2fa2a8'); txtServices2();" alt="">
+            <li>
+                <img src="build/img/chica2.webp"
+                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#2fa2a8'); txtServices2();"
+                    alt="Nuestros Servicios">
             </li>
-            <li><img src="build/img/chica3.webp"
-                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#ce297a'); txtServices3();" alt="">
+            <li>
+                <img src="build/img/chica3.webp"
+                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#ce297a'); txtServices3();"
+                    alt="Nuestros Servicios">
             </li>
-            <li><img src="build/img/chica1.webp"
-                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#2fa2a8'); txtServices4();" alt="">
+            <li>
+                <img src="build/img/chica1.webp"
+                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#2fa2a8'); txtServices4();"
+                    alt="Nuestros Servicios">
             </li>
-            <li><img src="build/img/chica2.webp"
-                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#ce297a'); txtServices5();" alt="">
+            <li>
+                <img src="build/img/chica2.webp"
+                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#ce297a'); txtServices5();"
+                    alt="Nuestros Servicios">
             </li>
-            <li><img src="build/img/chica3.webp"
-                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#5f4691'); txtServices6();" alt="">
+            <li>
+                <img src="build/img/chica3.webp"
+                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#5f4691'); txtServices6();"
+                    alt="Nuestros Servicios">
             </li>
-            <li><img src="build/img/chica3.webp"
-                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#2fa2a8'); txtServices7();" alt="">
+            <li>
+                <img src="build/img/chica3.webp"
+                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#2fa2a8'); txtServices7();"
+                    alt="Nuestros Servicios">
             </li>
         </ul>
     </section>
@@ -175,39 +192,71 @@
                     <span>|</span>
                 </li>
                 <li class="item">
-                    <a data-grid="6">Toma Con Dron</a>
+                    <a data-grid="6">Publicidad</a>
+                    <span>|</span>
+                </li>
+                <li class="item">
+                    <a data-grid="7">Toma Con Dron</a>
                 </li>
             </ul>
 
         </div>
         <div class="container">
             <div id="grid-1" class="grid">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/web/2.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/web/2.webp" alt="Portafolio Alchile Studio">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '1' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
             </div>
             <div id="grid-2" class="grid">
-                <img src="build/img/portafolio/fotografia/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/fotografia/2.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/fotografia/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/fotografia/2.webp" alt="Portafolio Alchile Studio">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '2' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
             </div>
             <div id="grid-3" class="grid">
-                <img src="build/img/portafolio/fotografia/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/fotografia/2.webp" alt="Portafolio Alchile Studio">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '3' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
             </div>
             <div id="grid-4" class="grid">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '4' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
             </div>
             <div id="grid-5" class="grid">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '5' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
             </div>
             <div id="grid-6" class="grid">
-                <img src="build/img/portafolio/web/1.webp" alt="Portafolio Alchile Studio">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '6' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
+            </div>
+            <div id="grid-7" class="grid">
+            <?php
+                    $consulta = $con->query("SELECT * FROM imagenes WHERE id_categoria = '7' ");
+                    while($imagenes = mysqli_fetch_array($consulta)) {
+                        echo '<img src="build/portafolio/'.$imagenes['nombre'].'/'.$imagenes['url_foto'].'" alt="Portafolio de alchile studio">';
+                    } 
+            ?>
             </div>
         </div>
     </section>
@@ -250,7 +299,7 @@
         </div>
     </section>
     <footer class="footer">
-      <h2>Sitio Desarrollado por <span><a href="awsoftware.mx" target="_blank">AW Software</a></span></h2>
+        <h2>Sitio Desarrollado por <span><a href="awsoftware.mx" target="_blank">AW Software</a></span></h2>
     </footer>
     <script src="build/js/app.js"></script>
 </body>

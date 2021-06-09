@@ -7,7 +7,7 @@
 
         <header class="main-header">
             <!-- Logo -->
-            <a href="../../index.php" class="logo">
+            <a href="../../index.php" class="logo" target="_blank">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b style="color: #000">A</b>S</span>
                 <!-- logo for regular state and mobile devices -->

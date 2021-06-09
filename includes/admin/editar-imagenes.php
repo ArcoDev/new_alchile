@@ -28,11 +28,11 @@
         <!-- Default box -->
         <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Editar Usuario</h3>
+            <h3 class="box-title">Editar Imagen</h3>
           </div>
           <div class="box-body">
             <?php
-                $sql ="SELECT * FROM `productos` WHERE `id_pro` = $id";
+                $sql ="SELECT * FROM `imagenes` WHERE `id_imagenes` = $id";
                 $resultado = $con->query($sql);
                 $producto = $resultado->fetch_assoc(); 
              ?>
@@ -45,36 +45,22 @@
                   <input autocomplete="off" type="text" class="form-control" id="nombre" name="nombre"
                     placeholder="Ingresa el nombre del producto" value="<?php echo $producto['nombre'] ?>">
                 </div>
+                <!-- select -->
                 <div class="form-group">
-                  <label for="precio">Precio</label>
-                  <input autocomplete="off" type="text" class="form-control" id="precio" name="precio"
-                    placeholder="Ingresa el precio del producto" value="<?php echo $producto['precio']; ?>">
-                </div>
-                 <!-- select -->
-                 <div class="form-group">
                   <label for="precio">Categoría</label>
                   <select name="categoria" class="form-control">
-                    <option value="">Selecciona una categoría</option>
-                    <option value="bicicletas">1.- Bicicletas</option>
-                    <option value="accesorios">2.- Accesorios</option>
+                  <option value="">Selecciona una categoría</option>
+                  <?php 
+                      $consulta = $con->query('SELECT * FROM portafolio');
+                      while($portafolio = mysqli_fetch_array($consulta)) {
+                          echo '<option value="'.$portafolio['id_cat'].'">'.$portafolio['nombre'].'</option>';
+                      }
+                  ?>
                   </select>
-                </div>
-                <div class="form-group">
-                  <label for="nombre">URL mercado libre</label>
-                  <input autocomplete="off" type="text" class="form-control" id="mercado" name="url_mercado"
-                    placeholder="Ingresa el link de el producto de mercado libre"
-                    value="<?php echo $producto['url_mercado_libre'] ?>">
-                </div>
-                <div class="form-group">
-                  <label for="nombre">URL Amazon</label>
-                  <input autocomplete="off" type="text" class="form-control" id="amazon" name="url_amazon"
-                    placeholder="Ingresa el link de el producto de amazon"
-                    value="<?php echo $producto['url_amazon'] ?>">
-                </div>
                 <div class="form-group">
                   <label for="imagen_actual">Imagen Actual: </label>
                   <br>
-                  <img src="../../assets/images/<?php echo $producto['url_foto']; ?>"
+                  <img src="../../build/portafolio/<?php echo $producto['nombre']; ?>/<?php echo $producto['url_foto']; ?>"
                     alt="Productos del catalo de amora" width="200" height="200">
                 </div>
                 <div class="form-group">
@@ -93,7 +79,7 @@
                   </div>
                 </div>
                 <div id="loader" class="form-group" style="display: none;">
-                  <img src="../../assets/img/preloader.gif" alt="Cargando" style="margin: 10px 0 10px 20px;">
+                  <img src="../../build/img/preloader.gif" alt="Cargando" style="margin: 10px 0 10px 20px;">
                   <p>Espere un momento porfavor...</p>
                 </div>
                 <div class="box-footer">

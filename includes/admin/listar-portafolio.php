@@ -13,8 +13,8 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Lista de imagnes
-      <small>registrados en la base de datos de alchile studio</small>
+      Lista de categorias
+      <small>registrados en la base de datos de black wolf</small>
     </h1>
   </section>
 
@@ -31,41 +31,30 @@
             <table id="registros" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Categoria</th>
-                  <th>Foto</th>
-                  <th>URL Mercado Libre</th>
-                  <th>URL Amazon</th>
+                  <th>Identificador de categoria</th>
+                  <th>Nombre de la categoria</th>
                   <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                     try {
-                      $sql = "SELECT id_pro, nombre, precio, nombre_cat, url_foto, url_mercado_libre, url_amazon FROM productos";
+                      $sql = "SELECT id_cat, nombre_portafolio FROM portafolio";
                       $resultado = $con->query($sql);
                     } catch (Exception $e) {
                       $error = $e->getMessage();
                       echo $error;
                     }
-                    while ($producto = $resultado->fetch_assoc()) {?>
+                    while ($categoria = $resultado->fetch_assoc()) {?>
                 <tr>
-                  <td><?php echo $producto['nombre'] ?></td>
-                  <td><?php echo $producto['precio'] ?></td>
-                  <td><?php echo $producto['nombre_cat'] ?></td>
+                  <td><?php echo $categoria['id_cat'] ?></td>
+                  <td><?php echo $categoria['nombre_portafolio'] ?></td>
                   <td>
-                    <center><img loading="lazy" src="../../assets/images/<?php echo $producto['url_foto']; ?>"
-                        alt="Productos del catalo de amora" width="200" height="100"></center>
-                  </td>
-                  <td><?php echo $producto['url_mercado_libre'] ?></td>
-                  <td><?php echo $producto['url_amazon'] ?></td>
-                  <td>
-                    <a href="editar-productos.php?id=<?php echo $producto['id_pro']?>"
+                    <a href="editar-portafolio.php?id=<?php echo $categoria['id_cat']?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $producto['id_pro']?>" data-tipo="productos"
+                    <a href="#" data-id="<?php echo $categoria['id_cat']?>" data-tipo="categorias"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>
@@ -73,6 +62,13 @@
                 </tr>
                 <?php } ?>
               </tbody>
+              <tfoot>
+                <tr>
+                  <th>Identificador de categoria</th>
+                  <th>Nombre de la categoria</th>
+                  <th>Acciones</th>
+                </tr>
+              </tfoot>
             </table>
           </div>
           <!-- /.box-body -->

@@ -682,6 +682,7 @@ body::-webkit-scrollbar-thumb {
         justify-content: center; } }
     .services .img-big img {
       max-width: 70%;
+      max-height: 70%;
       object-fit: cover; }
   .services .img-thumb {
     position: absolute;
@@ -699,7 +700,8 @@ body::-webkit-scrollbar-thumb {
       .services .img-thumb li:hover {
         transform: translateY(-15px); }
     .services .img-thumb img {
-      max-width: 60%; }
+      max-width: 60%;
+      max-height: 100%; }
       @media screen and (max-width: 767px) {
         .services .img-thumb img {
           max-width: 100%; } }
@@ -789,12 +791,13 @@ body::-webkit-scrollbar-thumb {
   .portafolio .container {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 10rem; }
     @media screen and (max-width: 767px) {
       .portafolio .container {
         margin-top: 3rem; } }
     .portafolio .container .grid {
-      width: 90%;
+      width: 95%;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -805,12 +808,31 @@ body::-webkit-scrollbar-thumb {
           width: 95%;
           padding-left: .4rem; } }
       .portafolio .container .grid.mostrar-grid {
-        display: inline-flex; }
+        display: inline-flex;
+        justify-content: center; }
       .portafolio .container .grid img {
-        width: 49.6%;
+        width: 47.5%;
         height: 650px;
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         object-fit: cover; }
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); } }
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); } }
         @media screen and (max-width: 767px) {
           .portafolio .container .grid img {
             width: 48%;

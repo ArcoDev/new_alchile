@@ -68,6 +68,7 @@
 
             span {
                 color: $blanco;
+
                 @include movil {
                     display: none;
                 }
@@ -101,11 +102,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 10rem;
         @include movil {
             margin-top: 3rem;
         }
+
         .grid {
-            width: 90%;
+            width: 95%;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -119,14 +122,40 @@
 
             &.mostrar-grid {
                 display: inline-flex;
-                @include movil {
-                }
+                justify-content: center;
+                @include movil {}
             }
 
             img {
-                width: 49.6%;
+                width: 47.5%;
                 height: 650px;
                 box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+                -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+                @-webkit-keyframes slide-top {
+                    0% {
+                        -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+
+                    100% {
+                        -webkit-transform: translateY(-100px);
+                        transform: translateY(-100px);
+                    }
+                }
+
+                @keyframes slide-top {
+                    0% {
+                        -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+
+                    100% {
+                        -webkit-transform: translateY(-100px);
+                        transform: translateY(-100px);
+                    }
+                }
 
                 @include movil {
                     width: 48%;
