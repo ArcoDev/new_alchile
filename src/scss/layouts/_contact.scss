@@ -1,75 +1,120 @@
 .contact {
     width: 100%;
     height: auto;
-    padding: $separacion * 2;
+    padding: 10rem 10rem 5rem 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-     @include movil {
-         padding: 0;
-     }
+
+    @include movil {
+        padding: 0;
+    }
+
     .grid {
         height: 250px;
+
         @include movil {
             height: 200px;
+
             &:nth-child(1) {
                 grid-column-start: span 2;
             }
+
             &:nth-child(2) {
                 grid-column-start: span 2;
             }
         }
+
         &:nth-child(3) {
             height: 100px;
             grid-column-start: span 2;
         }
 
+        &:nth-child(4) {
+            height: 50px;
+            grid-column-start: span 2;
+        }
+
         &.paragraphs {
             padding: 0 $separacion;
+
             .text {
                 font-size: 5.3rem;
                 font-family: $textos;
                 color: $blanco;
                 font-weight: $semiBold;
+
                 @include movil {
                     font-size: 3rem;
                 }
             }
         }
+
         &.socials ul {
             @include social;
+
             a {
                 color: $blanco;
+
                 &:hover {
                     color: $amarillo;
                 }
             }
         }
+
         &.info-contact {
             display: grid;
             place-items: center;
+
             .action {
                 width: 40%;
+
                 @include movil {
                     width: 100%;
                     padding-left: $separacion;
                 }
-                a{
+
+                a {
                     color: $blanco;
                     display: flex;
                     justify-content: space-between;
                     transition: all .8s ease-out;
+
                     &:hover {
                         color: $amarillo;
                     }
                 }
+
                 i {
                     font-size: 3rem;
                     margin-right: 1rem;
                     margin-top: 1.7rem;
                 }
+
                 p {
                     flex: 1;
                     font-size: 2rem;
+                }
+            }
+        }
+
+        &.notice {
+            display: grid;
+            place-items: center;
+            padding-top: 2rem;
+
+            a {
+                color: $blanco;
+                font-size: 2rem;
+                font-weight: $semiBold;
+                border-bottom: 2px solid $blanco;
+                padding: 0 1rem .5rem 1rem;
+                border-radius: 1rem;
+                letter-spacing: 1px;
+                transition: color .4s ease-out;
+
+                &:hover {
+                    color: $amarillo;
+                    border-bottom: 2px solid $amarillo;
                 }
             }
         }

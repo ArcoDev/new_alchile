@@ -394,12 +394,14 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column; }
 
 .navbar {
-  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
   padding: 0 5rem;
-  z-index: 1000; }
+  z-index: 1000;
+  transition: top .7s ease-out; }
   @media screen and (max-width: 767px) {
     .navbar {
       padding: 0 1.25rem; } }
@@ -463,9 +465,18 @@ body::-webkit-scrollbar-thumb {
         font-size: 15rem; } }
 
 .about {
-  padding: 100px;
+  padding: 100px 200px 50px 100px;
   display: flex;
   gap: 10px; }
+  .about img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover; }
+    @media screen and (max-width: 767px) {
+      .about img {
+        width: 100%;
+        height: 100%;
+        margin-left: -.5rem; } }
   @media screen and (max-width: 767px) {
     .about {
       flex-wrap: wrap;
@@ -475,26 +486,11 @@ body::-webkit-scrollbar-thumb {
     .about {
       padding: 10px;
       gap: 12px; } }
-  .about .title-about {
-    position: relative;
-    width: 40%;
-    color: #FFFFFF;
-    font-size: 5rem; }
-    @media screen and (max-width: 767px) {
-      .about .title-about {
-        width: 100%;
-        font-size: 2.5rem;
-        text-align: center; } }
-    @media screen and (max-width: 768px) {
-      .about .title-about {
-        font-size: 2.3rem;
-        display: grid;
-        place-items: center; } }
   .about .description {
     position: relative;
     width: 60%;
     color: #FFFFFF;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: justify;
     line-height: 1.8;
     display: grid;
@@ -623,7 +619,7 @@ body::-webkit-scrollbar-thumb {
       flex-wrap: wrap; } }
   .services .title-services {
     position: relative;
-    max-width: 60%;
+    max-width: 70%;
     display: grid;
     place-items: center; }
     @media screen and (max-width: 767px) {
@@ -641,7 +637,7 @@ body::-webkit-scrollbar-thumb {
           font-size: 4.2rem;
           margin-bottom: 2rem; } }
       .services .title-services h2 span {
-        font-size: 8.3rem;
+        font-size: 8rem;
         font-weight: 600;
         font-family: "Roboto", sans-serif; }
         @media screen and (max-width: 767px) {
@@ -681,12 +677,12 @@ body::-webkit-scrollbar-thumb {
         margin-top: -20rem;
         justify-content: center; } }
     .services .img-big img {
-      max-width: 70%;
-      max-height: 70%;
+      max-width: 90%;
+      max-height: 90%;
       object-fit: cover; }
   .services .img-thumb {
     position: absolute;
-    left: 20%;
+    left: 17%;
     bottom: 3%;
     display: flex; }
     @media screen and (max-width: 767px) {
@@ -718,7 +714,7 @@ body::-webkit-scrollbar-thumb {
 .portafolio {
   width: 100%;
   padding-bottom: 5rem;
-  padding: 20rem .3rem;
+  padding: 10rem .3rem;
   padding-bottom: 0; }
   @media screen and (max-width: 767px) {
     .portafolio {
@@ -728,7 +724,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     justify-content: flex-end;
     padding: 2rem 0;
-    padding-right: 7rem; }
+    padding-right: 5.5rem; }
     @media screen and (max-width: 767px) {
       .portafolio .filter {
         justify-content: center;
@@ -744,7 +740,7 @@ body::-webkit-scrollbar-thumb {
           padding: 0 1rem;
           text-align: center; } }
       .portafolio .filter ul li {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         text-align: center; }
         @media screen and (max-width: 767px) {
           .portafolio .filter ul li {
@@ -763,7 +759,8 @@ body::-webkit-scrollbar-thumb {
           .portafolio .filter ul a {
             padding: 0; } }
         .portafolio .filter ul a.active {
-          color: #F6BB31; }
+          color: #F6BB31;
+          font-weight: 600; }
         .portafolio .filter ul a:hover {
           color: #F6BB31; }
       .portafolio .filter ul span {
@@ -815,7 +812,7 @@ body::-webkit-scrollbar-thumb {
         height: 650px;
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
         -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         object-fit: cover; }
 
 @-webkit-keyframes slide-top {
@@ -841,7 +838,7 @@ body::-webkit-scrollbar-thumb {
 .contact {
   width: 100%;
   height: auto;
-  padding: 10rem;
+  padding: 10rem 10rem 5rem 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
   @media screen and (max-width: 767px) {
@@ -858,6 +855,9 @@ body::-webkit-scrollbar-thumb {
           grid-column-start: span 2; } }
     .contact .grid:nth-child(3) {
       height: 100px;
+      grid-column-start: span 2; }
+    .contact .grid:nth-child(4) {
+      height: 50px;
       grid-column-start: span 2; }
     .contact .grid.paragraphs {
       padding: 0 5rem; }
@@ -913,6 +913,22 @@ body::-webkit-scrollbar-thumb {
         .contact .grid.info-contact .action p {
           flex: 1;
           font-size: 2rem; }
+    .contact .grid.notice {
+      display: grid;
+      place-items: center;
+      padding-top: 2rem; }
+      .contact .grid.notice a {
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-weight: 600;
+        border-bottom: 2px solid #FFFFFF;
+        padding: 0 1rem .5rem 1rem;
+        border-radius: 1rem;
+        letter-spacing: 1px;
+        transition: color .4s ease-out; }
+        .contact .grid.notice a:hover {
+          color: #F6BB31;
+          border-bottom: 2px solid #F6BB31; }
 
 .footer {
   padding: 1.66667rem;

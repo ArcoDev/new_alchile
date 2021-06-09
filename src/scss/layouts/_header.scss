@@ -27,13 +27,14 @@
 }
 
 .navbar {
-    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    //padding: $separacion / 2;
+    position: fixed;
+    top: 0;
     padding: 0 $separacion;
     z-index: 1000;
+    transition: top .7s ease-out;
     @include movil {
         padding: 0 $separacion / 4;
     }
@@ -106,6 +107,7 @@
         font-family: $titulo;
         font-weight: $semiBold;
         line-height: 0.9;
+
         @include movil {
             font-size: 10rem;
         }

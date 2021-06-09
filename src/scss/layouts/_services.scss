@@ -14,7 +14,7 @@
 
     .title-services {
         position: relative;
-        max-width: 60%;
+        max-width: 70%;
         display: grid;
         place-items: center;
 
@@ -36,7 +36,7 @@
             }
 
             span {
-                font-size: 8.3rem;
+                font-size: 8rem;
                 font-weight: $semiBold;
                 font-family: $textos;
                 @include movil {
@@ -89,8 +89,8 @@
         }
 
         img {
-            max-width: 70%;
-            max-height: 70%;
+            max-width: 90%;
+            max-height: 90%;
             object-fit: cover;
 
         }
@@ -98,7 +98,7 @@
 
     .img-thumb {
         position: absolute;
-        left: 20%;
+        left: 17%;
         bottom: 3%;
         display: flex;
 

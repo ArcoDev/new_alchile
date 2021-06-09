@@ -28,7 +28,7 @@
     <!-- Nav -->
     <nav id="box-nav" class="navbar">
         <div class="icon">
-            <img src="src/icons/alchile2.svg" alt="">
+            <img src="src/icons/alchile.svg" alt="">
         </div>
         <div id="menu" class="menu">
             <i id="bars" class="fas fa-bars"></i>
@@ -98,15 +98,9 @@
     </header>
     <!-- About -->
     <section id="about" class="about">
-        <h2 class="title-about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <img src="src/icons/alchile2.svg" alt="Alchile Studio">
         <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit illo. Vitae
-            dolor, et enim iure quod magni a sint saepe esse asperiores at laborum quam consectetur quis, corporis
-            reprehenderit.Enim doloribus, obcaecati ullam repellendus eligendi reprehenderit repudiandae odit vitae
-            nostrum commodi impedit neque eaque error sequi provident. Aliquam voluptas debitis odit voluptatibus!
-            Non incidunt nostrum, error natus consectetur ad? Facere molestiae quaerat quas a eveniet atque iure,
-            rerum aut at libero inventore amet assumenda, officia quibusdam modi iusto nobis maiores repudiandae
-            doloribus praesentium vero error fugiat debitis. Veritatis,ducimus
+            Está conformado por un equipo creativo con el compromiso de atender a nuestros clientes, brindándoles servicios picantes de gran impacto. Comprometidos en brindar servicios y soluciones mediante un conjunto de disciplinas, cada una analizada y desarrollada acorde a las necesidades de nuestros clientes.
         </p>
     </section>
     <!-- Services -->
@@ -165,7 +159,7 @@
     <section class="portafolio">
         <div class="img-portafolio">
             <div class="title-protafolio">
-                <h1>"A place where you can teach your Grandma how to floss, and we dont mean her teeth."</h1>
+                <h1>"Nuestro trabajo con el factor picoso que nos distingue."</h1>
             </div>
         </div>
         <div class="filter">
@@ -297,7 +291,11 @@
                 </a>
             </ul>
         </div>
+        <div class="grid notice">
+            <a href="aviso.pdf" target="_blank">Aviso de privacidad</a>
+        </div>
     </section>
+    
     <footer class="footer">
         <h2>Sitio Desarrollado por <span><a href="awsoftware.mx" target="_blank">AW Software</a></span></h2>
     </footer>
