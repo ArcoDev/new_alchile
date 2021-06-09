@@ -37,6 +37,8 @@
     transition: top .7s ease-out;
     @include movil {
         padding: 0 $separacion / 4;
+        background: $morado;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     }
 
     .icon {
@@ -48,8 +50,8 @@
             object-fit: cover;
 
             @include movil {
-                width: 80px;
-                height: 80px;
+                width: 6.5rem;
+                height: 6.5rem;
             }
         }
     }
@@ -67,12 +69,12 @@
             font-size: 2.8rem;
             color: $blanco;
             cursor: pointer;
-            //margin-top: $separacion - 2;
-            //margin-right: $separacion / 3;
             transition: all .8s;
-
             &:hover {
                 color: $azulCielo;
+            }
+            @include movil {
+                color: $amarillo;
             }
         }
     }

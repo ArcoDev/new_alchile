@@ -404,7 +404,9 @@ body::-webkit-scrollbar-thumb {
   transition: top .7s ease-out; }
   @media screen and (max-width: 767px) {
     .navbar {
-      padding: 0 1.25rem; } }
+      padding: 0 1.25rem;
+      background: #594590;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19); } }
   .navbar .icon {
     width: 95%; }
     .navbar .icon img {
@@ -413,8 +415,8 @@ body::-webkit-scrollbar-thumb {
       object-fit: cover; }
       @media screen and (max-width: 767px) {
         .navbar .icon img {
-          width: 80px;
-          height: 80px; } }
+          width: 6.5rem;
+          height: 6.5rem; } }
   .navbar .menu {
     width: 5%;
     display: grid;
@@ -429,6 +431,9 @@ body::-webkit-scrollbar-thumb {
       transition: all .8s; }
       .navbar .menu i:hover {
         color: #6EB2BD; }
+      @media screen and (max-width: 767px) {
+        .navbar .menu i {
+          color: #F6BB31; } }
   .navbar #close {
     display: none; }
 
@@ -643,7 +648,11 @@ body::-webkit-scrollbar-thumb {
         @media screen and (max-width: 767px) {
           .services .title-services h2 span {
             font-size: 4rem;
-            line-height: 1.8; } }
+            line-height: 1.8;
+            position: absolute;
+            width: 100%;
+            left: 1%;
+            top: 506%; } }
     .services .title-services p {
       color: #FFFFFF;
       font-size: 2rem;
@@ -666,6 +675,9 @@ body::-webkit-scrollbar-thumb {
       .services .title-services a:hover {
         transform: scale(1.04);
         background: #7049db; }
+      @media screen and (max-width: 767px) {
+        .services .title-services a {
+          display: none; } }
   .services .img-big {
     width: 60%;
     display: flex;
@@ -680,6 +692,11 @@ body::-webkit-scrollbar-thumb {
       max-width: 90%;
       max-height: 90%;
       object-fit: cover; }
+      @media screen and (max-width: 767px) {
+        .services .img-big img {
+          max-width: 80%;
+          max-height: 80%;
+          margin-top: -10rem; } }
   .services .img-thumb {
     position: absolute;
     left: 17%;
