@@ -43,6 +43,9 @@
                     font-weight: $semiBold;
                     border: 1px solid $blanco;
                     padding: 1rem;
+                    &:last-child {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -124,7 +127,10 @@
             &.mostrar-grid {
                 display: inline-flex;
                 justify-content: center;
-                @include movil {}
+                @include movil {
+                    justify-content: flex-start;
+                    margin-top: 8rem;
+                }
             }
 
             img {

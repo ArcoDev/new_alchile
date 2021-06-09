@@ -505,9 +505,6 @@ body::-webkit-scrollbar-thumb {
         width: 95%;
         font-size: 1.5rem;
         margin: 0 auto; } }
-    @media screen and (max-width: 768px) {
-      .about .description {
-        font-size: 1.2rem; } }
 
 .overlay {
   position: fixed;
@@ -765,7 +762,9 @@ body::-webkit-scrollbar-thumb {
             font-size: 1.1rem;
             font-weight: 600;
             border: 1px solid #FFFFFF;
-            padding: 1rem; } }
+            padding: 1rem; }
+            .portafolio .filter ul li:last-child {
+              width: 100%; } }
       .portafolio .filter ul a {
         color: #FFFFFF;
         padding-right: 1rem;
@@ -824,6 +823,10 @@ body::-webkit-scrollbar-thumb {
       .portafolio .container .grid.mostrar-grid {
         display: inline-flex;
         justify-content: center; }
+        @media screen and (max-width: 767px) {
+          .portafolio .container .grid.mostrar-grid {
+            justify-content: flex-start;
+            margin-top: 8rem; } }
       .portafolio .container .grid img {
         width: 47.5%;
         height: 650px;
@@ -876,6 +879,9 @@ body::-webkit-scrollbar-thumb {
     .contact .grid:nth-child(4) {
       height: 50px;
       grid-column-start: span 2; }
+      @media screen and (max-width: 767px) {
+        .contact .grid:nth-child(4) {
+          height: 100px; } }
     .contact .grid.paragraphs {
       padding: 0 5rem; }
       .contact .grid.paragraphs .text {
@@ -903,6 +909,10 @@ body::-webkit-scrollbar-thumb {
         @media screen and (min-width: 1920px) {
           .contact .grid.socials ul a {
             font-size: 2rem; } }
+      @media screen and (max-width: 767px) {
+        .contact .grid.socials ul {
+          justify-content: center;
+          padding: 5rem 1rem 0 0; } }
       .contact .grid.socials ul a {
         color: #FFFFFF; }
         .contact .grid.socials ul a:hover {
