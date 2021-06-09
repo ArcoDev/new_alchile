@@ -401,7 +401,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   padding: 0 5rem;
   z-index: 1000;
-  transition: top .7s ease-out; }
+  transition: top 1s ease-out; }
   @media screen and (max-width: 767px) {
     .navbar {
       padding: 0 1.25rem;
@@ -764,7 +764,7 @@ body::-webkit-scrollbar-thumb {
             border: 1px solid #FFFFFF;
             padding: 1rem; }
             .portafolio .filter ul li:last-child {
-              width: 100%; } }
+              width: 98.3%; } }
       .portafolio .filter ul a {
         color: #FFFFFF;
         padding-right: 1rem;
@@ -789,7 +789,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-  .portafolio .title-protafolio h1 {
+  .portafolio .title-protafolio h2 {
     width: 60%;
     font-size: 4.3rem;
     letter-spacing: .3rem;
@@ -797,7 +797,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Roboto", sans-serif;
     padding-left: 7rem; }
     @media screen and (max-width: 767px) {
-      .portafolio .title-protafolio h1 {
+      .portafolio .title-protafolio h2 {
         width: 100%;
         font-size: 2rem;
         padding: 0 1rem 1rem 1rem; } }

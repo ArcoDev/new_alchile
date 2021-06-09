@@ -159,7 +159,7 @@
     <section class="portafolio">
         <div class="img-portafolio">
             <div class="title-protafolio">
-                <h1>"Nuestro trabajo con el factor picoso que nos distingue."</h1>
+                <h2>"Portafolio, algunos de nuestros trabajos con el factor picoso que nos distingue."</h2>
             </div>
         </div>
         <div class="filter">
