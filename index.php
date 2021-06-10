@@ -28,7 +28,7 @@
     <!-- Nav -->
     <nav id="box-nav" class="navbar">
         <div class="icon">
-            <img src="src/icons/alchile.svg" alt="">
+           <a href="index.php"><img src="src/icons/alchile.svg" alt=""> </a>
         </div>
         <div id="menu" class="menu">
             <i id="bars" class="fas fa-bars"></i>
@@ -41,8 +41,6 @@
         <div class="layer">
             <div class="title-header">
                 <h1>We Make Good Shit</h1>
-                <!--<div class="line line-1">1</div>
-                    <div class="line line-2">2</div>-->
             </div>
         </div>
         <div id="overlay">

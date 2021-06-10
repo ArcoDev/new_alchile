@@ -56,7 +56,7 @@
                 color: $transparente;
                 font-family: $titulo;
                 line-height: 1.3;
-                transition: all .4s ease-out;
+                transition: color .4s ease-out;
                 &:hover {
                     color: $blanco;
                     font-weight: $semiBold;
