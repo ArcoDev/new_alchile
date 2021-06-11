@@ -320,7 +320,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  transition: all 1s ease-in; }
+  transition: 1s ease-in; }
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -513,12 +513,9 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../img/fondo-overlay.webp");
-  transition: 1s ease-out;
-  animation: animaOverlay 5s;
+  /*@include backgroundIMG(cover);
+    background-image: url('../img/fondo-overlay.webp');*/
+  animation: animaOverlay 6s;
   z-index: 501;
   overflow-y: hidden !important; }
 
@@ -526,26 +523,30 @@ body::-webkit-scrollbar-thumb {
   0% {
     left: -120%;
     top: 0;
-    background: #594590; }
+    background: #342163; }
   25% {
     left: 100%;
     top: 0;
-    background: #594590; }
+    background: #342163; }
   50% {
     left: 0;
     top: 0;
-    background-color: #594590; } }
+    background-color: #342163; } }
 
 .quitarOverlay {
+  transition: 1s ease-out;
   transform: translate(-100%); }
 
 .layer-menu {
   width: 100%;
   height: 100vh;
-  background-color: #352268cc;
+  background: #352268cc;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden !important; }
+  overflow-y: hidden !important;
+  transform: translate(-100%); }
+  .layer-menu.quitarTransform {
+    transform: translate(0); }
   @media screen and (max-width: 767px) {
     .layer-menu {
       justify-content: center; } }

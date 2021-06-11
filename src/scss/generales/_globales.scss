@@ -15,7 +15,7 @@ html {
 body {
     font-family: $textos;
     overflow-x: hidden;
-    transition: all 1s ease-in;
+    transition: 1s ease-in;
 } 
 body::-webkit-scrollbar {
     width: 10px;

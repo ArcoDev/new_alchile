@@ -2,10 +2,9 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    @include backgroundIMG(cover);
-    background-image: url('../img/fondo-overlay.webp');
-    transition: 1s ease-out;
-    animation: animaOverlay 5s;
+    /*@include backgroundIMG(cover);
+    background-image: url('../img/fondo-overlay.webp');*/
+    animation: animaOverlay 6s;
     z-index: 501;
     overflow-y: hidden !important;
 }
@@ -14,34 +13,42 @@
     0% {
         left: -120%;
         top: 0;
-        background: $morado;
+        background: $moradoBlack;
+
     }
 
     25% {
         left: 100%;
         top: 0;
-        background: $morado;
+        background: $moradoBlack;
     }
 
     50% {
         left: 0;
         top: 0;
-        background-color: $morado;
-
+        background-color: $moradoBlack;
     }
+
 }
 
 .quitarOverlay {
+    transition: 1s ease-out;
     transform: translate(-100%);
+
 }
 
 .layer-menu {
     width: 100%;
     height: 100vh;
-    background-color: $layerMenu;
+    background: $layerMenu;
     display: flex;
     flex-direction: column;
     overflow-y: hidden !important;
+    transform: translate(-100%);
+
+    &.quitarTransform {
+        transform: translate(0);
+    }
 
     @include movil {
         justify-content: center;
