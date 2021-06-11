@@ -2,7 +2,6 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
 
 *,
@@ -15,11 +14,8 @@ html {
 }
 body {
     font-family: $textos;
-    //background-color: $morado;
-    //animation: background-body 5s ease-out infinite;
     overflow-x: hidden;
     transition: all 1s ease-in;
-    
 } 
 body::-webkit-scrollbar {
     width: 10px;

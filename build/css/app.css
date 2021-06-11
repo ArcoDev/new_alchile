@@ -339,9 +339,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   background: #5b37c7;
   box-shadow: 0 4px 6px 0 rgba(187, 129, 13, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  animation: up 1s ease-out infinite; }
+  animation: up 1s ease-out infinite;
+  transition: background .5 ease-out; }
   .up.invisible {
     display: none; }
+  .up:hover {
+    background: #7049db; }
 
 @keyframes up {
   50% {
@@ -514,10 +517,10 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/fondo-overlay.webp");
-  transition: all 1s ease-out;
+  transition: 1s ease-out;
   animation: animaOverlay 5s;
   z-index: 501;
-  overflow: hidden; }
+  overflow-y: hidden !important; }
 
 @keyframes animaOverlay {
   0% {
@@ -542,10 +545,16 @@ body::-webkit-scrollbar-thumb {
   background-color: #352268cc;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
+  overflow-y: hidden !important; }
+  @media screen and (max-width: 767px) {
+    .layer-menu {
+      justify-content: center; } }
   .layer-menu .items {
     padding-top: 10rem;
     padding-left: 8rem; }
+    @media screen and (max-width: 767px) {
+      .layer-menu .items {
+        padding-left: 0; } }
     @media screen and (min-width: 1920px) {
       .layer-menu .items {
         padding-top: 15rem;
@@ -562,17 +571,28 @@ body::-webkit-scrollbar-thumb {
       @media screen and (min-width: 1920px) {
         .layer-menu .items .link a {
           font-size: 1.5rem; } }
+      @media screen and (max-width: 767px) {
+        .layer-menu .items .link a {
+          color: #FFFFFF; } }
     .layer-menu .items .link span {
       font-size: 9rem;
       margin-left: 2.5rem; }
       @media screen and (min-width: 1920px) {
         .layer-menu .items .link span {
           font-size: 10rem; } }
+      @media screen and (max-width: 767px) {
+        .layer-menu .items .link span {
+          font-size: 6rem;
+          line-height: 1.75; } }
   .layer-menu .socials ul {
     display: flex;
     gap: 5px;
     justify-content: flex-end;
     padding: 5rem 3rem 0 0; }
+    @media screen and (max-width: 767px) {
+      .layer-menu .socials ul {
+        justify-content: center;
+        padding: 3rem 0 0 0; } }
     @media screen and (min-width: 1920px) {
       .layer-menu .socials ul {
         padding: 15rem 3rem 0 0; } }
@@ -582,6 +602,10 @@ body::-webkit-scrollbar-thumb {
       font-family: "Spectral", serif; }
       .layer-menu .socials ul a:hover {
         color: #FFFFFF; }
+      @media screen and (max-width: 767px) {
+        .layer-menu .socials ul a {
+          font-size: 1.5rem;
+          color: #FFFFFF; } }
       @media screen and (min-width: 1920px) {
         .layer-menu .socials ul a {
           font-size: 2rem; } }
@@ -897,6 +921,10 @@ body::-webkit-scrollbar-thumb {
       gap: 5px;
       justify-content: flex-end;
       padding: 5rem 3rem 0 0; }
+      @media screen and (max-width: 767px) {
+        .contact .grid.socials ul {
+          justify-content: center;
+          padding: 3rem 0 0 0; } }
       @media screen and (min-width: 1920px) {
         .contact .grid.socials ul {
           padding: 15rem 3rem 0 0; } }
@@ -906,6 +934,10 @@ body::-webkit-scrollbar-thumb {
         font-family: "Spectral", serif; }
         .contact .grid.socials ul a:hover {
           color: #FFFFFF; }
+        @media screen and (max-width: 767px) {
+          .contact .grid.socials ul a {
+            font-size: 1.5rem;
+            color: #FFFFFF; } }
         @media screen and (min-width: 1920px) {
           .contact .grid.socials ul a {
             font-size: 2rem; } }

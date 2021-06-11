@@ -26,6 +26,10 @@
     gap: 5px;
     justify-content: flex-end;
     padding: $separacion $separacion - 2 0 0;
+    @include movil {
+        justify-content: center;
+        padding: 3rem 0 0 0;
+    }
     @include monitor {
         padding: $separacion *3 $separacion - 2 0 0;
     }
@@ -34,6 +38,10 @@
         font-size: 1.7rem;
         font-family: $titulo;
         &:hover {
+            color: $blanco;
+        }
+        @include movil {
+            font-size: 1.5rem;
             color: $blanco;
         }
         @include monitor {

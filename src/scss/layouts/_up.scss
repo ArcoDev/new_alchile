@@ -8,8 +8,12 @@
     background: $up;
     box-shadow: 0 4px 6px 0 rgba(187, 129, 13, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     animation: up 1s ease-out infinite;
+    transition: background .5 ease-out;
     &.invisible {
         display: none;
+    }
+    &:hover{
+        background: $footer;
     }
     @keyframes up {
         50% {
