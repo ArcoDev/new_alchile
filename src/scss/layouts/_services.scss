@@ -22,7 +22,10 @@
             max-width: 100%;
             text-align: center;
         }
-
+        @include tablet {
+            max-width: 55%;
+        }
+       
         h2 {
             color: $blanco;
             font-size: 7rem;
@@ -33,6 +36,9 @@
             @include movil {
                 font-size: 4.2rem;
                 margin-bottom: $separacion - 3;
+            }
+            @include tablet {
+                font-size: 4rem;
             }
 
             span {
@@ -47,6 +53,9 @@
                     left: 1%;
                     top: 506%;
                 }
+                @include tablet {
+                    font-size: 5rem;
+                }
             }
         }
 
@@ -58,6 +67,9 @@
 
             @include movil {
                 display: none;
+            }
+            @include tablet {
+                font-size: 1.7rem;
             }
         }
 
@@ -115,6 +127,12 @@
 
         @include movil {
             left: -9%;
+        }
+        @include tablet {
+            left: 0;
+        }
+        @include monitor {
+            left: 25%;
         }
 
         li {

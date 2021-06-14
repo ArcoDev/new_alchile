@@ -8,11 +8,25 @@
     @include movil {
         padding: 0;
     }
+    @include tablet {
+        padding: 0;
+    }
 
     .grid {
         height: 250px;
 
         @include movil {
+            height: 200px;
+
+            &:nth-child(1) {
+                grid-column-start: span 2;
+            }
+
+            &:nth-child(2) {
+                grid-column-start: span 2;
+            }
+        }
+        @include tablet {
             height: 200px;
 
             &:nth-child(1) {
@@ -35,6 +49,9 @@
             @include movil {
                 height: 100px;
             }
+            @include tablet {
+                height: 120px;
+            }
         }
 
         &.paragraphs {
@@ -48,6 +65,9 @@
 
                 @include movil {
                     font-size: 3rem;
+                }
+                @include tablet {
+                    font-size: 4rem;
                 }
             }
         }
@@ -72,8 +92,11 @@
         &.info-contact {
             display: grid;
             place-items: center;
-
-            .action {
+            @include tablet {
+                place-items: unset;
+                padding-left: $separacion;
+            }
+            .action { 
                 width: 40%;
 
                 @include movil {

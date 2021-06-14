@@ -410,6 +410,11 @@ body::-webkit-scrollbar-thumb {
       padding: 0 1.25rem;
       background: #594590;
       box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19); } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+      padding: 0 1.25rem;
+      background: #594590;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19); } }
   .navbar .icon {
     width: 95%; }
     .navbar .icon img {
@@ -440,10 +445,6 @@ body::-webkit-scrollbar-thumb {
   .navbar #close {
     display: none; }
 
-/*.anima-navbar {
-    transition: all .5s ease-out;
-    transform: translate3d(0px, -100%, 0px);
-}*/
 .title-header {
   width: 20%;
   margin-left: 20%;
@@ -451,8 +452,8 @@ body::-webkit-scrollbar-thumb {
   @media screen and (max-width: 767px) {
     .title-header {
       margin-left: 15%;
-      margin-top: 50%; } }
-  @media screen and (max-width: 768px) {
+      margin-top: 30%; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     .title-header {
       margin-top: 30%; } }
   .title-header h1 {
@@ -465,10 +466,10 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .title-header h1 {
         font-size: 10rem; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       .title-header h1 {
-        font-size: 10rem; } }
-    @media screen and (min-width: 1920px) {
+        font-size: 14rem; } }
+    @media screen and (min-width: 1440px) {
       .title-header h1 {
         font-size: 15rem; } }
 
@@ -490,10 +491,10 @@ body::-webkit-scrollbar-thumb {
       flex-wrap: wrap;
       padding: 0;
       gap: 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     .about {
       padding: 10px;
-      gap: 12px; } }
+      gap: 10px; } }
   .about .description {
     position: relative;
     width: 60%;
@@ -508,6 +509,9 @@ body::-webkit-scrollbar-thumb {
         width: 95%;
         font-size: 1.5rem;
         margin: 0 auto; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .about .description {
+        margin-left: -5%; } }
 
 .overlay {
   position: fixed;
@@ -561,7 +565,7 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .layer-menu .items {
         padding-left: 0; } }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1440px) {
       .layer-menu .items {
         padding-top: 15rem;
         padding-left: 15rem; } }
@@ -574,7 +578,7 @@ body::-webkit-scrollbar-thumb {
       .layer-menu .items .link a:hover {
         color: #FFFFFF;
         font-weight: 600; }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1440px) {
         .layer-menu .items .link a {
           font-size: 1.5rem; } }
       @media screen and (max-width: 767px) {
@@ -583,7 +587,7 @@ body::-webkit-scrollbar-thumb {
     .layer-menu .items .link span {
       font-size: 9rem;
       margin-left: 2.5rem; }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1440px) {
         .layer-menu .items .link span {
           font-size: 10rem; } }
       @media screen and (max-width: 767px) {
@@ -599,9 +603,9 @@ body::-webkit-scrollbar-thumb {
       .layer-menu .socials ul {
         justify-content: center;
         padding: 3rem 0 0 0; } }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1440px) {
       .layer-menu .socials ul {
-        padding: 15rem 3rem 0 0; } }
+        padding: 8rem 3rem 0 0; } }
     .layer-menu .socials ul a {
       color: #ffffff86;
       font-size: 1.7rem;
@@ -612,7 +616,7 @@ body::-webkit-scrollbar-thumb {
         .layer-menu .socials ul a {
           font-size: 1.5rem;
           color: #FFFFFF; } }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1440px) {
         .layer-menu .socials ul a {
           font-size: 2rem; } }
 
@@ -625,7 +629,7 @@ body::-webkit-scrollbar-thumb {
   @media screen and (max-width: 767px) {
     .txt-overlay {
       display: none; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     .txt-overlay {
       display: none; } }
   .txt-overlay h2 {
@@ -633,7 +637,7 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     text-align: right;
     font-family: "Spectral", serif; }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1440px) {
       .txt-overlay h2 {
         font-size: 4rem; } }
 
@@ -658,6 +662,9 @@ body::-webkit-scrollbar-thumb {
       .services .title-services {
         max-width: 100%;
         text-align: center; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .services .title-services {
+        max-width: 55%; } }
     .services .title-services h2 {
       color: #FFFFFF;
       font-size: 7rem;
@@ -668,6 +675,9 @@ body::-webkit-scrollbar-thumb {
         .services .title-services h2 {
           font-size: 4.2rem;
           margin-bottom: 2rem; } }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .services .title-services h2 {
+          font-size: 4rem; } }
       .services .title-services h2 span {
         font-size: 8rem;
         font-weight: 600;
@@ -680,6 +690,9 @@ body::-webkit-scrollbar-thumb {
             width: 100%;
             left: 1%;
             top: 506%; } }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          .services .title-services h2 span {
+            font-size: 5rem; } }
     .services .title-services p {
       color: #FFFFFF;
       font-size: 2rem;
@@ -688,6 +701,9 @@ body::-webkit-scrollbar-thumb {
       @media screen and (max-width: 767px) {
         .services .title-services p {
           display: none; } }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .services .title-services p {
+          font-size: 1.7rem; } }
     .services .title-services a {
       color: #FFFFFF;
       letter-spacing: 1.3px;
@@ -732,6 +748,12 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .services .img-thumb {
         left: -9%; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .services .img-thumb {
+        left: 0; } }
+    @media screen and (min-width: 1440px) {
+      .services .img-thumb {
+        left: 25%; } }
     .services .img-thumb li {
       display: inline-block;
       margin: 0 10px;
@@ -773,6 +795,9 @@ body::-webkit-scrollbar-thumb {
       .portafolio .filter {
         justify-content: center;
         padding: 0; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .portafolio .filter {
+        padding-right: 6.6rem; } }
     .portafolio .filter ul {
       display: flex;
       gap: 1rem; }
@@ -795,6 +820,9 @@ body::-webkit-scrollbar-thumb {
             padding: 1rem; }
             .portafolio .filter ul li:last-child {
               width: 98.3%; } }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          .portafolio .filter ul li {
+            font-size: 1.3rem; } }
       .portafolio .filter ul a {
         color: #FFFFFF;
         padding-right: 1rem;
@@ -831,6 +859,10 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         font-size: 2rem;
         padding: 0 1rem 1rem 1rem; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .portafolio .title-protafolio h2 {
+        width: 95%;
+        padding-left: 3rem; } }
   .portafolio .container {
     display: flex;
     flex-direction: column;
@@ -884,6 +916,9 @@ body::-webkit-scrollbar-thumb {
           .portafolio .container .grid img {
             width: 48%;
             height: 250px; } }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          .portafolio .container .grid img {
+            width: 49%; } }
 
 .contact {
   width: 100%;
@@ -894,9 +929,19 @@ body::-webkit-scrollbar-thumb {
   @media screen and (max-width: 767px) {
     .contact {
       padding: 0; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+      padding: 0; } }
   .contact .grid {
     height: 250px; }
     @media screen and (max-width: 767px) {
+      .contact .grid {
+        height: 200px; }
+        .contact .grid:nth-child(1) {
+          grid-column-start: span 2; }
+        .contact .grid:nth-child(2) {
+          grid-column-start: span 2; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       .contact .grid {
         height: 200px; }
         .contact .grid:nth-child(1) {
@@ -912,6 +957,9 @@ body::-webkit-scrollbar-thumb {
       @media screen and (max-width: 767px) {
         .contact .grid:nth-child(4) {
           height: 100px; } }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .contact .grid:nth-child(4) {
+          height: 120px; } }
     .contact .grid.paragraphs {
       padding: 0 5rem; }
       .contact .grid.paragraphs .text {
@@ -922,6 +970,9 @@ body::-webkit-scrollbar-thumb {
         @media screen and (max-width: 767px) {
           .contact .grid.paragraphs .text {
             font-size: 3rem; } }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          .contact .grid.paragraphs .text {
+            font-size: 4rem; } }
     .contact .grid.socials ul {
       display: flex;
       gap: 5px;
@@ -931,9 +982,9 @@ body::-webkit-scrollbar-thumb {
         .contact .grid.socials ul {
           justify-content: center;
           padding: 3rem 0 0 0; } }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1440px) {
         .contact .grid.socials ul {
-          padding: 15rem 3rem 0 0; } }
+          padding: 8rem 3rem 0 0; } }
       .contact .grid.socials ul a {
         color: #ffffff86;
         font-size: 1.7rem;
@@ -944,7 +995,7 @@ body::-webkit-scrollbar-thumb {
           .contact .grid.socials ul a {
             font-size: 1.5rem;
             color: #FFFFFF; } }
-        @media screen and (min-width: 1920px) {
+        @media screen and (min-width: 1440px) {
           .contact .grid.socials ul a {
             font-size: 2rem; } }
       @media screen and (max-width: 767px) {
@@ -958,6 +1009,10 @@ body::-webkit-scrollbar-thumb {
     .contact .grid.info-contact {
       display: grid;
       place-items: center; }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .contact .grid.info-contact {
+          place-items: unset;
+          padding-left: 5rem; } }
       .contact .grid.info-contact .action {
         width: 40%; }
         @media screen and (max-width: 767px) {

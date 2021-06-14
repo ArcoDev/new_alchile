@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alchile Studio</title>
-    <link rel="shortcut icon" href="src/icons/alchile.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="build/icons/alchile.ico" type="image/x-icon">
     <link rel="stylesheet" href="build/css/app.css">
     <!-- FONT AWESOME CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -28,7 +28,7 @@
     <!-- Nav -->
     <nav id="box-nav" class="navbar">
         <div class="icon">
-           <a href="index.php"><img src="src/icons/alchile.svg" alt=""> </a>
+           <a href="index.php"><img src="build/icons/alchile.svg" alt="Alchile Studio"> </a>
         </div>
         <div id="menu" class="menu">
             <i id="bars" class="fas fa-bars"></i>
@@ -37,7 +37,7 @@
     </nav>
     <!-- Header -->
     <header class="header">
-        <video src="src/video/header2.mp4" autoplay muted loop playsinline></video>
+        <video src="build/video/header2.mp4" autoplay muted loop playsinline></video>
         <div class="layer">
             <div class="title-header">
                 <h1>We Make Good Shit</h1>
@@ -56,17 +56,17 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#services">
                                 02 <span>Servicios</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#portafolio">
                                 03 <span>Portafolio</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#contact">
                                 04 <span>Contacto</span>
                             </a>
                         </li>
@@ -96,13 +96,13 @@
     </header>
     <!-- About -->
     <section id="about" class="about">
-        <img src="src/icons/alchile2.svg" alt="Alchile Studio">
+        <img src="build/icons/alchile2.svg" alt="Alchile Studio">
         <p class="description">
             Está conformado por un equipo creativo con el compromiso de atender a nuestros clientes, brindándoles servicios picantes de gran impacto. Comprometidos en brindar servicios y soluciones mediante un conjunto de disciplinas, cada una analizada y desarrollada acorde a las necesidades de nuestros clientes.
         </p>
     </section>
     <!-- Services -->
-    <section class="services">
+    <section id="services" class="services">
         <div id="circle" class="circle"></div>
         <div class="title-services">
             <h2>Hacemos cosas picantes como <span id="service">Diseño</span></h2>
@@ -154,7 +154,7 @@
     </section>
 
     <!-- Portafolio  -->
-    <section class="portafolio">
+    <section id="portafolio" class="portafolio">
         <div class="img-portafolio">
             <div class="title-protafolio">
                 <h2>"Portafolio, algunos de nuestros trabajos con el factor picoso que nos distingue."</h2>

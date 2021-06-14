@@ -40,7 +40,11 @@
         background: $morado;
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     }
-
+    @include tablet {
+        padding: 0 $separacion / 4;
+        background: $morado;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    }
     .icon {
         width: 95%;
 
@@ -84,10 +88,6 @@
     }
 }
 
-/*.anima-navbar {
-    transition: all .5s ease-out;
-    transform: translate3d(0px, -100%, 0px);
-}*/
 .title-header {
     width: 20%;
     margin-left: 20%;
@@ -95,7 +95,7 @@
 
     @include movil {
         margin-left: 15%;
-        margin-top: 50%;
+        margin-top: 30%;
     }
 
     @include tablet {
@@ -115,7 +115,7 @@
         }
 
         @include tablet {
-            font-size: 10rem;
+            font-size: 14rem;
         }
 
         @include monitor {
