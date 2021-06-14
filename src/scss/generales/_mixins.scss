@@ -25,13 +25,13 @@
     display: flex;
     gap: 5px;
     justify-content: flex-end;
-    padding: $separacion $separacion - 2 0 0;
+    padding: 2rem $separacion - 2 0 0;
     @include movil {
         justify-content: center;
         padding: 3rem 0 0 0;
     }
     @include monitor {
-        padding: $separacion *3 $separacion - 2 0 0;
+        padding: $separacion * 3 $separacion - 2 0 0;
     }
     a {
         color: $transparente;

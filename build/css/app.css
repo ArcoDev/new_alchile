@@ -513,11 +513,16 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 100%;
   height: 100vh;
-  /*@include backgroundIMG(cover);
-    background-image: url('../img/fondo-overlay.webp');*/
-  animation: animaOverlay 6s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/fondo-overlay.jpg");
+  transition: 1s ease-out;
   z-index: 501;
   overflow-y: hidden !important; }
+
+.animacionOverlay {
+  animation: animaOverlay 6s; }
 
 @keyframes animaOverlay {
   0% {
@@ -589,7 +594,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     gap: 5px;
     justify-content: flex-end;
-    padding: 5rem 3rem 0 0; }
+    padding: 2rem 3rem 0 0; }
     @media screen and (max-width: 767px) {
       .layer-menu .socials ul {
         justify-content: center;
@@ -921,7 +926,7 @@ body::-webkit-scrollbar-thumb {
       display: flex;
       gap: 5px;
       justify-content: flex-end;
-      padding: 5rem 3rem 0 0; }
+      padding: 2rem 3rem 0 0; }
       @media screen and (max-width: 767px) {
         .contact .grid.socials ul {
           justify-content: center;
