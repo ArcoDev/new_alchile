@@ -10,7 +10,7 @@ function changeCircle(color) {
 const service = document.getElementById('service');
 
 function txtServices() {
-    service.innerHTML = 'Publicidad'
+    service.innerHTML = 'Branding'
 }
 
 function txtServices2() {
@@ -26,7 +26,7 @@ function txtServices4() {
 }
 
 function txtServices5() {
-    service.innerHTML = 'Fotografia';
+    service.innerHTML = 'Fotografía';
 }
 
 function txtServices6() {

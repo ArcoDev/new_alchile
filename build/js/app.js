@@ -1206,7 +1206,6 @@ window.addEventListener('DOMContentLoaded', function () {
     const layer = document.querySelector('.layer-menu');
     if (bars) {
         bars.addEventListener('click', function () {
-            //overlay.style.transform = 'unset';
             overlay.classList.add('overlay');
             overlay.classList.remove('quitarOverlay');
             overlay.classList.add('animacionOverlay');
@@ -1273,7 +1272,7 @@ function changeCircle(color) {
 const service = document.getElementById('service');
 
 function txtServices() {
-    service.innerHTML = 'Publicidad'
+    service.innerHTML = 'Branding'
 }
 
 function txtServices2() {
@@ -1289,7 +1288,7 @@ function txtServices4() {
 }
 
 function txtServices5() {
-    service.innerHTML = 'Fotografia';
+    service.innerHTML = 'Fotografía';
 }
 
 function txtServices6() {

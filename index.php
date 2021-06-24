@@ -81,7 +81,7 @@
                             <li>Instagram /</li>
                         </a>
                         <a href="">
-                            <li>Whatsap /</li>
+                            <li>Whatsapp /</li>
                         </a>
                         <a href="">
                             <li>Correo /</li>
@@ -167,7 +167,7 @@
                     <span>|</span>
                 </li>
                 <li class="item">
-                    <a data-grid="2">Fotografia</a>
+                    <a data-grid="2">Fotografía</a>
                     <span>|</span>
                 </li>
                 <li class="item">
@@ -184,7 +184,7 @@
                     <span>|</span>
                 </li>
                 <li class="item">
-                    <a data-grid="6">Publicidad</a>
+                    <a data-grid="6">Branding</a>
                     <span>|</span>
                 </li>
                 <li class="item">
@@ -276,7 +276,7 @@
                 </a>
             </div>
         </div>
-        <div class="grid socials">
+        <div class="grid socials social-footer">
             <ul>
                 <a href="https://facebook.com/AlChileStudioMx/">
                     <li>Facebook /</li>

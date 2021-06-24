@@ -12,7 +12,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Lista de imagnes
+      Lista de imagenes
       <small>registrados en la base de datos de alchile studio</small>
     </h1>
   </section>
@@ -48,20 +48,22 @@
                       $error = $e->getMessage();
                       echo $error;
                     }
-                    while ($producto = $resultado->fetch_assoc()) {?>
+                    
+                    while ($imagenes = $resultado->fetch_assoc()) { ?>
                 <tr>
-                  <td><?php echo $producto['nombre'] ?></td>
+                  <td><?php echo $imagenes['nombre'] ?></td>
                   <td>
-                    <center><img loading="lazy" src="../../build/portafolio/<?php echo $producto['nombre']; ?>/<?php echo $producto['url_foto']; ?>"
-                        alt="Productos del catalo de amora" width="200" height="100"></center>
+                    <center>
+                      <img loading="lazy" src="../../build/portafolio/<?php echo $imagenes['nombre']; ?>/<?php echo $imagenes['url_foto']; ?>" alt="Portafolio de alchile studio" width="200" height="100">
+                    </center>
                   </td>
-                  <td><?php echo $producto['nombre_portafolio'] ?></td>
+                  <td><?php echo $imagenes['nombre_portafolio'] ?></td>
                   <td>
-                    <a href="editar-imagenes.php?id=<?php echo $producto['id_imagenes']?>"
+                    <a href="editar-imagenes.php?id=<?php echo $imagenes['id_imagenes'] ?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $producto['id_imagenes']?>" data-tipo="imagenes"
+                    <a href="#" data-id="<?php  echo $imagenes['id_imagenes'] ?>" data-tipo="imagenes"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>

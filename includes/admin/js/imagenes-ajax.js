@@ -2,9 +2,7 @@ $(document).ready(function() {
     /* Crear un usuario y mandar info a la BD */
     $('#guardar-producto-archivo').on('submit', function(e) {
         e.preventDefault();
-
         var datos = new FormData(this);
-
         $.ajax({
             type: $(this).attr('method'),
             data: datos,
@@ -61,12 +59,8 @@ $(document).ready(function() {
             cancelButtonColor: '#d33',
             confirmButtonText: 'Si! Eliminar',
             cancelButtonText: 'Cancelar'
-
         }).then(function(result) {
-            console.log(result);
             if (result.value) {
-                //console.log("ID:" + id);
-
                 $.ajax({
                     type: 'post',
                     data: {
@@ -76,7 +70,6 @@ $(document).ready(function() {
 
                     url: 'modelo-' + imagenes + '.php',
                     success: function(data) {
-                        //  console.log(data);
                         var resultado = JSON.parse(data);
                         console.log(resultado);
                         if (resultado.respuesta == 'exito') {

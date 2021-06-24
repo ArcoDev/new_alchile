@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', function () {
     const layer = document.querySelector('.layer-menu');
     if (bars) {
         bars.addEventListener('click', function () {
-            //overlay.style.transform = 'unset';
             overlay.classList.add('overlay');
             overlay.classList.remove('quitarOverlay');
             overlay.classList.add('animacionOverlay');

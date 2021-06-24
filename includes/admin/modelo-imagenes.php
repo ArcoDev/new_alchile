@@ -47,7 +47,7 @@ if($_POST['registro'] == 'nuevo') {
 }
 
 
-/*Actualizar Registro de usuario */
+/*Actualizar Registro de la imagen del portafolio */
 if($_POST['registro'] == 'actualizar') {
     
     $directorio = "../../build/portafolio/";
@@ -93,11 +93,11 @@ if($_POST['registro'] == 'actualizar') {
     die(json_encode($respuesta));
 }
 
-/*Eliminar usuario */
+/*Eliminar imagenes */
 if($_POST['registro'] == 'eliminar') { 
-    $id_borrar = $_POST['id'];
+    $id_borrar = $_POST['id_imagenes'];
     try {
-        $stmt = $con->prepare("DELETE FROM productos WHERE id_pro = ?");
+        $stmt = $con->prepare("DELETE FROM imagenes WHERE id_imagenes = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {

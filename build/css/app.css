@@ -469,7 +469,7 @@ body::-webkit-scrollbar-thumb {
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .title-header h1 {
         font-size: 14rem; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1680px) {
       .title-header h1 {
         font-size: 15rem; } }
 
@@ -565,7 +565,7 @@ body::-webkit-scrollbar-thumb {
     @media screen and (max-width: 767px) {
       .layer-menu .items {
         padding-left: 0; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1680px) {
       .layer-menu .items {
         padding-top: 15rem;
         padding-left: 15rem; } }
@@ -578,7 +578,7 @@ body::-webkit-scrollbar-thumb {
       .layer-menu .items .link a:hover {
         color: #FFFFFF;
         font-weight: 600; }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1680px) {
         .layer-menu .items .link a {
           font-size: 1.5rem; } }
       @media screen and (max-width: 767px) {
@@ -587,7 +587,7 @@ body::-webkit-scrollbar-thumb {
     .layer-menu .items .link span {
       font-size: 9rem;
       margin-left: 2.5rem; }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1680px) {
         .layer-menu .items .link span {
           font-size: 10rem; } }
       @media screen and (max-width: 767px) {
@@ -603,7 +603,7 @@ body::-webkit-scrollbar-thumb {
       .layer-menu .socials ul {
         justify-content: center;
         padding: 3rem 0 0 0; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1680px) {
       .layer-menu .socials ul {
         padding: 8rem 3rem 0 0; } }
     .layer-menu .socials ul a {
@@ -616,7 +616,7 @@ body::-webkit-scrollbar-thumb {
         .layer-menu .socials ul a {
           font-size: 1.5rem;
           color: #FFFFFF; } }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1680px) {
         .layer-menu .socials ul a {
           font-size: 2rem; } }
 
@@ -637,7 +637,7 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     text-align: right;
     font-family: "Spectral", serif; }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1680px) {
       .txt-overlay h2 {
         font-size: 4rem; } }
 
@@ -742,7 +742,7 @@ body::-webkit-scrollbar-thumb {
           margin-top: -10rem; } }
   .services .img-thumb {
     position: absolute;
-    left: 17%;
+    left: 18%;
     bottom: 3%;
     display: flex; }
     @media screen and (max-width: 767px) {
@@ -751,7 +751,7 @@ body::-webkit-scrollbar-thumb {
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .services .img-thumb {
         left: 0; } }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1680px) {
       .services .img-thumb {
         left: 25%; } }
     .services .img-thumb li {
@@ -982,7 +982,7 @@ body::-webkit-scrollbar-thumb {
         .contact .grid.socials ul {
           justify-content: center;
           padding: 3rem 0 0 0; } }
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 1680px) {
         .contact .grid.socials ul {
           padding: 8rem 3rem 0 0; } }
       .contact .grid.socials ul a {
@@ -995,7 +995,7 @@ body::-webkit-scrollbar-thumb {
           .contact .grid.socials ul a {
             font-size: 1.5rem;
             color: #FFFFFF; } }
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1680px) {
           .contact .grid.socials ul a {
             font-size: 2rem; } }
       @media screen and (max-width: 767px) {
@@ -1004,6 +1004,8 @@ body::-webkit-scrollbar-thumb {
           padding: 5rem 1rem 0 0; } }
       .contact .grid.socials ul a {
         color: #FFFFFF; }
+        .contact .grid.socials ul a li {
+          font-family: "Roboto", sans-serif !important; }
         .contact .grid.socials ul a:hover {
           color: #F6BB31; }
     .contact .grid.info-contact {

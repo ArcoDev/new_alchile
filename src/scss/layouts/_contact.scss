@@ -82,7 +82,9 @@
 
             a {
                 color: $blanco;
-
+                li{
+                    font-family: $textos!important;
+                }
                 &:hover {
                     color: $amarillo;
                 }
