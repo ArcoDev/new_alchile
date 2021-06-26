@@ -689,7 +689,7 @@ body::-webkit-scrollbar-thumb {
             position: absolute;
             width: 100%;
             left: 1%;
-            top: 506%; } }
+            top: 450%; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
           .services .title-services h2 span {
             font-size: 5rem; } }
@@ -762,11 +762,11 @@ body::-webkit-scrollbar-thumb {
       .services .img-thumb li:hover {
         transform: translateY(-15px); }
     .services .img-thumb img {
-      max-width: 60%;
+      max-width: 100%;
       max-height: 100%; }
       @media screen and (max-width: 767px) {
         .services .img-thumb img {
-          max-width: 100%; } }
+          max-width: 150%; } }
   .services .circle {
     position: absolute;
     top: 0;
@@ -891,11 +891,10 @@ body::-webkit-scrollbar-thumb {
             margin-top: 8rem; } }
       .portafolio .container .grid img {
         width: 47.5%;
-        height: 650px;
-        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+        height: 450px;
+        object-fit: contain;
         -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        object-fit: cover; }
+        animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @-webkit-keyframes slide-top {
   0% {
@@ -915,7 +914,8 @@ body::-webkit-scrollbar-thumb {
         @media screen and (max-width: 767px) {
           .portafolio .container .grid img {
             width: 48%;
-            height: 250px; } }
+            height: 48%;
+            object-fit: contain; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
           .portafolio .container .grid img {
             width: 49%; } }
@@ -928,7 +928,8 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(2, 1fr); }
   @media screen and (max-width: 767px) {
     .contact {
-      padding: 0; } }
+      padding: 0;
+      margin-top: -8rem; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .contact {
       padding: 0; } }

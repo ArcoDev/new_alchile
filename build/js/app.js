@@ -1272,32 +1272,32 @@ function changeCircle(color) {
 const service = document.getElementById('service');
 
 function txtServices() {
-    service.innerHTML = 'Branding'
+    service.innerHTML = 'Fotografía'
 }
 
 function txtServices2() {
-    service.innerHTML = 'Marketing';
-}
-
-function txtServices3() {
     service.innerHTML = 'Social Media';
 }
 
+function txtServices3() {
+    service.innerHTML = 'Video MKT';
+}
+
 function txtServices4() {
-    service.innerHTML = 'Tomas con dron';
+    service.innerHTML = 'Marketing Digital';
 }
 
 function txtServices5() {
-    service.innerHTML = 'Fotografía';
+    service.innerHTML = 'Branding';
 }
 
 function txtServices6() {
-    service.innerHTML = 'Video';
+    service.innerHTML = 'Toma con Dron';
+}
+function txtServices6() {
+    service.innerHTML = 'Diseño';
 }
 
-function txtServices7() {
-    service.innerHTML = 'Redes Sociales';
-}
 
 window.onscroll = function () {
     const scroll = window.scrollY;

@@ -112,43 +112,45 @@
             <a href="#contact">Hablemos</a>
         </div>
         <div class="img-big">
-            <img src="build/img/grande1.webp" alt="" class="big">
+            <img src="build/img/diseño-gr.png" alt="Nuestros Servicios" class="big">
         </div>
         <ul class="img-thumb">
             <li>
-                <img src="build/img/chica1.webp"
-                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#5f4691'); txtServices();"
+                <img src="build/img/foto-ch.png"
+                    onclick="imgSlider('build/img/foto-gr.png');changeCircle('#5f4691'); txtServices();"
                     alt="Nuestros Servicios">
             </li>
             <li>
-                <img src="build/img/chica2.webp"
-                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#2fa2a8'); txtServices2();"
+                <img src="build/img/socialM-ch.png"
+                    onclick="imgSlider('build/img/socialM-gr.png');changeCircle('#2fa2a8'); txtServices2();"
                     alt="Nuestros Servicios">
             </li>
             <li>
-                <img src="build/img/chica3.webp"
-                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#ce297a'); txtServices3();"
+                <img src="build/img/video-ch.png"
+                    onclick="imgSlider('build/img/video-gr.png');changeCircle('#B22777'); txtServices3();"
                     alt="Nuestros Servicios">
             </li>
             <li>
-                <img src="build/img/chica1.webp"
-                    onclick="imgSlider('build/img/grande1.webp');changeCircle('#2fa2a8'); txtServices4();"
+                <img src="build/img/mkt-ch.png"
+                    onclick="imgSlider('build/img/mkt-gr.png');changeCircle('#5f4691'); txtServices4();"
                     alt="Nuestros Servicios">
             </li>
             <li>
-                <img src="build/img/chica2.webp"
-                    onclick="imgSlider('build/img/grande2.webp');changeCircle('#ce297a'); txtServices5();"
+                <img src="build/img/branding-ch.png"
+                    onclick="imgSlider('build/img/branding-gr.png');changeCircle('#B22777'); txtServices5();"
                     alt="Nuestros Servicios">
             </li>
             <li>
-                <img src="build/img/chica3.webp"
-                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#5f4691'); txtServices6();"
+                <img src="build/img/dron-ch.png"
+                    onclick="imgSlider('build/img/dron-gr.png');changeCircle('#2fa2a8'); txtServices6();"
                     alt="Nuestros Servicios">
             </li>
             <li>
-                <img src="build/img/chica3.webp"
-                    onclick="imgSlider('build/img/grande3.webp');changeCircle('#2fa2a8'); txtServices7();"
+                <img src="build/img/diseño-ch.png"
+                    onclick="imgSlider('build/img/diseño-gr.png');changeCircle('#B22777'); txtServices7();"
                     alt="Nuestros Servicios">
+            </li>
+            <li>
             </li>
         </ul>
     </section>
