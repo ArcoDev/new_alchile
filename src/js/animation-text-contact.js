@@ -1151,8 +1151,8 @@
 //INICIAR typed
 var typed = new Typed('.text', {
     strings: [
-        "Si deseas tu diseño para tu marca personal, echame un mensaje!",
-        "Si ya tienes tu marca y quieres potenciarla, echame un mensaje!",
+        "Si deseas tu diseño para tu marca personal, échame un mensaje!",
+        "Si ya tienes tu marca y quieres potenciarla, échame un mensaje!",
         "Te dejo mis datos de contacto, estoy disponible 24/7 para ti..."
     ],
     typeSpeed: 80,

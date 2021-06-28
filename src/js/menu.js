@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', function () {
         close.addEventListener('click', function () {
             setTimeout(function () {
                 overlay.classList.remove('overlay');
-            }, 2000);
+            }, 1500);
             overlay.classList.remove('animacionOverlay');
             overlay.classList.add('quitarOverlay');
             close.style.display = 'none';
@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function () {
             setTimeout(function () {
                 overlay.classList.remove('overlay');
-            }, 2000);
+            }, 1500);
             overlay.classList.remove('animacionOverlay');
             overlay.classList.add('quitarOverlay');
             close.style.display = 'none';

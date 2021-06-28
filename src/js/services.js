@@ -18,11 +18,11 @@ function txtServices2() {
 }
 
 function txtServices3() {
-    service.innerHTML = 'Video MKT';
+    service.innerHTML = 'Video';
 }
 
 function txtServices4() {
-    service.innerHTML = 'Marketing Digital';
+    service.innerHTML = 'Marketing';
 }
 
 function txtServices5() {
@@ -32,7 +32,7 @@ function txtServices5() {
 function txtServices6() {
     service.innerHTML = 'Toma con Dron';
 }
-function txtServices6() {
+function txtServices7() {
     service.innerHTML = 'Diseño';
 }
 

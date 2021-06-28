@@ -106,9 +106,7 @@
         <div id="circle" class="circle"></div>
         <div class="title-services">
             <h2>Hacemos cosas picantes como <span id="service">Diseño</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptas vel ex laboriosam sequi,
-                dolor exercitationem ipsum nisi, consectetur facere aspernatur, consequatur fugit. Laudantium in
-                voluptates odio reiciendis vero temporibus?</p>
+            <p>Nuestros servicios siempre con el factor picoso que nos distingue.</p>
             <a href="#contact">Hablemos</a>
         </div>
         <div class="img-big">
@@ -157,12 +155,10 @@
 
     <!-- Portafolio  -->
     <section id="portafolio" class="portafolio">
-        <div class="img-portafolio">
-            <div class="title-protafolio">
-                <h2>"Portafolio, algunos de nuestros trabajos con el factor picoso que nos distingue."</h2>
-            </div>
-        </div>
         <div class="filter">
+            <div class="title-portafolio">
+                <h2>Portafolio</h2>
+            </div>
             <ul>
                 <li class="item">
                     <a data-grid="1">Diseño</a>

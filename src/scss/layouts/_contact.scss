@@ -145,10 +145,12 @@
                 border-radius: 1rem;
                 letter-spacing: 1px;
                 transition: color .4s ease-out;
-
                 &:hover {
                     color: $amarillo;
                     border-bottom: 2px solid $amarillo;
+                }
+                @include movil {
+                    font-size: 1.3rem;
                 }
             }
         }

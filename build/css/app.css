@@ -793,30 +793,51 @@ body::-webkit-scrollbar-thumb {
     padding-right: 5.5rem; }
     @media screen and (max-width: 767px) {
       .portafolio .filter {
+        flex-direction: column;
         justify-content: center;
         padding: 0; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .portafolio .filter {
         padding-right: 6.6rem; } }
+    .portafolio .filter .title-portafolio {
+      width: 20%; }
+      .portafolio .filter .title-portafolio h2 {
+        font-size: 5rem;
+        letter-spacing: .3rem;
+        color: #FFFFFF;
+        font-family: "Roboto", sans-serif; }
+      @media screen and (max-width: 767px) {
+        .portafolio .filter .title-portafolio {
+          width: 100%;
+          text-align: center;
+          font-size: 2rem;
+          padding: 0 1rem .5rem 1rem; } }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .portafolio .filter .title-portafolio {
+          width: 95%;
+          padding-left: 3rem; } }
     .portafolio .filter ul {
+      width: 70%;
       display: flex;
+      justify-content: flex-end;
       gap: 1rem; }
       @media screen and (max-width: 767px) {
         .portafolio .filter ul {
+          width: 100%;
           justify-content: space-evenly;
           align-items: center;
           flex-wrap: wrap;
           padding: 0 1rem;
-          text-align: center; } }
+          text-align: center;
+          margin-top: -2rem; } }
       .portafolio .filter ul li {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         text-align: center; }
         @media screen and (max-width: 767px) {
           .portafolio .filter ul li {
             width: 30%;
             font-size: 1.1rem;
             font-weight: 600;
-            border: 1px solid #FFFFFF;
             padding: 1rem; }
             .portafolio .filter ul li:last-child {
               width: 98.3%; } }
@@ -847,22 +868,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-  .portafolio .title-protafolio h2 {
-    width: 60%;
-    font-size: 4.3rem;
-    letter-spacing: .3rem;
-    color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
-    padding-left: 7rem; }
-    @media screen and (max-width: 767px) {
-      .portafolio .title-protafolio h2 {
-        width: 100%;
-        font-size: 2rem;
-        padding: 0 1rem 1rem 1rem; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      .portafolio .title-protafolio h2 {
-        width: 95%;
-        padding-left: 3rem; } }
   .portafolio .container {
     display: flex;
     flex-direction: column;
@@ -1052,6 +1057,9 @@ body::-webkit-scrollbar-thumb {
         .contact .grid.notice a:hover {
           color: #F6BB31;
           border-bottom: 2px solid #F6BB31; }
+        @media screen and (max-width: 767px) {
+          .contact .grid.notice a {
+            font-size: 1.3rem; } }
 
 .footer {
   padding: 1.66667rem;

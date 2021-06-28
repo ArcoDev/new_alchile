@@ -1151,8 +1151,8 @@
 //INICIAR typed
 var typed = new Typed('.text', {
     strings: [
-        "Si deseas tu diseño para tu marca personal, echame un mensaje!",
-        "Si ya tienes tu marca y quieres potenciarla, echame un mensaje!",
+        "Si deseas tu diseño para tu marca personal, échame un mensaje!",
+        "Si ya tienes tu marca y quieres potenciarla, échame un mensaje!",
         "Te dejo mis datos de contacto, estoy disponible 24/7 para ti..."
     ],
     typeSpeed: 80,
@@ -1220,7 +1220,7 @@ window.addEventListener('DOMContentLoaded', function () {
         close.addEventListener('click', function () {
             setTimeout(function () {
                 overlay.classList.remove('overlay');
-            }, 2000);
+            }, 1500);
             overlay.classList.remove('animacionOverlay');
             overlay.classList.add('quitarOverlay');
             close.style.display = 'none';
@@ -1231,7 +1231,7 @@ window.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function () {
             setTimeout(function () {
                 overlay.classList.remove('overlay');
-            }, 2000);
+            }, 1500);
             overlay.classList.remove('animacionOverlay');
             overlay.classList.add('quitarOverlay');
             close.style.display = 'none';
@@ -1280,11 +1280,11 @@ function txtServices2() {
 }
 
 function txtServices3() {
-    service.innerHTML = 'Video MKT';
+    service.innerHTML = 'Video';
 }
 
 function txtServices4() {
-    service.innerHTML = 'Marketing Digital';
+    service.innerHTML = 'Marketing';
 }
 
 function txtServices5() {
@@ -1294,7 +1294,7 @@ function txtServices5() {
 function txtServices6() {
     service.innerHTML = 'Toma con Dron';
 }
-function txtServices6() {
+function txtServices7() {
     service.innerHTML = 'Diseño';
 }
 

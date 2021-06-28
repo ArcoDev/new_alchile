@@ -16,39 +16,70 @@
         padding-right: 5.5rem;
 
         @include movil {
+            flex-direction: column;
             justify-content: center;
             padding: 0;
         }
+
         @include tablet {
             padding-right: 6.6rem;
         }
 
+        .title-portafolio {
+            width: 20%;
+            h2 {
+
+                font-size: 5rem;
+                letter-spacing: .3rem;
+                color: $blanco;
+                font-family: $textos;
+            }
+
+            @include movil {
+                width: 100%;
+                text-align: center;
+                font-size: 2rem;
+                padding: 0 1rem .5rem 1rem;
+            }
+
+            @include tablet {
+                width: 95%;
+                padding-left: 3rem;
+            }
+        }
+
         ul {
+            width: 70%;
             display: flex;
+            justify-content: flex-end;
             gap: 1rem;
 
             @include movil {
+                width: 100%;
                 justify-content: space-evenly;
                 align-items: center;
                 flex-wrap: wrap;
                 padding: 0 1rem;
                 text-align: center;
+                margin-top: -2rem;
             }
 
             li {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
                 text-align: center;
 
                 @include movil {
                     width: 30%;
                     font-size: 1.1rem;
                     font-weight: $semiBold;
-                    border: 1px solid $blanco;
+                    //border: 1px solid $blanco;
                     padding: 1rem;
+
                     &:last-child {
                         width: 98.3%;
                     }
                 }
+
                 @include tablet {
                     font-size: 1.3rem;
                 }
@@ -92,30 +123,14 @@
         width: 100%;
     }
 
-    .title-protafolio h2 {
-        width: 60%;
-        font-size: 4.3rem;
-        letter-spacing: .3rem;
-        color: $blanco;
-        font-family: $textos;
-        padding-left: $separacion + 2;
 
-        @include movil {
-            width: 100%;
-            font-size: 2rem;
-            padding: 0 1rem 1rem 1rem;
-        }
-        @include tablet {
-            width: 95%;
-            padding-left: 3rem;
-        }
-    }
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10rem;
+
         @include movil {
             margin-top: 3rem;
         }
@@ -136,12 +151,13 @@
             &.mostrar-grid {
                 display: inline-flex;
                 justify-content: center;
+
                 @include movil {
                     justify-content: flex-start;
                     margin-top: 8rem;
                 }
             }
-            
+
             img {
                 width: 47.5%;
                 height: 450px;
@@ -178,6 +194,7 @@
                     height: 48%;
                     object-fit: contain;
                 }
+
                 @include tablet {
                     width: 49%;
                 }

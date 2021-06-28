@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-06-2021 a las 20:51:05
+-- Tiempo de generación: 26-06-2021 a las 18:53:18
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -39,10 +39,21 @@ CREATE TABLE `imagenes` (
 --
 
 INSERT INTO `imagenes` (`id_imagenes`, `nombre`, `url_foto`, `id_categoria`) VALUES
-(1, 'Diseño', '1.jpg', 1),
-(2, 'Fotografia', '1.jpg', 2),
-(3, 'Social Media', '2.jpg', 3),
-(4, 'Diseño', '2.jpg', 1);
+(1, 'Fotografia', 'FOTOGRAFIA.jpg', 2),
+(2, 'MKT', 'MKT-DIGITAL.png', 5),
+(3, 'MKT', 'MKT-DIGITAL2.png', 5),
+(4, 'MKT', 'MKT-DIGITAL3.png', 5),
+(5, 'Branding', 'publicidad-balam-bicicletas.jpg', 6),
+(6, 'Branding', 'publicidad-cla.jpg', 6),
+(7, 'Dron', 'dron-combugas1.jpg', 7),
+(9, 'Video', 'video-acuario.jpg', 4),
+(11, 'Video', 'video-aw.jpg', 4),
+(12, 'Video', 'video-blackwolf.jpg', 4),
+(13, 'Video', 'video-apromsa.png', 4),
+(14, 'Social Media', 'SOCIAL-MEDIA.png', 3),
+(15, 'Dron', 'dron-combugas2.jpg', 7),
+(16, 'Diseño', '1.jpg', 1),
+(17, 'Diseño', '2.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -61,11 +72,13 @@ CREATE TABLE `portafolio` (
 --
 
 INSERT INTO `portafolio` (`id_cat`, `nombre_portafolio`, `editado`) VALUES
-(1, 'Diseño', '2021-06-07 12:40:28'),
-(2, 'Fotografía', '2021-06-07 12:40:38'),
-(3, 'Social Media', '2021-06-07 12:40:45'),
-(4, 'MKT Digital', '2021-06-07 12:41:00'),
-(5, 'Toma con dron', '2021-06-07 12:41:10');
+(1, 'Diseño', '2021-06-16 10:18:51'),
+(2, 'Fotografía', '2021-06-16 10:19:03'),
+(3, 'Social Media', '2021-06-16 10:19:25'),
+(4, 'Video Marketing', '2021-06-16 10:19:41'),
+(5, 'MKT Digital', '2021-06-16 10:19:50'),
+(6, 'Branding', '2021-06-16 10:19:58'),
+(7, 'Toma Con Dron', '2021-06-16 10:20:06');
 
 -- --------------------------------------------------------
 
@@ -122,13 +135,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `imagenes`
 --
 ALTER TABLE `imagenes`
-  MODIFY `id_imagenes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_imagenes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `portafolio`
 --
 ALTER TABLE `portafolio`
-  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
