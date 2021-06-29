@@ -27,7 +27,7 @@ $(document).ready(function() {
                 }
                 if (resultado.respuesta === 'actualizar') {
                     swal(
-                        'El producto!',
+                        'La categoría!',
                         'Se edito correctamente.',
                         'success'
                     );
@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('.borrar_registro').on('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('data-id');
-        var categoria = $(this).attr('data-tipo');
+        var imagenes = $(this).attr('data-tipo');
         swal({
             title: 'Estas seguro?',
             text: "Esta acción no se puede revertir!",
@@ -52,10 +52,7 @@ $(document).ready(function() {
             cancelButtonText: 'Cancelar'
 
         }).then(function(result) {
-            console.log(result);
             if (result.value) {
-                //console.log("ID:" + id);
-
                 $.ajax({
                     type: 'post',
                     data: {
@@ -63,15 +60,13 @@ $(document).ready(function() {
                         'registro': 'eliminar'
                     },
 
-                    url: 'modelo-' + categoria + '.php',
+                    url: 'modelo-' + imagenes + '.php',
                     success: function(data) {
-                        //  console.log(data);
                         var resultado = JSON.parse(data);
-                        console.log(resultado);
-                        if (resultado.respuesta == 'exito') {
+                        if (resultado.respuesta == 'correcto') {
                             swal(
-                                'Eliminado!',
-                                'Registro eliminado',
+                                'Eliminada!',
+                                'categoria eliminada',
                                 'success'
                             );
                             jQuery("[data-id='" + resultado.id_eliminado + "'").parents('tr').remove();

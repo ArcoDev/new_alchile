@@ -63,7 +63,7 @@
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php  echo $imagenes['id_imagenes'] ?>" data-tipo="imagenes"
+                    <a href="#" data-id="<?php echo $imagenes['id_imagenes'] ?>" data-tipo="imagenes"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>

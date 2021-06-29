@@ -13,8 +13,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Categorias para los productos de black wolf
-      <small>llena el formulario para la categoria</small>
+      Categorias del portafolio
     </h1>
   </section>
 

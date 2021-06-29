@@ -95,14 +95,14 @@ if($_POST['registro'] == 'actualizar') {
 
 /*Eliminar imagenes */
 if($_POST['registro'] == 'eliminar') { 
-    $id_borrar = $_POST['id_imagenes'];
+    $id_borrar = $_POST['id'];
     try {
-        $stmt = $con->prepare("DELETE FROM imagenes WHERE id_imagenes = ?");
+        $stmt = $con->prepare("DELETE FROM portafolio WHERE id_cat = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {
             $respuesta = array(
-                'respuesta' => 'exito',
+                'respuesta' => 'correcto',
                 'id_eliminado' => $id_borrar
             );
         } else {

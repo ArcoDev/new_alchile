@@ -877,7 +877,7 @@ body::-webkit-scrollbar-thumb {
       .portafolio .container {
         margin-top: 3rem; } }
     .portafolio .container .grid {
-      width: 95%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -895,9 +895,9 @@ body::-webkit-scrollbar-thumb {
             justify-content: flex-start;
             margin-top: 8rem; } }
       .portafolio .container .grid img {
-        width: 47.5%;
-        height: 450px;
-        object-fit: contain;
+        width: 48%;
+        height: 100%;
+        object-fit: cover;
         -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 

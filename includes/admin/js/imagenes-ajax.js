@@ -20,8 +20,8 @@ $(document).ready(function() {
                 var resultado = data;
                 if (resultado.respuesta === 'exito') {
                     swal(
-                        'El producto!',
-                        'Se agrego correctamente.',
+                        'La imagen',
+                        'Se agrego correctamente!',
                         'success'
                     );
                     $('#loader').hide();
@@ -29,14 +29,14 @@ $(document).ready(function() {
                 } else {
                     swal(
                         'Ooops!',
-                        'No se puede cargar el producto',
+                        'No se puede cargar la imagen',
                         'error'
                     );
                 }
                 if (resultado.respuesta === 'actualizar') {
                     swal(
-                        'El producto!',
-                        'Se edito correctamente.',
+                        'La imagen',
+                        'Se edito correctamente!',
                         'success'
                     );
                     $('#loader').hide();
@@ -75,7 +75,7 @@ $(document).ready(function() {
                         if (resultado.respuesta == 'exito') {
                             swal(
                                 'Eliminado!',
-                                'Registro eliminado',
+                                'imgen eliminada',
                                 'success'
                             );
                             jQuery("[data-id='" + resultado.id_eliminado + "'").parents('tr').remove();

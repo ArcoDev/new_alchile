@@ -28,16 +28,16 @@ if($_POST['registro'] == 'nuevo') {
     }
     die(json_encode($respuesta));
 }
-/* Actualizar categoria del portafolio 
+/* Actualizar categoria del portafolio */
 if($_POST['registro'] == 'actualizar') {
     
     try {
         if (empty($_POST['nombre'])) {
-            $stmt = $con->prepare("UPDATE categorias SET nombre =?, editado = NOW() WHERE id_cat =?");
+            $stmt = $con->prepare("UPDATE portafolio SET nombre_portafolio = ?, editado = NOW() WHERE id_cat =?");
             $stmt->bind_param("si", $nombre, $id_registroEditar);
         } else {
             $id_registroEditar = $_POST["id_registro"];
-            $stmt = $con->prepare("UPDATE categorias SET nombre = ?, editado = NOW() WHERE id_cat = ?");
+            $stmt = $con->prepare("UPDATE portafolio SET nombre_portafolio = ?, editado = NOW() WHERE id_cat = ?");
             $stmt->bind_param("si", $nombre, $id_registroEditar);
         }
         $stmt->execute();
@@ -59,13 +59,13 @@ if($_POST['registro'] == 'actualizar') {
         );
     }
     die(json_encode($respuesta));
-}*/
+}
 
-/*Eliminar usuario 
+/*Eliminar usuario */
 if($_POST['registro'] == 'eliminar') { 
-    $id_borrar = $_POST['id'];
+    $id_borrar = $_POST['id_cat'];
     try {
-        $stmt = $con->prepare("DELETE FROM categorias WHERE id_cat = ?");
+        $stmt = $con->prepare("DELETE FROM portafolio WHERE id_cat = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {
@@ -84,4 +84,4 @@ if($_POST['registro'] == 'eliminar') {
         );
     }
     die(json_encode($respuesta));
-}*/
+}

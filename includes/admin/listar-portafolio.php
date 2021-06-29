@@ -50,11 +50,11 @@
                   <td><?php echo $categoria['id_cat'] ?></td>
                   <td><?php echo $categoria['nombre_portafolio'] ?></td>
                   <td>
-                    <a href="editar-portafolio.php?id=<?php echo $categoria['id_cat']?>"
+                  <a href="editar-portafolio.php?id=<?php echo $categoria['id_cat'] ?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $categoria['id_cat']?>" data-tipo="categorias"
+                    <a href="#" data-id="<?php echo $categoria['id_cat']?>" data-tipo="imagenes"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>

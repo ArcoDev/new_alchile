@@ -17,7 +17,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Productos black wolf
+      Nombre de las categoria del portafolio
     </h1>
   </section>
 
@@ -39,10 +39,10 @@
             <!-- form start -->
             <form role="form" name="guardar-categoria" id="guardar-categoria" method="post" action="modelo-portafolio.php">
               <div class="box-body">
-                <div class="form-group">
-                  <label for="foto">URL de la foto</label>
-                  <input autocomplete="off" type="text" class="form-control" id="foto" name="nombre"
-                  placeholder="Ingresa el nombre de la categoria, ejemplo: pulseras" value="<?php echo $categoria['nombre_portafolio'] ?>">
+              <div class="form-group">
+                  <label for="foto">Nombre de la categoria</label>
+                  <input autocomplete="off" type="text" class="form-control" id="nombre" name="nombre"
+                    placeholder="Ingresa el nombre de la categoria del portafolio" value="<?php echo $categoria['nombre_portafolio']?>">
                 </div>
                 <div class="box-footer">
                   <input type="hidden" name="registro" value="actualizar">

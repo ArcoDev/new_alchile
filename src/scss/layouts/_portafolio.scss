@@ -14,7 +14,6 @@
         justify-content: flex-end;
         padding: 2rem 0;
         padding-right: 5.5rem;
-
         @include movil {
             flex-direction: column;
             justify-content: center;
@@ -136,7 +135,7 @@
         }
 
         .grid {
-            width: 95%;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -159,9 +158,9 @@
             }
 
             img {
-                width: 47.5%;
-                height: 450px;
-                object-fit: contain;
+                width: 48%;
+                height: 100%;
+                object-fit: cover;
                 -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-top .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
