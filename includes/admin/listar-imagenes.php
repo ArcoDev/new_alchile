@@ -48,27 +48,26 @@
                       $error = $e->getMessage();
                       echo $error;
                     }
-                    
-                    while ($imagenes = $resultado->fetch_assoc()) { ?>
-                <tr>
-                  <td><?php echo $imagenes['nombre'] ?></td>
-                  <td>
-                    <center>
-                      <img loading="lazy" src="../../build/portafolio/<?php echo $imagenes['nombre']; ?>/<?php echo $imagenes['url_foto']; ?>" alt="Portafolio de alchile studio" width="200" height="100">
-                    </center>
-                  </td>
-                  <td><?php echo $imagenes['nombre_portafolio'] ?></td>
-                  <td>
-                    <a href="editar-imagenes.php?id=<?php echo $imagenes['id_imagenes'] ?>"
-                      class="btn btn-warning btn-flat margin" title="Editar">
-                      <i class="fas fa-pencil-alt"></i>
-                    </a>
-                    <a href="#" data-id="<?php echo $imagenes['id_imagenes'] ?>" data-tipo="imagenes"
-                      class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
-                      <i class="fas fa-trash"></i>
-                    </a>
-                  </td>
-                </tr>
+                while ($imagenes = $resultado->fetch_assoc()) { ?>
+                    <tr>
+                      <td><?php echo $imagenes['nombre'] ?></td>
+                      <td>
+                        <center>
+                          <img loading="lazy" src="../../build/portafolio/<?php echo $imagenes['nombre']; ?>/<?php echo $imagenes['url_foto']; ?>" alt="Portafolio de alchile studio" width="200" height="100">
+                        </center>
+                      </td>
+                      <td><?php echo $imagenes['nombre_portafolio'] ?></td>
+                      <td>
+                        <a href="editar-imagenes.php?id=<?php echo $imagenes['id_imagenes'] ?>"
+                          class="btn btn-warning btn-flat margin" title="Editar">
+                          <i class="fas fa-pencil-alt"></i>
+                        </a>
+                        <a href="#" data-id="<?php echo $imagenes['id_imagenes']?>" data-tipo="imagenes"
+                          class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
+                          <i class="fas fa-trash"></i>
+                        </a>
+                      </td>
+                    </tr>
                 <?php } ?>
               </tbody>
             </table>

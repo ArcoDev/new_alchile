@@ -71,7 +71,6 @@ $(document).ready(function() {
                     url: 'modelo-' + imagenes + '.php',
                     success: function(data) {
                         var resultado = JSON.parse(data);
-                        console.log(resultado);
                         if (resultado.respuesta == 'exito') {
                             swal(
                                 'Eliminado!',

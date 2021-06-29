@@ -105,7 +105,7 @@
     <section id="services" class="services">
         <div id="circle" class="circle"></div>
         <div class="title-services">
-            <h2>Hacemos cosas picantes como <span id="service">Diseño</span></h2>
+            <h2>Hacemos cosas picantes como <span id="service">Branding</span></h2>
             <p>Nuestros servicios siempre con el factor picoso que nos distingue.</p>
             <a href="#contact">Hablemos</a>
         </div>

@@ -896,9 +896,10 @@ body::-webkit-scrollbar-thumb {
             margin-top: 8rem; } }
       .portafolio .container .grid img {
         width: 48%;
-        height: 100%;
+        height: 500px;
         object-fit: cover;
         -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
         animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @-webkit-keyframes slide-top {

@@ -26,14 +26,14 @@ function txtServices4() {
 }
 
 function txtServices5() {
-    service.innerHTML = 'Branding';
+    service.innerHTML = 'Diseño';
 }
 
 function txtServices6() {
     service.innerHTML = 'Toma con Dron';
 }
 function txtServices7() {
-    service.innerHTML = 'Diseño';
+    service.innerHTML = 'Branding';
 }
 
 

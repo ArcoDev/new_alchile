@@ -63,7 +63,7 @@ if($_POST['registro'] == 'actualizar') {
 
 /*Eliminar usuario */
 if($_POST['registro'] == 'eliminar') { 
-    $id_borrar = $_POST['id_cat'];
+    $id_borrar = $_POST['id'];
     try {
         $stmt = $con->prepare("DELETE FROM portafolio WHERE id_cat = ?");
         $stmt->bind_param('i', $id_borrar);

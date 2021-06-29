@@ -38,7 +38,7 @@
              ?>
             <!-- form start -->
             <form role="form" name="guardar-producto" id="guardar-producto-archivo" method="post"
-              action="modelo-productos.php" enctype="multipart/form-data">
+              action="modelo-imagenes.php" enctype="multipart/form-data">
               <div class="box-body">
                 <div class="form-group">
                   <label for="nombre">Nombre</label>
@@ -53,10 +53,11 @@
                   <?php 
                       $consulta = $con->query('SELECT * FROM portafolio');
                       while($portafolio = mysqli_fetch_array($consulta)) {
-                          echo '<option value="'.$portafolio['id_cat'].'">'.$portafolio['nombre'].'</option>';
+                          echo '<option value="'.$portafolio['id_cat'].'">'.$portafolio['nombre_portafolio'].'</option>';
                       }
                   ?>
                   </select>
+                </div>
                 <div class="form-group">
                   <label for="imagen_actual">Imagen Actual: </label>
                   <br>
@@ -84,7 +85,7 @@
                 </div>
                 <div class="box-footer">
                   <input type="hidden" name="registro" value="actualizar">
-                  <input type="hidden" name="id_registro" value="<?php echo $producto['id_pro']; ?>">
+                  <input type="hidden" name="id_registro" value="<?php echo $producto['id_imagenes'] ?>">
                   <button type="submit" class="btn btn-primary">Actualizar</button>
                 </div>
             </form>

@@ -49,8 +49,8 @@ if($_POST['registro'] == 'nuevo') {
 
 /*Actualizar Registro de la imagen del portafolio */
 if($_POST['registro'] == 'actualizar') {
-    
-    $directorio = "../../build/portafolio/";
+    $nombre_carpeta = $nombre;
+    $directorio = "../../build/portafolio/$nombre_carpeta/";
     if(!is_dir($directorio)) {
         mkdir($directorio, 0755, true);
     }
@@ -65,12 +65,12 @@ if($_POST['registro'] == 'actualizar') {
     try {
         if($_FILES['archivo_imagen']['size'] > 0) {
             //Con imagen
-            $stmt = $con->prepare('UPDATE imagenes SET nombre = ?,  nombre_cat = ?, url_foto = ? WHERE id_imagenes = ? ');
-            $stmt->bind_param("sssi", $nombre, $categoria, $imagen_url, $id_registroEditar);
+            $stmt = $con->prepare('UPDATE imagenes SET nombre = ?, url_foto = ? WHERE id_imagenes = ? ');
+            $stmt->bind_param("ssi", $nombre, $imagen_url, $id_registroEditar);
         } else {
             //Sin imagen
-            $stmt = $con->prepare("UPDATE imagenes SET nombre = ?, nombre_cat = ? WHERE id_imagenes = ?");
-            $stmt->bind_param("ssi", $nombre, $categoria, $id_registroEditar);
+            $stmt = $con->prepare("UPDATE imagenes SET nombre = ? WHERE id_imagenes = ?");
+            $stmt->bind_param("s", $nombre, $id_registroEditar);
         }
         $estado = $stmt->execute();
         if($estado == true) {
@@ -97,12 +97,12 @@ if($_POST['registro'] == 'actualizar') {
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
-        $stmt = $con->prepare("DELETE FROM portafolio WHERE id_cat = ?");
+        $stmt = $con->prepare("DELETE FROM imagenes WHERE id_imagenes = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {
             $respuesta = array(
-                'respuesta' => 'correcto',
+                'respuesta' => 'exito',
                 'id_eliminado' => $id_borrar
             );
         } else {
