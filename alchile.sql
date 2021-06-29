@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-06-2021 a las 18:53:18
+-- Tiempo de generación: 29-06-2021 a las 23:16:49
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `alchile`
+-- Base de datos: `bd_studioalchile`
 --
 
 -- --------------------------------------------------------
@@ -39,21 +39,34 @@ CREATE TABLE `imagenes` (
 --
 
 INSERT INTO `imagenes` (`id_imagenes`, `nombre`, `url_foto`, `id_categoria`) VALUES
-(1, 'Fotografia', 'FOTOGRAFIA.jpg', 2),
-(2, 'MKT', 'MKT-DIGITAL.png', 5),
-(3, 'MKT', 'MKT-DIGITAL2.png', 5),
-(4, 'MKT', 'MKT-DIGITAL3.png', 5),
-(5, 'Branding', 'publicidad-balam-bicicletas.jpg', 6),
-(6, 'Branding', 'publicidad-cla.jpg', 6),
-(7, 'Dron', 'dron-combugas1.jpg', 7),
-(9, 'Video', 'video-acuario.jpg', 4),
-(11, 'Video', 'video-aw.jpg', 4),
-(12, 'Video', 'video-blackwolf.jpg', 4),
-(13, 'Video', 'video-apromsa.png', 4),
-(14, 'Social Media', 'SOCIAL-MEDIA.png', 3),
-(15, 'Dron', 'dron-combugas2.jpg', 7),
-(16, 'Diseño', '1.jpg', 1),
-(17, 'Diseño', '2.jpg', 1);
+(1, 'Diseño', 'DISEÑO1.jpg', 1),
+(2, 'Diseño', 'DISEÑO2.jpg', 1),
+(3, 'Diseño', 'DISEÑO3.jpg', 1),
+(4, 'Diseño', 'DISEÑO4.jpg', 1),
+(5, 'Fotografia', 'FOTOGRAFIA2.jpg', 2),
+(6, 'Fotografia', 'FOTOGRAFIA3.jpg', 2),
+(7, 'Fotografia', 'FOTOGRAFIA4.jpg', 2),
+(8, 'Fotografia', 'FOTOGRAFIAS.jpg', 2),
+(9, 'Social Media', 'SOCIAL-MEDIA.jpg', 3),
+(10, 'Social Media', 'SOCIAL-MEDIA2.jpg', 3),
+(11, 'Social Media', 'SOCIAL-MEDIA3.jpg', 3),
+(12, 'Social Media', 'SOCIAL-MEDIA4.jpg', 3),
+(13, 'Video', 'VIDEO1.jpg', 4),
+(14, 'Video', 'VIDEO2.jpg', 4),
+(15, 'Video', 'VIDEO3.jpg', 4),
+(16, 'Video', 'VIDEO4.jpg', 4),
+(17, 'MKT', 'MKT-DIGITAL-1.jpg', 5),
+(18, 'MKT', 'MKT-DIGITAL4.jpg', 5),
+(19, 'MKT', 'MKT-DIGITAL-2.jpg', 5),
+(20, 'MKT', 'MKT-DIGITAL-3.jpg', 5),
+(21, 'Branding', 'BRANDING.jpg', 6),
+(22, 'Branding', 'BRANDING4.jpg', 6),
+(23, 'Branding', 'BRANDING2.jpg', 6),
+(24, 'Branding', 'BRANDING3.jpg', 6),
+(25, 'Dron', 'TOMA-CON-DRON1.jpg', 7),
+(26, 'Dron', 'TOMA-CON-DRON2.jpg', 7),
+(27, 'Dron', 'TOMA-CON-DRON3.jpg', 7),
+(28, 'Dron', 'TOMA-CON-DRON4.jpg', 7);
 
 -- --------------------------------------------------------
 
@@ -135,13 +148,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `imagenes`
 --
 ALTER TABLE `imagenes`
-  MODIFY `id_imagenes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_imagenes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT de la tabla `portafolio`
 --
 ALTER TABLE `portafolio`
-  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

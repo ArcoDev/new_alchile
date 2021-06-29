@@ -74,19 +74,19 @@
                 </div>
                 <div class="socials">
                     <ul>
-                        <a href="">
+                        <a target="_blank" href="https://facebook.com/AlChileStudioMx/">
                             <li>Facebook /</li>
                         </a>
-                        <a href="">
+                        <a target="_blank" href="https://instagram.com/alchilestudio_mx/">
                             <li>Instagram /</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>Whatsapp /</li>
                         </a>
-                        <a href="">
+                        <a href="mailto:hola@alchilestudio.com">
                             <li>Correo /</li>
                         </a>
-                        <a href="">
+                        <a href="tel:8717134025">
                             <li>Telefono</li>
                         </a>
                     </ul>
@@ -276,13 +276,13 @@
         </div>
         <div class="grid socials social-footer">
             <ul>
-                <a href="https://facebook.com/AlChileStudioMx/">
+                <a target="_blank" href="https://facebook.com/AlChileStudioMx/">
                     <li>Facebook /</li>
                 </a>
-                <a href="https://instagram.com/alchilestudio_mx/">
+                <a target="_blank" href="https://instagram.com/alchilestudio_mx/">
                     <li>Instagram /</li>
                 </a>
-                <a href="">
+                <a target="_blank" href="">
                     <li>Whatsapp</li>
                 </a>
             </ul>
