@@ -21,6 +21,8 @@
         }
 
         @include tablet {
+            flex-direction: column;
+            justify-content: center;
             padding-right: 6.6rem;
         }
 
@@ -62,7 +64,9 @@
                 text-align: center;
                 margin-top: -2rem;
             }
-
+            @include tablet {
+                width: 100%;
+            }
             li {
                 font-size: 1.9rem;
                 text-align: center;
@@ -80,7 +84,7 @@
                 }
 
                 @include tablet {
-                    font-size: 1.3rem;
+                    font-size: 1.35rem;
                 }
             }
 
@@ -197,6 +201,7 @@
 
                 @include tablet {
                     width: 49%;
+                    height: 260px;
                 }
 
             }

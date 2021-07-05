@@ -40,13 +40,13 @@
         <video src="build/video/header2.mp4" autoplay muted loop playsinline></video>
         <div class="layer">
             <div class="title-header">
-                <h1>We Make Good Shit</h1>
+                <h1>Creatividad, Inspiración e Innovación...</h1>
             </div>
         </div>
         <div id="overlay">
             <div class="layer-menu">
                 <div class="txt-overlay">
-                    <h2>We Make Good Shit</h2>
+                    <h2>Creatividad, Inspiración e Innovación...</h2>
                 </div>
                 <div class="items">
                     <ul id="link" class="link">

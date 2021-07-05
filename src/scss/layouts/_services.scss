@@ -22,10 +22,11 @@
             max-width: 100%;
             text-align: center;
         }
+
         @include tablet {
             max-width: 55%;
         }
-       
+
         h2 {
             color: $blanco;
             font-size: 7rem;
@@ -37,6 +38,7 @@
                 font-size: 4.2rem;
                 margin-bottom: $separacion - 3;
             }
+
             @include tablet {
                 font-size: 4rem;
             }
@@ -45,6 +47,7 @@
                 font-size: 8rem;
                 font-weight: $semiBold;
                 font-family: $textos;
+
                 @include movil {
                     font-size: 4rem;
                     line-height: 1.8;
@@ -53,6 +56,7 @@
                     left: 1%;
                     top: 450%;
                 }
+
                 @include tablet {
                     font-size: 5rem;
                 }
@@ -68,6 +72,7 @@
             @include movil {
                 display: none;
             }
+
             @include tablet {
                 font-size: 1.7rem;
             }
@@ -89,6 +94,7 @@
                 transform: scale(1.04);
                 background: $footer;
             }
+
             @include movil {
                 display: none;
             }
@@ -111,6 +117,7 @@
             max-width: 90%;
             max-height: 90%;
             object-fit: cover;
+
             @include movil {
                 max-width: 80%;
                 max-height: 80%;
@@ -121,16 +128,19 @@
 
     .img-thumb {
         position: absolute;
-        left: 18%;
+        left: 14%;
         bottom: 3%;
         display: flex;
+        gap: 1.5rem;
 
         @include movil {
             left: -9%;
         }
+
         @include tablet {
             left: 0;
         }
+
         @include monitor {
             left: 25%;
         }
@@ -149,8 +159,9 @@
         img {
             max-width: 100%;
             max-height: 100%;
+
             @include movil {
-                max-width: 150%;
+                max-width: 365%;
             }
         }
     }

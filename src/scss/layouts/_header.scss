@@ -89,37 +89,40 @@
 }
 
 .title-header {
-    width: 20%;
-    margin-left: 20%;
-    margin-top: 5%;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 12%;
 
     @include movil {
-        margin-left: 15%;
-        margin-top: 30%;
+        width: 100%;
+        margin-left: 1%;
+        margin-top: 60%;
     }
 
     @include tablet {
-        margin-top: 30%;
+        width: 90%;
+        margin-top: 45%;
     }
+    
 
     h1 {
-        font-size: 12rem;
-        text-align: right;
+        font-size: 9rem;
+        text-align: center;
         color: $blanco;
         font-family: $titulo;
         font-weight: $semiBold;
         line-height: 0.9;
 
         @include movil {
-            font-size: 10rem;
+            font-size: 5rem;
         }
 
         @include tablet {
-            font-size: 14rem;
+            font-size: 12rem;
         }
 
         @include monitor {
-            font-size: 15rem;
+            font-size: 12rem;
         }
     }
 }

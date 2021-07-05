@@ -341,6 +341,12 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 4px 6px 0 rgba(187, 129, 13, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   animation: up 1s ease-out infinite;
   transition: background .5 ease-out; }
+  @media screen and (max-width: 767px) {
+    .up {
+      right: 7%; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .up {
+      right: 4%; } }
   .up.invisible {
     display: none; }
   .up:hover {
@@ -446,32 +452,34 @@ body::-webkit-scrollbar-thumb {
     display: none; }
 
 .title-header {
-  width: 20%;
-  margin-left: 20%;
-  margin-top: 5%; }
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 12%; }
   @media screen and (max-width: 767px) {
     .title-header {
-      margin-left: 15%;
-      margin-top: 30%; } }
+      width: 100%;
+      margin-left: 1%;
+      margin-top: 60%; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .title-header {
-      margin-top: 30%; } }
+      width: 90%;
+      margin-top: 45%; } }
   .title-header h1 {
-    font-size: 12rem;
-    text-align: right;
+    font-size: 9rem;
+    text-align: center;
     color: #FFFFFF;
     font-family: "Spectral", serif;
     font-weight: 600;
     line-height: 0.9; }
     @media screen and (max-width: 767px) {
       .title-header h1 {
-        font-size: 10rem; } }
+        font-size: 5rem; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .title-header h1 {
-        font-size: 14rem; } }
+        font-size: 12rem; } }
     @media screen and (min-width: 1680px) {
       .title-header h1 {
-        font-size: 15rem; } }
+        font-size: 12rem; } }
 
 .about {
   padding: 100px 200px 50px 100px;
@@ -622,10 +630,13 @@ body::-webkit-scrollbar-thumb {
 
 .txt-overlay {
   position: absolute;
-  width: 5%;
-  right: 2%;
+  width: 10%;
+  right: 1%;
   bottom: 15%;
   z-index: 1; }
+  @media screen and (min-width: 1680px) {
+    .txt-overlay {
+      width: 12%; } }
   @media screen and (max-width: 767px) {
     .txt-overlay {
       display: none; } }
@@ -633,13 +644,13 @@ body::-webkit-scrollbar-thumb {
     .txt-overlay {
       display: none; } }
   .txt-overlay h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #FFFFFF;
-    text-align: right;
+    text-align: center;
     font-family: "Spectral", serif; }
     @media screen and (min-width: 1680px) {
       .txt-overlay h2 {
-        font-size: 4rem; } }
+        font-size: 3.3rem; } }
 
 .services {
   position: relative;
@@ -742,9 +753,10 @@ body::-webkit-scrollbar-thumb {
           margin-top: -10rem; } }
   .services .img-thumb {
     position: absolute;
-    left: 18%;
+    left: 14%;
     bottom: 3%;
-    display: flex; }
+    display: flex;
+    gap: 1.5rem; }
     @media screen and (max-width: 767px) {
       .services .img-thumb {
         left: -9%; } }
@@ -766,7 +778,7 @@ body::-webkit-scrollbar-thumb {
       max-height: 100%; }
       @media screen and (max-width: 767px) {
         .services .img-thumb img {
-          max-width: 150%; } }
+          max-width: 365%; } }
   .services .circle {
     position: absolute;
     top: 0;
@@ -798,6 +810,8 @@ body::-webkit-scrollbar-thumb {
         padding: 0; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .portafolio .filter {
+        flex-direction: column;
+        justify-content: center;
         padding-right: 6.6rem; } }
     .portafolio .filter .title-portafolio {
       width: 20%; }
@@ -830,6 +844,9 @@ body::-webkit-scrollbar-thumb {
           padding: 0 1rem;
           text-align: center;
           margin-top: -2rem; } }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .portafolio .filter ul {
+          width: 100%; } }
       .portafolio .filter ul li {
         font-size: 1.9rem;
         text-align: center; }
@@ -843,7 +860,7 @@ body::-webkit-scrollbar-thumb {
               width: 98.3%; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
           .portafolio .filter ul li {
-            font-size: 1.3rem; } }
+            font-size: 1.35rem; } }
       .portafolio .filter ul a {
         color: #FFFFFF;
         padding-right: 1rem;
@@ -924,7 +941,8 @@ body::-webkit-scrollbar-thumb {
             object-fit: contain; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
           .portafolio .container .grid img {
-            width: 49%; } }
+            width: 49%;
+            height: 260px; } }
 
 .contact {
   width: 100%;
