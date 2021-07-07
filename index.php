@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Equipo creativo con el compromiso de atender a nuestros clientes, brindándoles servicios picantes de gran impacto.">
     <title>Alchile Studio</title>
     <link rel="shortcut icon" href="build/icons/alchile.ico" type="image/x-icon">
     <link rel="stylesheet" href="build/css/app.css">
@@ -37,7 +38,11 @@
     </nav>
     <!-- Header -->
     <header class="header">
-        <video src="build/video/header2.mp4" autoplay muted loop playsinline></video>
+        <video autoplay muted loop playsinline>
+            <source src="build/video/header.mp4" type="video/mp4">
+            <source src="build/video/header.ogg" type="video/ogg">
+            <source src="build/video/header.webm" type="video/webm">
+        </video>
         <div class="layer">
             <div class="title-header">
                 <h1>Creatividad, Inspiración e Innovación...</h1>
